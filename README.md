@@ -1,7 +1,7 @@
 # README
 
 
-![Pitcher Schema](Pitcher_Schema.jpg)
+![Pitcher Schema](Pitcher_Schema.png)
 
 
 
