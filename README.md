@@ -25,14 +25,14 @@ Database: Postgresql
   - Get a [client_id & access token](https://www.yelp.com/fusion)
   - ``bundle exec figaro install``
   - Store API keys in config/application.yml
-    - ENV['yelp_client_id']    = <client_id>
-    - ENV['yelp_public_token'] = <access_token>
+    - ENV['yelp_client_id']: <client_id>
+    - ENV['yelp_public_token']: <access_token>
   
 4 - Setup Google API:
   - Get a [client_secret & client_id](https://developers.google.com/identity/sign-in/web/sign-in)
   - Store API keys in config/application.yml
-    - ENV['google_client_id'] = <client_id>
-    - ENV['google_secret']    = <client_secret>  
+    - ENV['google_client_id']: <client_id>
+    - ENV['google_secret']: <client_secret>  
 
 ## Gems
 - ``gem 'pg', '>= 0.18', '< 2.0'``
