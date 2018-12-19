@@ -21,16 +21,14 @@ Database: Postgresql
 
 2 - Setup DB: ``bundle exec rake db:{drop,create,migrate,seed}``
 
-3 - Setup Test Suite: ``rails generate rspec:install``
-
-4 - Setup Yelp API: 
+3 - Setup Yelp API: 
   - Get a [client_id & access token](https://www.yelp.com/fusion)
   - ``bundle exec figaro install``
   - Store API keys in config/application.yml
     - ENV['yelp_client_id']    = <client_id>
     - ENV['yelp_public_token'] = <access_token>
   
-5 - Setup Google API:
+4 - Setup Google API:
   - Get a [client_secret & client_id](https://developers.google.com/identity/sign-in/web/sign-in)
   - Store API keys in config/application.yml
     - ENV['google_client_id'] = <client_id>
