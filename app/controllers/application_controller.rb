@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
+  helper_method :main_address
 
   def authenticate
   	redirect_to '/' unless user_signed_in?

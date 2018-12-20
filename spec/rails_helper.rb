@@ -51,8 +51,28 @@ end
 RSpec.configure do |config|
   config.fixture_path  = "#{::Rails.root}/spec/fixtures" # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.use_transactional_fixtures = true               # If you're not using ActiveRecord, or you'd prefer not to run each of your # examples within a transaction, remove the following line or assign false # instead of true.
-                                                         # RSpec Rails can automatically mix in different behaviours to your tests based on their file location, for example enabling you to call `get` and `post` in specs under `spec/controllers`. # You can disable this behaviour by removing the line below, and instead explicitly tag your specs with their type, e.g.:
-                                                         #     RSpec.describe UsersController, :type => :controller do # ... end
+  OmniAuth.config.test_mode = true
+
+  Capybara.default_host = 'http://localhost:3000'
+
+  def stub_omniauth
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:google] = OmniAuth::AuthHash.new({
+      provider: "google",
+      uid: "12345678910",
+      info: {
+        email: "example@gmail.com",
+        first_name: "Jawe",
+        last_name: "Some"
+      },
+      credentials: {
+        token: "abcdefg12345",
+        refresh_token: "12345abcdefg",
+        expires_at: DateTime.now,
+      }
+    }
+    )
+  end                                                     # RSpec Rails can automatically mix in different behaviours to your tests based on their file location, for example enabling you to call `get` and `post` in specs under `spec/controllers`. # You can disable this behaviour by removing the line below, and instead explicitly tag your specs with their type, e.g.:
                                                          # The different available types are documented in the features, such as in # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!                    # Filter lines from Rails gems in backtraces. # arbitrary gems may also be filtered via: config.filter_gems_from_backtrace("gem name")

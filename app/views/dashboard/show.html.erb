@@ -1,8 +1,21 @@
-<% if current_user %>
 <ul>
   <li> First Name: <%= current_user.first_name %> </li>
   <li> Last Name: <%= current_user.last_name %> </li>
   <li> Email: <%= current_user.email %> </li>
 </ul>
 <%= link_to "Logout", logout_path %>
+
+<% if @main_address.id %>
+  Address: <%= @main_address.address %>
+  City: <%= @main_address.city %>
+  State: <%= @main_address.state %>
+  Zip Code: <%= @main_address.zip %>
+<% else %>
+  <%= form_for [current_user, @main_address] do |f| %>
+    <%= f.text_field :address %>
+    <%= f.text_field :city %>
+    <%= f.text_field :state %>
+    <%= f.text_field :zip %>
+    <%= f.submit "Submit"%>
+  <% end %>
 <% end %>
