@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get 'images', to: 'images#index'
 
   root to: "home#show"
+
+  resources :users do
+    resources :main_addresses, only: [:create, :destroy]
+  end
 end

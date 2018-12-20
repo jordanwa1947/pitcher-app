@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_one :main_address
 
   def self.find_or_create_user(auth)
     where(uid: auth[:uid]).first_or_initialize.tap do |user|
