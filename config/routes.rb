@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'dashboard#show'
 
   root to: "home#show"
+
+  resources :users do
+    resources :main_addresses, only: [:create, :destroy]
+  end
 end
