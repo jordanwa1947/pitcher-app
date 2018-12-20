@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   root to: "home#show"
 
+  get '/wishlist', to: 'wishlist#index', as: 'wishlist'
+
   resources :users do
     resources :main_addresses, only: [:create, :destroy]
   end

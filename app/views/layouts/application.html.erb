@@ -10,9 +10,16 @@
   </head>
 
   <body>
+
+    <%= render partial: "partials/nav_bar" %>
+
     <% flash.each do |type, message| %>
-      <%= "#{type}: #{message}" %> 
+      <%= "#{type}: #{message}" %>
     <% end %>
+
     <%= yield %>
+
+
+
   </body>
 </html>
