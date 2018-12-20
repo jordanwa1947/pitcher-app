@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get '/', to: 'home#show'
   get 'dashboard', to: 'dashboard#show'
 
+  get 'images', to: 'images#index'
+
   root to: "home#show"
 end
