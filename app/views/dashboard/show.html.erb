@@ -10,12 +10,8 @@
   City: <%= @main_address.city %>
   State: <%= @main_address.state %>
   Zip Code: <%= @main_address.zip %>
+  <%= link_to 'Update Main Address', edit_user_main_address_path(current_user.id, @main_address) %>
+  <%= link_to 'Delete Main Address', user_main_address_path(current_user.id, @main_address), method: :delete %>
 <% else %>
-  <%= form_for [current_user, @main_address] do |f| %>
-    <%= f.text_field :address %>
-    <%= f.text_field :city %>
-    <%= f.text_field :state %>
-    <%= f.text_field :zip %>
-    <%= f.submit "Submit"%>
-  <% end %>
+  <%= render '/shared/main_address_form' %>
 <% end %>

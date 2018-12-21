@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get '/wishlist', to: 'wishlist#index', as: 'wishlist'
 
   resources :users do
-    resources :main_addresses, only: [:create, :destroy]
+    resources :main_addresses, only: [:create, :destroy, :edit, :update]
   end
 end
