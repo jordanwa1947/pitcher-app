@@ -1,0 +1,20 @@
+
+
+<div class='nav'>
+
+  <% if current_user %>
+    <span class='favorites' >
+      <%= link_to "Wishlist", wishlist_path %>
+      <!-- < %= link_to "Recent Matches", matches_path %> -->
+    </span>
+    <span class="address-options">
+      <!-- < %= link_to "Default Location", images_path(address: "default") %> -->
+      <!-- < %= link_to "Explore",          images_path(address: "explore") %> -->
+      <!-- < %= link_to "Current Location",          images_path(address: "explore") %> -->
+    </span>
+    <span class='logout'>
+      <!-- < %= link_to "Logout", logout_path %> -->
+    </span>
+  <% end %>
+
+</div>

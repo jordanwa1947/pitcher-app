@@ -19,4 +19,9 @@ class ApplicationController < ActionController::Base
   def images_facade
     @images_facade ||= ImagesFacade.new(current_user) if current_user 
   end
+  
+  def four_oh_four
+    raise ActionController::RoutingError.new('Not Found')
+  end
+
 end
