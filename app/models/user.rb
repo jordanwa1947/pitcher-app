@@ -10,4 +10,13 @@ class User < ApplicationRecord
       user.save!
     end
   end
+
+  def build_address
+    address_attributes = main_address.attributes.find_all do |attribute, value|
+      value && !(attribute =~ /id/)
+    end
+    only_values = address_attributes.map do |value|
+      value[1]
+    end.join(' ')
+  end
 end
