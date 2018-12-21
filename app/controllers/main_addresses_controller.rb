@@ -11,7 +11,8 @@ class MainAddressesController < ApplicationController
   def destroy
     main_address = MainAddress.find(params[:id])
     main_address.delete
-    redirect_to dashboard_path 
+    flash[:success] = 'Main Address Has Been Deleted'
+    redirect_to dashboard_path
   end
 
   def edit
