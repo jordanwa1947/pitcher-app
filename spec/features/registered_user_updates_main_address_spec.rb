@@ -25,6 +25,7 @@ describe 'Registered User with clicks on update main address' do
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content('City: Tampa')
     expect(page).to have_content('State: Fl')
+    expect(page).to have_content('Zip Code: 80202')
     expect(page).to_not have_content('State: CO')
     expect(page).to_not have_content('City: Denver')
   end
