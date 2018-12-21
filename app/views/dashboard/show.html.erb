@@ -11,6 +11,7 @@
   State: <%= @main_address.state %>
   Zip Code: <%= @main_address.zip %>
   <%= link_to 'Update Main Address', edit_user_main_address_path(current_user.id, @main_address) %>
+  <%= link_to 'Delete Main Address', user_main_address_path(current_user.id, @main_address), method: :delete %>
 <% else %>
   <%= render '/shared/main_address_form' %>
 <% end %>
