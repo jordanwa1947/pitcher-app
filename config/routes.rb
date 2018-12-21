@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   root to: "home#show"
 
   resources :users do
-    resources :main_addresses, only: [:create, :destroy]
+    resources :main_addresses, only: [:create, :destroy, :edit, :update]
   end
 end
