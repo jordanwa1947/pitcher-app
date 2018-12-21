@@ -1,0 +1,17 @@
+<main>
+  <% if @images_facade %>
+    <h2>Pick or Pass?</h2>
+    <div class="photo-container">
+      <img src=<%= @images_facade.photos.first.url %>
+          alt="restaurant or food photo"
+          class="photo"
+          width="300"
+          height="200" />
+    </div>
+    <div class="photo-feedback-container">
+      <%= button_to "Like", like_path, method: :post %>
+      <%= button_to "Finish", dashboard_path %>
+      <%= button_to "Pass", dislike_path, method: :delete %>
+    </div>
+  <% end %>
+</main>
