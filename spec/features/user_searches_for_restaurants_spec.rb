@@ -15,24 +15,81 @@ describe 'As a registered user' do
     end
 
     it 'should display a button to search using my main address' do
-      expect(page).to have_content("Use My Home Address")
+      expect(page).to have_content("Default Location")
     end
 
-    describe 'when I click the Use My Home Address button' do
+    describe 'when I click the Default Location button' do
 
-      it 'should display a photo and like and dislike buttons' do
-
-        within(".nav") do
-          click_button("Use My Home Address")
-        end
-  
-        expect(current_path).to eq("images_path")
-        expect(page).to have_css(".photo", count: 1)
-        expect(page).to have_css("button.like", count: 1)
-        expect(page).to have_css("button.dislike", count: 1)
-        expect(page).to have_css("button.finish", count: 1)
+      before(:each) do
+        stub_request(:get, "https://api.yelp.com/v3/businesses/search?limit=20&location=1331%2017th%20Street%20Denver%20CO%2080202&radius=1609&sort_by=distance&term=restaurant").
+          to_return(body: File.read("./spec/fixtures/business_search.json"))
+        stub_request(:get, "https://api.yelp.com/v3/businesses/cL8rbKfItlQOoFzLIQAsdA").
+          to_return(body: File.read("./spec/fixtures/business_details_1.json"))
+        stub_request(:get, "https://api.yelp.com/v3/businesses/eaVcCJO5OmBhAv-kJRpWRg").
+          to_return(body: File.read("./spec/fixtures/business_details_2.json"))
+        stub_request(:get, "https://api.yelp.com/v3/businesses/us9NRKZDQZH0iKgEmdhbJQ").
+          to_return(body: File.read("./spec/fixtures/business_details_3.json"))
+        click_on "Default Location"
       end
 
+      it 'should display photos and like and dislike buttons' do
+
+        expect(current_path).to eq("/matches")
+        expect(page).to have_css(".photo", count: 3)
+        expect(page).to have_css("input.like", count: 1)
+        expect(page).to have_css("input.dislike", count: 1)
+        expect(page).to have_css("input.finish", count: 1)
+      end
+
+      describe "when I click the like button" do
+
+        before(:each) do
+          visit matches_path
+          click_on "Like"
+        end
+
+        it "should display a new set of photos" do
+          expect(current_path).to eq("/matches")
+          expect(page).to have_css(".photo", count: 3)
+        end
+
+        describe "when I click the finish button" do
+
+          before(:each) do
+            click_on "Finish"
+          end
+
+          it "should display restaurant info in my wishlist" do
+            expect(page).to have_content("These are all the restaurants you've been interested in from the past.")
+            expect(page).to have_css("li.restaurant", count: 1)
+          end
+        end
+      end
+
+      describe "when I click the dislike button" do
+
+        before(:each) do
+          visit matches_path
+          click_on "Pass"
+        end
+
+        it "should display a new set of photos" do
+          expect(current_path).to eq("/matches")
+          expect(page).to have_css(".photo", count: 3)
+        end
+
+        describe "when I click the finish button" do
+
+          before(:each) do
+            click_on "Finish"
+          end
+
+          it "should not display restaurant info in my wishlist" do
+            expect(page).to have_content("You don't have any recommended restaurants yet.")
+            expect(page).to_not have_css("li.restaurant", count: 1)
+          end
+        end
+      end
     end
   end
 end
