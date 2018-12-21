@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get '/', to: 'home#show'
   get 'dashboard', to: 'dashboard#show'
-  get 'images', to: 'images#index'
-  delete 'images', to: 'images#destroy', as: 'dislike'
   get 'matches', to: 'matches#index'
   post 'matches', to: 'matches#create', as: 'like'
+  delete 'matches', to: 'matches#destroy', as: 'dislike'
+  patch 'matches', to: 'matches#update', as: 'finish'
 
   root to: "home#show"
 
