@@ -5,6 +5,7 @@ class Wishlist < ApplicationRecord
   # TO DO - I don't think you can validate default value ?
 
   belongs_to :user
+  validates_uniqueness_of :restaurant_id
 
 
 

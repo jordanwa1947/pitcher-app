@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2018_12_20_234603) do
 
   create_table "wishlists", force: :cascade do |t|
     t.bigint "user_id"
-    t.integer "rank", default: 0, null: false
+    t.string "restaurant_id", default: "0", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_wishlists_on_user_id"

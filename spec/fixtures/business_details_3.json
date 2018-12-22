@@ -1,0 +1,101 @@
+{
+  "id": "us9NRKZDQZH0iKgEmdhbJQ",
+  "alias": "erbert-and-gerberts-denver",
+  "name": "Erbert & Gerbert's",
+  "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/hQpruIl8eJGE8GHjhrhcbQ/o.jpg",
+  "is_claimed": true,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/erbert-and-gerberts-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "+13038254444",
+  "display_phone": "(303) 825-4444",
+  "review_count": 54,
+  "categories": [
+    {
+      "alias": "soup",
+      "title": "Soup"
+    },
+    {
+      "alias": "sandwiches",
+      "title": "Sandwiches"
+    }
+  ],
+  "rating": 3.5,
+  "location": {
+    "address1": "1675 Larimer St",
+    "address2": "",
+    "address3": "",
+    "city": "Denver",
+    "zip_code": "80202",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "1675 Larimer St",
+      "Denver, CO 80202"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.7500877380371,
+    "longitude": -104.996757507324
+  },
+  "photos": [
+    "https://s3-media3.fl.yelpcdn.com/bphoto/hQpruIl8eJGE8GHjhrhcbQ/o.jpg",
+    "https://s3-media3.fl.yelpcdn.com/bphoto/XLWwo32uTwPoNbVHKgpUEg/o.jpg",
+    "https://s3-media2.fl.yelpcdn.com/bphoto/kC99ZiIoqh5W29Fvwo9zRQ/o.jpg"
+  ],
+  "price": "$",
+  "hours": [
+    {
+      "open": [
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 0
+        },
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 1
+        },
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 2
+        },
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 3
+        },
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 4
+        },
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 5
+        },
+        {
+          "is_overnight": false,
+          "start": "1030",
+          "end": "2000",
+          "day": 6
+        }
+      ],
+      "hours_type": "REGULAR",
+      "is_open_now": true
+    }
+  ],
+  "transactions": [
+    "delivery",
+    "pickup"
+  ]
+}
