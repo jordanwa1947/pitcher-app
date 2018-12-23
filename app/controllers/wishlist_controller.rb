@@ -3,7 +3,9 @@ class WishlistController < ApplicationController
 
   def index
     four_oh_four if !current_user
-    @wishlist = Wishlist.all
+    @restaurants = current_user.wishlists.map do |wishlist|
+      wishlist.restaurant
+    end
   end
 
 
