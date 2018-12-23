@@ -24,6 +24,7 @@ describe 'User' do
 
     it '.local_restaurants' do
       VCR.use_cassette("user_local_restaurants_spec", record: :all) do
+        skip("This test is no longer needed here")
         restaurants = @user.local_restaurants(@user.build_address)
         expect(restaurants).to be_a(Hash)
         expect(restaurants.keys.count).to eq(20)
