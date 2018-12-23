@@ -1,0 +1,96 @@
+  {
+    "id": "mzOAkvH-4WIfQuR3uCs87g",
+    "alias": "hopdoddy-burger-bar-denver",
+    "name": "Hopdoddy Burger Bar",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CdADjEj_McY9D9Mpk6Jvgg/o.jpg",
+    "is_claimed": true,
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/hopdoddy-burger-bar-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+    "phone": "+13034462337",
+    "display_phone": "(303) 446-2337",
+    "review_count": 756,
+    "categories": [
+      {
+        "alias": "burgers",
+        "title": "Burgers"
+      }
+    ],
+    "rating": 4.5,
+    "location": {
+      "address1": "1747 Wynkoop St",
+      "address2": "",
+      "address3": "",
+      "city": "Denver",
+      "zip_code": "80202",
+      "country": "US",
+      "state": "CO",
+      "display_address": [
+        "1747 Wynkoop St",
+        "Denver, CO 80202"
+      ],
+      "cross_streets": ""
+    },
+    "coordinates": {
+      "latitude": 39.7534294,
+      "longitude": -104.9991989
+    },
+    "photos": [
+      "https://s3-media1.fl.yelpcdn.com/bphoto/CdADjEj_McY9D9Mpk6Jvgg/o.jpg",
+      "https://s3-media4.fl.yelpcdn.com/bphoto/KQGsi63Bi2MHD7xxcm1CUw/o.jpg",
+      "https://s3-media4.fl.yelpcdn.com/bphoto/-0UCieO-8UoHjnaD_RT_KQ/o.jpg"
+    ],
+    "price": "$$",
+    "hours": [
+      {
+        "open": [
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2200",
+            "day": 0
+          },
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2200",
+            "day": 1
+          },
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2200",
+            "day": 2
+          },
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2200",
+            "day": 3
+          },
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2300",
+            "day": 4
+          },
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2300",
+            "day": 5
+          },
+          {
+            "is_overnight": false,
+            "start": "1100",
+            "end": "2200",
+            "day": 6
+          }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "transactions": [
+      "pickup"
+    ]
+  }

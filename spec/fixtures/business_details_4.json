@@ -1,0 +1,102 @@
+{
+  "id": "AufxrKk-COzfAMr9KMVWRA",
+  "alias": "mortons-the-steakhouse-denver-2",
+  "name": "Morton's The Steakhouse",
+  "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/c86oV0nZkTOm2Pt9tKFYog/o.jpg",
+  "is_claimed": true,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/mortons-the-steakhouse-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "+13038253353",
+  "display_phone": "(303) 825-3353",
+  "review_count": 168,
+  "categories": [
+    {
+      "alias": "steak",
+      "title": "Steakhouses"
+    },
+    {
+      "alias": "tradamerican",
+      "title": "American (Traditional)"
+    },
+    {
+      "alias": "bars",
+      "title": "Bars"
+    }
+  ],
+  "rating": 3.5,
+  "location": {
+    "address1": "1745 Wazee St",
+    "address2": "",
+    "address3": "",
+    "city": "Denver",
+    "zip_code": "80202",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "1745 Wazee St",
+      "Denver, CO 80202"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.7530570684622,
+    "longitude": -104.998126650297
+  },
+  "photos": [
+    "https://s3-media3.fl.yelpcdn.com/bphoto/c86oV0nZkTOm2Pt9tKFYog/o.jpg",
+    "https://s3-media4.fl.yelpcdn.com/bphoto/wAA56X2hIEfHlibfOqyX8Q/o.jpg",
+    "https://s3-media3.fl.yelpcdn.com/bphoto/tEoR8CZTV79iO8a87Qe5MQ/o.jpg"
+  ],
+  "price": "$$$$",
+  "hours": [
+    {
+      "open": [
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2200",
+          "day": 0
+        },
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2200",
+          "day": 1
+        },
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2200",
+          "day": 2
+        },
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2200",
+          "day": 3
+        },
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2300",
+          "day": 4
+        },
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2300",
+          "day": 5
+        },
+        {
+          "is_overnight": false,
+          "start": "1700",
+          "end": "2200",
+          "day": 6
+        }
+      ],
+      "hours_type": "REGULAR",
+      "is_open_now": false
+    }
+  ],
+  "transactions": []
+}

@@ -1,0 +1,97 @@
+{
+  "id": "mKRMTGAOQKPIdhi8LKB4Tg",
+  "alias": "little-gingko-asian-cafe-denver-2",
+  "name": "Little Gingko Asian Cafe",
+  "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NUE5hIaTPzlsKOnDaVSCAg/o.jpg",
+  "is_claimed": true,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/little-gingko-asian-cafe-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "+13039932327",
+  "display_phone": "(303) 993-2327",
+  "review_count": 67,
+  "categories": [
+    {
+      "alias": "chinese",
+      "title": "Chinese"
+    }
+  ],
+  "rating": 4,
+  "location": {
+    "address1": "1279 N Marion St",
+    "address2": "",
+    "address3": null,
+    "city": "Denver",
+    "zip_code": "80218",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "1279 N Marion St",
+      "Denver, CO 80218"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.7366885730926,
+    "longitude": -104.972055974762
+  },
+  "photos": [
+    "https://s3-media2.fl.yelpcdn.com/bphoto/NUE5hIaTPzlsKOnDaVSCAg/o.jpg",
+    "https://s3-media2.fl.yelpcdn.com/bphoto/6i1iavaRvOxpnn5HbJOwRQ/o.jpg",
+    "https://s3-media1.fl.yelpcdn.com/bphoto/fctw95hpmkz4I1nVRrgYsA/o.jpg"
+  ],
+  "price": "$$",
+  "hours": [
+    {
+      "open": [
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2200",
+          "day": 0
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2200",
+          "day": 1
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2200",
+          "day": 2
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2200",
+          "day": 3
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2230",
+          "day": 4
+        },
+        {
+          "is_overnight": false,
+          "start": "1130",
+          "end": "2230",
+          "day": 5
+        },
+        {
+          "is_overnight": false,
+          "start": "1130",
+          "end": "2200",
+          "day": 6
+        }
+      ],
+      "hours_type": "REGULAR",
+      "is_open_now": true
+    }
+  ],
+  "transactions": [
+    "delivery",
+    "pickup"
+  ]
+}
