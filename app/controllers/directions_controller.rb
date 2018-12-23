@@ -1,7 +1,8 @@
 class DirectionsController < ApplicationController
 
+  before_action :authenticate
+
   def show
-    must_be_logged_in
     @restaurant = Restaurant.find( params[:id] )
     @facade     = DirectionsFacade.new( @restaurant.id )
   end

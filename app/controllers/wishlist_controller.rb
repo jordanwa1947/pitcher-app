@@ -1,8 +1,9 @@
 
 class WishlistController < ApplicationController
 
+  before_action :authenticate
+
   def index
-    must_be_logged_in
     @restaurants = current_user.wishlists.map do |wishlist|
       wishlist.restaurant
     end
