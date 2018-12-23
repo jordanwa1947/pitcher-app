@@ -37,7 +37,7 @@ describe 'As a registered user' do
       it 'should display photos and like and dislike buttons' do
 
         expect(current_path).to eq("/matches")
-        expect(page).to have_css(".photo", count: 3)
+        expect(page).to have_css(".photo")
         expect(page).to have_css("input.like", count: 1)
         expect(page).to have_css("input.dislike", count: 1)
         expect(page).to have_css("input.finish", count: 1)
@@ -46,13 +46,12 @@ describe 'As a registered user' do
       describe "when I click the like button" do
 
         before(:each) do
-          visit matches_path
           click_on "Like"
         end
 
         it "should display a new set of photos" do
           expect(current_path).to eq("/matches")
-          expect(page).to have_css(".photo", count: 3)
+          expect(page).to have_css(".photo")
         end
 
         describe "when I click the finish button" do
@@ -75,13 +74,12 @@ describe 'As a registered user' do
       describe "when I click the dislike button" do
 
         before(:each) do
-          visit matches_path
           click_on "Pass"
         end
 
         it "should display a new set of photos" do
           expect(current_path).to eq("/matches")
-          expect(page).to have_css(".photo", count: 3)
+          expect(page).to have_css(".photo")
         end
 
         describe "when I click the finish button" do
