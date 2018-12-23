@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    must_be_logged_in
     session[:user_id] = nil
     redirect_to root_path
   end

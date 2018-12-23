@@ -2,7 +2,7 @@
 class WishlistController < ApplicationController
 
   def index
-    four_oh_four if !current_user
+    must_be_logged_in
     @restaurants = current_user.wishlists.map do |wishlist|
       wishlist.restaurant
     end

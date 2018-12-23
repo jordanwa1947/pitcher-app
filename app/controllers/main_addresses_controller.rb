@@ -1,6 +1,7 @@
 class MainAddressesController < ApplicationController
 
   def create
+    must_be_logged_in
     main_address = MainAddress.new(address_params)
     main_address.user_id = params[:user_id].to_i
     if main_address.save!
@@ -13,6 +14,7 @@ class MainAddressesController < ApplicationController
   end
 
   def destroy
+    must_be_logged_in
     main_address = MainAddress.find(params[:id])
     main_address.delete
     flash[:success] = 'Main Address Has Been Deleted'
@@ -20,10 +22,12 @@ class MainAddressesController < ApplicationController
   end
 
   def edit
+    must_be_logged_in
     @main_address = current_user.main_address
   end
 
   def update
+    must_be_logged_in
     MainAddress.find_by(user_id: current_user.id).delete
     main_address = MainAddress.new(address_params)
     main_address.user_id = params[:user_id]

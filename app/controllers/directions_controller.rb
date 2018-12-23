@@ -1,7 +1,8 @@
 class DirectionsController < ApplicationController
 
   def show
-    @restaurant = Restaurant.find(params[:id]).to_i 
-    @facade = DirectionsFacade.new(params[:id].to_i)
+    must_be_logged_in
+    @restaurant = Restaurant.find( params[:id] )
+    @facade     = DirectionsFacade.new( @restaurant.id )
   end
 end
