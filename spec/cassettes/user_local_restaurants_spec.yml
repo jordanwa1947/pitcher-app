@@ -264,7 +264,6 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer it_9P6D7JXvg6iOWSQ4sisZ0GOW2_VCJFM7eLTq6S7aMsuQ18SYFqR6bioOUXfv6l7pnvHOMpftnZNWtuKtcjpsYAMkxUKuJVUehQwIPM5d9ZBNOX5mWAv5vl9IaXHYx
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
