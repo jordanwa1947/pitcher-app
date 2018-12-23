@@ -1,16 +1,19 @@
 class MatchesFacade
 
-  attr_reader :restaurant_id
+  attr_reader :yelp_id
 
-  def initialize(user, restaurant_id)
+  def initialize(user, yelp_id)
     @user = user
-    @restaurant_id = restaurant_id
+    @yelp_id = yelp_id
   end
 
   def images
-    response = conn.get("#{restaurant_id}")
-    body = JSON.parse(response.body, symbolize_names: true)
+    body = get_json
     return body[:photos]
+  end
+
+  def restaurant_info
+    get_json
   end
 
   # def restaurants
@@ -20,8 +23,13 @@ class MatchesFacade
   # end
 
   private
-  
+
   attr_reader :user
+
+  def get_json
+    @json ||= conn.get("#{yelp_id}")
+    JSON.parse(@json.body, symbolize_names: true)
+  end
 
   def conn
     Faraday.new(:url => 'https://api.yelp.com/v3/businesses/') do |faraday|

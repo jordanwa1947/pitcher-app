@@ -1,4 +1,4 @@
-<% if @wishlist.empty? %>
+<% if @restaurants.empty? %>
 
   <h2>You don't have any recommended restaurants yet.</h2>
 
@@ -7,8 +7,17 @@
   <h2>These are all the restaurants you've been interested in from the past.</h2>
 
   <ul class="wishlists">
-    <% @wishlist.each do |wishlist| %>
-      <li class="restaurant"><%= wishlist.restaurant_id %></li>
+    <% @restaurants.each do |restaurant| %>
+      <h3 class="restaurant_name"><%= restaurant.name %></h3>
+      <li class="restaurant_phone"><%= restaurant.phone_number %></li>
+      <li class="restaurant_address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
+      <li class="restaurant_yelp_link"><%= restaurant.yelp_link %></li>
+      <li class="directions"><%= link_to "Get Directions", "/directions/#{restaurant.id}" %>
+      <img src=<%= restaurant.image %>
+           alt="restaurant or food photo"
+           class="photo"
+           width="300"
+           height="200" />
     <% end %>
   </ul>
 

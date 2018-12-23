@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer it_9P6D7JXvg6iOWSQ4sisZ0GOW2_VCJFM7eLTq6S7aMsuQ18SYFqR6bioOUXfv6l7pnvHOMpftnZNWtuKtcjpsYAMkxUKuJVUehQwIPM5d9ZBNOX5mWAv5vl9IaXHYx
+      - Bearer <YELP_API_KEY>
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -27,23 +27,23 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4065'
+      - '4967'
       Ratelimit-Resettime:
-      - '2018-12-22T00:00:00+00:00'
+      - '2018-12-24T00:00:00+00:00'
       X-Proxied:
-      - 10-69-90-16-uswest2aprod
+      - 10-69-189-238-uswest2bprod
       Transfer-Encoding:
       - chunked
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 21 Dec 2018 23:42:12 GMT
+      - Sun, 23 Dec 2018 15:42:44 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-den19625-DEN
+      - cache-dfw18626-DFW
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -52,18 +52,18 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"businesses": [{"id": "cL8rbKfItlQOoFzLIQAsdA", "alias": "stack-subs-lodo-denver",
         "name": "STACK Subs LoDo", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rb3Nq7iNSLUcDYaNqd1i_A/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/stack-subs-lodo-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/stack-subs-lodo-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 20, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
-        39.75077, "longitude": -104.99645}, "transactions": ["delivery", "pickup"],
+        39.75077, "longitude": -104.99645}, "transactions": ["pickup", "delivery"],
         "location": {"address1": "1331 17th St", "address2": "", "address3": null,
         "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
         ["1331 17th St", "Denver, CO 80202"]}, "phone": "+13032957827", "display_phone":
         "(303) 295-7827", "distance": 21.501846067367165}, {"id": "eaVcCJO5OmBhAv-kJRpWRg",
         "alias": "the-delectable-egg-denver-denver", "name": "The Delectable Egg-Denver",
         "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ftIQr9MZOZoyPvIjeoapUA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-delectable-egg-denver-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-delectable-egg-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 302, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "burgers", "title": "Burgers"}, {"alias": "sandwiches", "title":
         "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 39.7503656, "longitude":
@@ -74,17 +74,17 @@ http_interactions:
         572-8146", "distance": 78.43136180750689}, {"id": "us9NRKZDQZH0iKgEmdhbJQ",
         "alias": "erbert-and-gerberts-denver", "name": "Erbert & Gerbert''s", "image_url":
         "https://s3-media3.fl.yelpcdn.com/bphoto/hQpruIl8eJGE8GHjhrhcbQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/erbert-and-gerberts-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        false, "url": "https://www.yelp.com/biz/erbert-and-gerberts-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 54, "categories": [{"alias": "soup", "title": "Soup"}, {"alias":
         "sandwiches", "title": "Sandwiches"}], "rating": 3.5, "coordinates": {"latitude":
-        39.7500877380371, "longitude": -104.996757507324}, "transactions": ["delivery",
-        "pickup"], "price": "$", "location": {"address1": "1675 Larimer St", "address2":
+        39.7500877380371, "longitude": -104.996757507324}, "transactions": ["pickup",
+        "delivery"], "price": "$", "location": {"address1": "1675 Larimer St", "address2":
         "", "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
         "state": "CO", "display_address": ["1675 Larimer St", "Denver, CO 80202"]},
         "phone": "+13038254444", "display_phone": "(303) 825-4444", "distance": 83.53917819179469},
         {"id": "4a-dMSzzPiIyZqj0pTlCGQ", "alias": "two-fisted-marios-pizza-denver",
         "name": "Two-Fisted Mario''s Pizza", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/esuVCeXyWgkPFPfcX4d6gg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/two-fisted-marios-pizza-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/two-fisted-marios-pizza-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 193, "categories": [{"alias": "pizza", "title": "Pizza"}],
         "rating": 3.0, "coordinates": {"latitude": 39.750292, "longitude": -104.997543},
         "transactions": ["delivery"], "price": "$", "location": {"address1": "1626
@@ -94,7 +94,7 @@ http_interactions:
         623-3523", "distance": 89.0674644534894}, {"id": "kRmYd-YMlTswHBnK4LBf2A",
         "alias": "the-black-buzzard-denver", "name": "The Black Buzzard", "image_url":
         "https://s3-media2.fl.yelpcdn.com/bphoto/WDRZ9ETvVbVV_CL7L7LgzQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/the-black-buzzard-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        false, "url": "https://www.yelp.com/biz/the-black-buzzard-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 3, "categories": [{"alias": "theater", "title": "Performing
         Arts"}, {"alias": "cajun", "title": "Cajun/Creole"}, {"alias": "beerbar",
         "title": "Beer Bar"}], "rating": 4.5, "coordinates": {"latitude": 39.750146,
@@ -104,8 +104,8 @@ http_interactions:
         St", "Denver, CO 80202"]}, "phone": "+17205023535", "display_phone": "(720)
         502-3535", "distance": 99.64675626045334}, {"id": "RtbHHTs4vdKUJdVQAGrwfw",
         "alias": "sliceworks-denver-2", "name": "Sliceworks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vsGs2ovjO_TgZgG5rg31Zg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/sliceworks-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 357, "categories": [{"alias": "pizza", "title": "Pizza"},
+        "is_closed": false, "url": "https://www.yelp.com/biz/sliceworks-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 358, "categories": [{"alias": "pizza", "title": "Pizza"},
         {"alias": "italian", "title": "Italian"}], "rating": 4.5, "coordinates": {"latitude":
         39.7514296, "longitude": -104.9975789}, "transactions": [], "price": "$",
         "location": {"address1": "1433 17th St", "address2": "Ste 100", "address3":
@@ -114,8 +114,8 @@ http_interactions:
         "+13032973464", "display_phone": "(303) 297-3464", "distance": 108.32028773844219},
         {"id": "rY6nzLptDIfZ2XA205u-rA", "alias": "oskar-blues-denver-denver-3", "name":
         "Oskar Blues - Denver", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dgKFw2TaYv9VXcLdDlTdWw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/oskar-blues-denver-denver-3?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 71, "categories": [{"alias": "brewpubs", "title": "Brewpubs"},
+        "is_closed": false, "url": "https://www.yelp.com/biz/oskar-blues-denver-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 72, "categories": [{"alias": "brewpubs", "title": "Brewpubs"},
         {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 4.0,
         "coordinates": {"latitude": 39.7500376533258, "longitude": -104.997868433743},
         "transactions": [], "price": "$$", "location": {"address1": "1624 Market St",
@@ -124,7 +124,7 @@ http_interactions:
         "phone": "+17205023535", "display_phone": "(720) 502-3535", "distance": 128.20883712957348},
         {"id": "SeYUNIIf5D-Nz715rAJjig", "alias": "heidis-brooklyn-deli-denver-2",
         "name": "Heidi''s Brooklyn Deli", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jLABNXezc3-gV7l9H3JArg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/heidis-brooklyn-deli-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/heidis-brooklyn-deli-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 54, "categories": [{"alias": "delis", "title": "Delis"}],
         "rating": 3.0, "coordinates": {"latitude": 39.7502593994141, "longitude":
         -104.995162963867}, "transactions": [], "price": "$", "location": {"address1":
@@ -133,7 +133,7 @@ http_interactions:
         "Denver, CO 80202"]}, "phone": "+17202144728", "display_phone": "(720) 214-4728",
         "distance": 136.42123284216407}, {"id": "OfXj0dgT4fSXP9QRVBiW7g", "alias":
         "marquez-food-denver-2", "name": "Marquez Food", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_pksxglJ_1_7_k1FfZBqWA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/marquez-food-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/marquez-food-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 31, "categories": [{"alias": "mexican", "title": "Mexican"}],
         "rating": 5.0, "coordinates": {"latitude": 39.75146, "longitude": -104.99796},
         "transactions": [], "price": "$", "location": {"address1": "17th and Blake",
@@ -142,7 +142,7 @@ http_interactions:
         "phone": "", "display_phone": "", "distance": 137.10777240402007}, {"id":
         "BkSzW46iEOPsfGwelzzp9w", "alias": "armenian-shish-kabob-denver", "name":
         "Armenian Shish Kabob", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NSjbHSwZg-wu0HaoMf1Qvw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/armenian-shish-kabob-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/armenian-shish-kabob-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 12, "categories": [{"alias": "foodstands", "title": "Food
         Stands"}, {"alias": "hotdogs", "title": "Fast Food"}], "rating": 4.5, "coordinates":
         {"latitude": 39.7495947882682, "longitude": -104.997789320029}, "transactions":
@@ -153,7 +153,7 @@ http_interactions:
         "display_phone": "(720) 579-8558", "distance": 158.90323737627173}, {"id":
         "iJ6FqDjSW96Uz42bSk9t8g", "alias": "tlc-food-denver-2", "name": "TLC Food",
         "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/pbKEdkQxrIXL0tJtnOr6Lw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/tlc-food-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tlc-food-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 14, "categories": [{"alias": "foodstands", "title": "Food
         Stands"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "hotdog",
         "title": "Hot Dogs"}], "rating": 5.0, "coordinates": {"latitude": 39.7495730720324,
@@ -164,7 +164,7 @@ http_interactions:
         "display_phone": "(720) 238-9040", "distance": 161.78370845906272}, {"id":
         "UM9gzn5tmWwGeNyVgyNaBg", "alias": "the-cheesecake-factory-denver", "name":
         "The Cheesecake Factory", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/uBAv8Mh5ODxwHSHorUZNiA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-cheesecake-factory-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-cheesecake-factory-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 413, "categories": [{"alias": "desserts", "title": "Desserts"},
         {"alias": "newamerican", "title": "American (New)"}], "rating": 3.0, "coordinates":
         {"latitude": 39.7492436318171, "longitude": -104.997110764268}, "transactions":
@@ -174,17 +174,17 @@ http_interactions:
         "+13035950333", "display_phone": "(303) 595-0333", "distance": 170.62244452757375},
         {"id": "YxeTWblmRB3m7egJzgAJCg", "alias": "pony-up-denver", "name": "Pony
         Up", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/0h7Yy8muwjICx3mp4onDRg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/pony-up-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 102, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        "is_closed": false, "url": "https://www.yelp.com/biz/pony-up-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 103, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "salad", "title":
         "Salad"}], "rating": 4.5, "coordinates": {"latitude": 39.75242, "longitude":
-        -104.99625}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -104.99625}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "1808 Blake St", "address2": null, "address3": "", "city": "Denver",
         "zip_code": "80202", "country": "US", "state": "CO", "display_address": ["1808
         Blake St", "Denver, CO 80202"]}, "phone": "+17207108144", "display_phone":
         "(720) 710-8144", "distance": 183.43400584512787}, {"id": "khGook-ivF2pwlv32N4wCQ",
         "alias": "smashburger-denver-13", "name": "Smashburger", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Js0cdoE8DpwUvBKHzrTyNg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/smashburger-denver-13?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/smashburger-denver-13?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 139, "categories": [{"alias": "burgers", "title": "Burgers"}],
         "rating": 3.0, "coordinates": {"latitude": 39.74874, "longitude": -104.99659},
         "transactions": [], "price": "$", "location": {"address1": "1201 16th St",
@@ -193,7 +193,7 @@ http_interactions:
         "Denver, CO 80202"]}, "phone": "+17202925121", "display_phone": "(720) 292-5121",
         "distance": 183.70961443052636}, {"id": "wL04ets5vd2CGxbzj3ii5w", "alias":
         "blue-agave-grill-denver", "name": "Blue Agave Grill", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NyWTqHGJ_y_I2GSfQUZ0mg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/blue-agave-grill-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/blue-agave-grill-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 319, "categories": [{"alias": "seafood", "title": "Seafood"},
         {"alias": "mexican", "title": "Mexican"}], "rating": 4.5, "coordinates": {"latitude":
         39.749018, "longitude": -104.996864176196}, "transactions": [], "price": "$$",
@@ -203,30 +203,30 @@ http_interactions:
         "+17205508389", "display_phone": "(720) 550-8389", "distance": 192.34981209914568},
         {"id": "1RUhg_pr4ypX7BquEjirRQ", "alias": "panera-bread-denver-10", "name":
         "Panera Bread", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HumXjD7LRjMP2xjVU_Ud7w/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/panera-bread-denver-10?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/panera-bread-denver-10?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 41, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "salad", "title": "Salad"}, {"alias": "soup", "title": "Soup"}],
         "rating": 3.0, "coordinates": {"latitude": 39.7494604652848, "longitude":
-        -104.998361350563}, "transactions": ["delivery", "pickup"], "price": "$",
+        -104.998361350563}, "transactions": ["pickup", "delivery"], "price": "$",
         "location": {"address1": "1380 16th Street Mall", "address2": "", "address3":
         "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
         "display_address": ["1380 16th Street Mall", "Denver, CO 80202"]}, "phone":
         "+17202146300", "display_phone": "(720) 214-6300", "distance": 202.33994660257008},
         {"id": "RcwpMQlFG9Di-g9OMMhyGg", "alias": "mellow-mushroom-denver-2", "name":
         "Mellow Mushroom", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BEBffjeymMJeqZp5RwrPPw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/mellow-mushroom-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mellow-mushroom-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 477, "categories": [{"alias": "pizza", "title": "Pizza"},
         {"alias": "bars", "title": "Bars"}, {"alias": "sandwiches", "title": "Sandwiches"}],
         "rating": 4.0, "coordinates": {"latitude": 39.7488845070351, "longitude":
-        -104.996757259744}, "transactions": ["delivery", "pickup"], "price": "$$",
+        -104.996757259744}, "transactions": ["pickup", "delivery"], "price": "$$",
         "location": {"address1": "1201 16th St", "address2": "Ste 108", "address3":
         "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
         "display_address": ["1201 16th St", "Ste 108", "Denver, CO 80202"]}, "phone":
         "+17203289114", "display_phone": "(720) 328-9114", "distance": 206.65878218822382},
         {"id": "IObqOwWu1IdqdI7A-BzD7A", "alias": "noodles-and-company-denver-3",
         "name": "Noodles & Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/67QK0yqNMzu6VP6PQFa6cQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/noodles-and-company-denver-3?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 106, "categories": [{"alias": "noodles", "title": "Noodles"}],
+        "is_closed": false, "url": "https://www.yelp.com/biz/noodles-and-company-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 107, "categories": [{"alias": "noodles", "title": "Noodles"}],
         "rating": 3.0, "coordinates": {"latitude": 39.7501899879119, "longitude":
         -104.998784115772}, "transactions": [], "price": "$", "location": {"address1":
         "1460 16th St", "address2": "", "address3": "", "city": "Denver", "zip_code":
@@ -234,8 +234,8 @@ http_interactions:
         "Denver, CO 80202"]}, "phone": "+17209049590", "display_phone": "(720) 904-9590",
         "distance": 208.07002131289536}, {"id": "hks-LDU4R-mJJvr9bBfguQ", "alias":
         "stk-denver-denver", "name": "STK Denver", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VuQ-acwAmhyeWgjoFwfrEA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/stk-denver-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 240, "categories": [{"alias": "cocktailbars", "title": "Cocktail
+        "is_closed": false, "url": "https://www.yelp.com/biz/stk-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 241, "categories": [{"alias": "cocktailbars", "title": "Cocktail
         Bars"}, {"alias": "newamerican", "title": "American (New)"}, {"alias": "steak",
         "title": "Steakhouses"}], "rating": 4.0, "coordinates": {"latitude": 39.74935,
         "longitude": -104.99849}, "transactions": [], "price": "$$$", "location":
@@ -244,8 +244,8 @@ http_interactions:
         ["1550 Market St", "Denver, CO 80202"]}, "phone": "+17205978010", "display_phone":
         "(720) 597-8010", "distance": 212.9502918018269}, {"id": "UTV40d3C0P7vfUUqmPl3vA",
         "alias": "vesta-denver", "name": "Vesta", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/LA6JeuX388_8VUwJZmIfcg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/vesta-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 870, "categories": [{"alias": "newamerican", "title": "American
+        "is_closed": false, "url": "https://www.yelp.com/biz/vesta-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 871, "categories": [{"alias": "newamerican", "title": "American
         (New)"}, {"alias": "desserts", "title": "Desserts"}, {"alias": "wine_bars",
         "title": "Wine Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.7525672912598,
         "longitude": -104.996025085449}, "transactions": [], "price": "$$$", "location":
@@ -255,7 +255,7 @@ http_interactions:
         "(303) 296-1970", "distance": 216.02376268019913}], "total": 506, "region":
         {"center": {"longitude": -104.9966812133789, "latitude": 39.75074211627347}}}'
     http_version: 
-  recorded_at: Fri, 21 Dec 2018 23:42:12 GMT
+  recorded_at: Sun, 23 Dec 2018 15:42:44 GMT
 - request:
     method: get
     uri: https://api.yelp.com/v3/businesses/search?limit=20&location=17th%20St%20LL100%20Denver%20CO%2080202&radius=1609&sort_by=distance&term=restaurant
@@ -264,6 +264,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
+      - Bearer <YELP_API_KEY>
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -282,23 +283,23 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4064'
+      - '4966'
       Ratelimit-Resettime:
-      - '2018-12-22T00:00:00+00:00'
+      - '2018-12-24T00:00:00+00:00'
       X-Proxied:
-      - 10-69-90-16-uswest2aprod
+      - 10-64-100-85-uswest1aprod
       Transfer-Encoding:
       - chunked
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 21 Dec 2018 23:44:43 GMT
+      - Sun, 23 Dec 2018 17:10:08 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-den19634-DEN
+      - cache-dfw18651-DFW
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -307,7 +308,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"businesses": [{"id": "cL8rbKfItlQOoFzLIQAsdA", "alias": "stack-subs-lodo-denver",
         "name": "STACK Subs LoDo", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rb3Nq7iNSLUcDYaNqd1i_A/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/stack-subs-lodo-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/stack-subs-lodo-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 20, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
@@ -318,7 +319,7 @@ http_interactions:
         "(303) 295-7827", "distance": 21.501846067367165}, {"id": "eaVcCJO5OmBhAv-kJRpWRg",
         "alias": "the-delectable-egg-denver-denver", "name": "The Delectable Egg-Denver",
         "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ftIQr9MZOZoyPvIjeoapUA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-delectable-egg-denver-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-delectable-egg-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 302, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "burgers", "title": "Burgers"}, {"alias": "sandwiches", "title":
         "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 39.7503656, "longitude":
@@ -329,7 +330,7 @@ http_interactions:
         572-8146", "distance": 78.43136180750689}, {"id": "us9NRKZDQZH0iKgEmdhbJQ",
         "alias": "erbert-and-gerberts-denver", "name": "Erbert & Gerbert''s", "image_url":
         "https://s3-media3.fl.yelpcdn.com/bphoto/hQpruIl8eJGE8GHjhrhcbQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/erbert-and-gerberts-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        false, "url": "https://www.yelp.com/biz/erbert-and-gerberts-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 54, "categories": [{"alias": "soup", "title": "Soup"}, {"alias":
         "sandwiches", "title": "Sandwiches"}], "rating": 3.5, "coordinates": {"latitude":
         39.7500877380371, "longitude": -104.996757507324}, "transactions": ["delivery",
@@ -339,7 +340,7 @@ http_interactions:
         "phone": "+13038254444", "display_phone": "(303) 825-4444", "distance": 83.53917819179469},
         {"id": "4a-dMSzzPiIyZqj0pTlCGQ", "alias": "two-fisted-marios-pizza-denver",
         "name": "Two-Fisted Mario''s Pizza", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/esuVCeXyWgkPFPfcX4d6gg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/two-fisted-marios-pizza-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/two-fisted-marios-pizza-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 193, "categories": [{"alias": "pizza", "title": "Pizza"}],
         "rating": 3.0, "coordinates": {"latitude": 39.750292, "longitude": -104.997543},
         "transactions": ["delivery"], "price": "$", "location": {"address1": "1626
@@ -349,7 +350,7 @@ http_interactions:
         623-3523", "distance": 89.0674644534894}, {"id": "kRmYd-YMlTswHBnK4LBf2A",
         "alias": "the-black-buzzard-denver", "name": "The Black Buzzard", "image_url":
         "https://s3-media2.fl.yelpcdn.com/bphoto/WDRZ9ETvVbVV_CL7L7LgzQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/the-black-buzzard-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        false, "url": "https://www.yelp.com/biz/the-black-buzzard-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 3, "categories": [{"alias": "theater", "title": "Performing
         Arts"}, {"alias": "cajun", "title": "Cajun/Creole"}, {"alias": "beerbar",
         "title": "Beer Bar"}], "rating": 4.5, "coordinates": {"latitude": 39.750146,
@@ -359,8 +360,8 @@ http_interactions:
         St", "Denver, CO 80202"]}, "phone": "+17205023535", "display_phone": "(720)
         502-3535", "distance": 99.64675626045334}, {"id": "RtbHHTs4vdKUJdVQAGrwfw",
         "alias": "sliceworks-denver-2", "name": "Sliceworks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vsGs2ovjO_TgZgG5rg31Zg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/sliceworks-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 357, "categories": [{"alias": "pizza", "title": "Pizza"},
+        "is_closed": false, "url": "https://www.yelp.com/biz/sliceworks-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 358, "categories": [{"alias": "pizza", "title": "Pizza"},
         {"alias": "italian", "title": "Italian"}], "rating": 4.5, "coordinates": {"latitude":
         39.7514296, "longitude": -104.9975789}, "transactions": [], "price": "$",
         "location": {"address1": "1433 17th St", "address2": "Ste 100", "address3":
@@ -369,8 +370,8 @@ http_interactions:
         "+13032973464", "display_phone": "(303) 297-3464", "distance": 108.32028773844219},
         {"id": "rY6nzLptDIfZ2XA205u-rA", "alias": "oskar-blues-denver-denver-3", "name":
         "Oskar Blues - Denver", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dgKFw2TaYv9VXcLdDlTdWw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/oskar-blues-denver-denver-3?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 71, "categories": [{"alias": "brewpubs", "title": "Brewpubs"},
+        "is_closed": false, "url": "https://www.yelp.com/biz/oskar-blues-denver-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 72, "categories": [{"alias": "brewpubs", "title": "Brewpubs"},
         {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 4.0,
         "coordinates": {"latitude": 39.7500376533258, "longitude": -104.997868433743},
         "transactions": [], "price": "$$", "location": {"address1": "1624 Market St",
@@ -379,7 +380,7 @@ http_interactions:
         "phone": "+17205023535", "display_phone": "(720) 502-3535", "distance": 128.20883712957348},
         {"id": "SeYUNIIf5D-Nz715rAJjig", "alias": "heidis-brooklyn-deli-denver-2",
         "name": "Heidi''s Brooklyn Deli", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jLABNXezc3-gV7l9H3JArg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/heidis-brooklyn-deli-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/heidis-brooklyn-deli-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 54, "categories": [{"alias": "delis", "title": "Delis"}],
         "rating": 3.0, "coordinates": {"latitude": 39.7502593994141, "longitude":
         -104.995162963867}, "transactions": [], "price": "$", "location": {"address1":
@@ -388,7 +389,7 @@ http_interactions:
         "Denver, CO 80202"]}, "phone": "+17202144728", "display_phone": "(720) 214-4728",
         "distance": 136.42123284216407}, {"id": "OfXj0dgT4fSXP9QRVBiW7g", "alias":
         "marquez-food-denver-2", "name": "Marquez Food", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_pksxglJ_1_7_k1FfZBqWA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/marquez-food-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/marquez-food-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 31, "categories": [{"alias": "mexican", "title": "Mexican"}],
         "rating": 5.0, "coordinates": {"latitude": 39.75146, "longitude": -104.99796},
         "transactions": [], "price": "$", "location": {"address1": "17th and Blake",
@@ -397,7 +398,7 @@ http_interactions:
         "phone": "", "display_phone": "", "distance": 137.10777240402007}, {"id":
         "BkSzW46iEOPsfGwelzzp9w", "alias": "armenian-shish-kabob-denver", "name":
         "Armenian Shish Kabob", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NSjbHSwZg-wu0HaoMf1Qvw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/armenian-shish-kabob-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/armenian-shish-kabob-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 12, "categories": [{"alias": "foodstands", "title": "Food
         Stands"}, {"alias": "hotdogs", "title": "Fast Food"}], "rating": 4.5, "coordinates":
         {"latitude": 39.7495947882682, "longitude": -104.997789320029}, "transactions":
@@ -408,7 +409,7 @@ http_interactions:
         "display_phone": "(720) 579-8558", "distance": 158.90323737627173}, {"id":
         "iJ6FqDjSW96Uz42bSk9t8g", "alias": "tlc-food-denver-2", "name": "TLC Food",
         "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/pbKEdkQxrIXL0tJtnOr6Lw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/tlc-food-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tlc-food-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 14, "categories": [{"alias": "foodstands", "title": "Food
         Stands"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "hotdog",
         "title": "Hot Dogs"}], "rating": 5.0, "coordinates": {"latitude": 39.7495730720324,
@@ -419,7 +420,7 @@ http_interactions:
         "display_phone": "(720) 238-9040", "distance": 161.78370845906272}, {"id":
         "UM9gzn5tmWwGeNyVgyNaBg", "alias": "the-cheesecake-factory-denver", "name":
         "The Cheesecake Factory", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/uBAv8Mh5ODxwHSHorUZNiA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-cheesecake-factory-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-cheesecake-factory-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 413, "categories": [{"alias": "desserts", "title": "Desserts"},
         {"alias": "newamerican", "title": "American (New)"}], "rating": 3.0, "coordinates":
         {"latitude": 39.7492436318171, "longitude": -104.997110764268}, "transactions":
@@ -429,8 +430,8 @@ http_interactions:
         "+13035950333", "display_phone": "(303) 595-0333", "distance": 170.62244452757375},
         {"id": "YxeTWblmRB3m7egJzgAJCg", "alias": "pony-up-denver", "name": "Pony
         Up", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/0h7Yy8muwjICx3mp4onDRg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/pony-up-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 102, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        "is_closed": false, "url": "https://www.yelp.com/biz/pony-up-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 103, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "salad", "title":
         "Salad"}], "rating": 4.5, "coordinates": {"latitude": 39.75242, "longitude":
         -104.99625}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
@@ -439,7 +440,7 @@ http_interactions:
         Blake St", "Denver, CO 80202"]}, "phone": "+17207108144", "display_phone":
         "(720) 710-8144", "distance": 183.43400584512787}, {"id": "khGook-ivF2pwlv32N4wCQ",
         "alias": "smashburger-denver-13", "name": "Smashburger", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Js0cdoE8DpwUvBKHzrTyNg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/smashburger-denver-13?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/smashburger-denver-13?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 139, "categories": [{"alias": "burgers", "title": "Burgers"}],
         "rating": 3.0, "coordinates": {"latitude": 39.74874, "longitude": -104.99659},
         "transactions": [], "price": "$", "location": {"address1": "1201 16th St",
@@ -448,7 +449,7 @@ http_interactions:
         "Denver, CO 80202"]}, "phone": "+17202925121", "display_phone": "(720) 292-5121",
         "distance": 183.70961443052636}, {"id": "wL04ets5vd2CGxbzj3ii5w", "alias":
         "blue-agave-grill-denver", "name": "Blue Agave Grill", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NyWTqHGJ_y_I2GSfQUZ0mg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/blue-agave-grill-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/blue-agave-grill-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 319, "categories": [{"alias": "seafood", "title": "Seafood"},
         {"alias": "mexican", "title": "Mexican"}], "rating": 4.5, "coordinates": {"latitude":
         39.749018, "longitude": -104.996864176196}, "transactions": [], "price": "$$",
@@ -458,7 +459,7 @@ http_interactions:
         "+17205508389", "display_phone": "(720) 550-8389", "distance": 192.34981209914568},
         {"id": "1RUhg_pr4ypX7BquEjirRQ", "alias": "panera-bread-denver-10", "name":
         "Panera Bread", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HumXjD7LRjMP2xjVU_Ud7w/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/panera-bread-denver-10?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/panera-bread-denver-10?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 41, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "salad", "title": "Salad"}, {"alias": "soup", "title": "Soup"}],
         "rating": 3.0, "coordinates": {"latitude": 39.7494604652848, "longitude":
@@ -469,7 +470,7 @@ http_interactions:
         "+17202146300", "display_phone": "(720) 214-6300", "distance": 202.33994660257008},
         {"id": "RcwpMQlFG9Di-g9OMMhyGg", "alias": "mellow-mushroom-denver-2", "name":
         "Mellow Mushroom", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BEBffjeymMJeqZp5RwrPPw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/mellow-mushroom-denver-2?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mellow-mushroom-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
         "review_count": 477, "categories": [{"alias": "pizza", "title": "Pizza"},
         {"alias": "bars", "title": "Bars"}, {"alias": "sandwiches", "title": "Sandwiches"}],
         "rating": 4.0, "coordinates": {"latitude": 39.7488845070351, "longitude":
@@ -480,8 +481,8 @@ http_interactions:
         "+17203289114", "display_phone": "(720) 328-9114", "distance": 206.65878218822382},
         {"id": "IObqOwWu1IdqdI7A-BzD7A", "alias": "noodles-and-company-denver-3",
         "name": "Noodles & Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/67QK0yqNMzu6VP6PQFa6cQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/noodles-and-company-denver-3?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 106, "categories": [{"alias": "noodles", "title": "Noodles"}],
+        "is_closed": false, "url": "https://www.yelp.com/biz/noodles-and-company-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 107, "categories": [{"alias": "noodles", "title": "Noodles"}],
         "rating": 3.0, "coordinates": {"latitude": 39.7501899879119, "longitude":
         -104.998784115772}, "transactions": [], "price": "$", "location": {"address1":
         "1460 16th St", "address2": "", "address3": "", "city": "Denver", "zip_code":
@@ -489,8 +490,8 @@ http_interactions:
         "Denver, CO 80202"]}, "phone": "+17209049590", "display_phone": "(720) 904-9590",
         "distance": 208.07002131289536}, {"id": "hks-LDU4R-mJJvr9bBfguQ", "alias":
         "stk-denver-denver", "name": "STK Denver", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VuQ-acwAmhyeWgjoFwfrEA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/stk-denver-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 240, "categories": [{"alias": "cocktailbars", "title": "Cocktail
+        "is_closed": false, "url": "https://www.yelp.com/biz/stk-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 241, "categories": [{"alias": "cocktailbars", "title": "Cocktail
         Bars"}, {"alias": "newamerican", "title": "American (New)"}, {"alias": "steak",
         "title": "Steakhouses"}], "rating": 4.0, "coordinates": {"latitude": 39.74935,
         "longitude": -104.99849}, "transactions": [], "price": "$$$", "location":
@@ -499,8 +500,8 @@ http_interactions:
         ["1550 Market St", "Denver, CO 80202"]}, "phone": "+17205978010", "display_phone":
         "(720) 597-8010", "distance": 212.9502918018269}, {"id": "UTV40d3C0P7vfUUqmPl3vA",
         "alias": "vesta-denver", "name": "Vesta", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/LA6JeuX388_8VUwJZmIfcg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/vesta-denver?adjust_creative=IBWCu4l3JaivaTeBveC9bg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=IBWCu4l3JaivaTeBveC9bg",
-        "review_count": 870, "categories": [{"alias": "newamerican", "title": "American
+        "is_closed": false, "url": "https://www.yelp.com/biz/vesta-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+        "review_count": 871, "categories": [{"alias": "newamerican", "title": "American
         (New)"}, {"alias": "desserts", "title": "Desserts"}, {"alias": "wine_bars",
         "title": "Wine Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.7525672912598,
         "longitude": -104.996025085449}, "transactions": [], "price": "$$$", "location":
@@ -510,5 +511,5 @@ http_interactions:
         "(303) 296-1970", "distance": 216.02376268019913}], "total": 506, "region":
         {"center": {"longitude": -104.9966812133789, "latitude": 39.75074211627347}}}'
     http_version: 
-  recorded_at: Fri, 21 Dec 2018 23:44:43 GMT
+  recorded_at: Sun, 23 Dec 2018 17:10:08 GMT
 recorded_with: VCR 4.0.0

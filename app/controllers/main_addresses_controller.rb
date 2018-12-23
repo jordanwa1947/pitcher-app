@@ -3,9 +3,13 @@ class MainAddressesController < ApplicationController
   def create
     main_address = MainAddress.new(address_params)
     main_address.user_id = params[:user_id].to_i
-    main_address.save!
-    flash[:success] = 'Main Address Updated'
-    redirect_to :dashboard
+    if main_address.save!
+      flash[:success] = 'Main Address Updated'
+      redirect_to :dashboard
+    else
+      flash[:failure] = 'An Error Occured. Please Try Again'
+      render :dashboard
+    end
   end
 
   def destroy
@@ -20,10 +24,16 @@ class MainAddressesController < ApplicationController
   end
 
   def update
-    main_address = MainAddress.find(params[:id])
-    main_address.update(address_params)
-    flash[:success] = "You're Main Address Has Been Updated"
-    redirect_to dashboard_path
+    MainAddress.find_by(user_id: current_user.id).delete
+    main_address = MainAddress.new(address_params)
+    main_address.user_id = params[:user_id]
+    if main_address.save!
+      flash[:success] = "You're Main Address Has Been Updated"
+      redirect_to dashboard_path
+    else
+      flash[:error] = "An Error Occured"
+      render :dashboard
+    end
   end
 
   private

@@ -13,12 +13,8 @@ class User < ApplicationRecord
   end
 
   def build_address
-    address_attributes = main_address.attributes.find_all do |attribute, value|
-      value && !(attribute =~ /id/)
-    end
-    only_values = address_attributes.map do |value|
-      value[1]
-    end.join(' ')
+    default = main_address
+    [default.address, default.city, default.state, default.zip].compact.join(' ')
   end
 
   def local_restaurants(location)

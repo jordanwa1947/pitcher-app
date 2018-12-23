@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   resources :users do
     resources :main_addresses, only: [:create, :destroy, :edit, :update]
   end
+
+  get '/directions/:id', to: 'directions#show'
 end

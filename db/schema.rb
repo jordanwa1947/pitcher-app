@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_20_234603) do
+ActiveRecord::Schema.define(version: 2018_12_23_082807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,19 @@ ActiveRecord::Schema.define(version: 2018_12_20_234603) do
     t.string "city"
     t.string "state"
     t.string "zip"
+    t.float "longitude"
+    t.float "latitude"
     t.index ["user_id"], name: "index_main_addresses_on_user_id"
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.float "longitude"
+    t.float "latitude"
+    t.string "yelp_link"
+    t.string "phone_number"
+    t.string "address"
+    t.string "name"
+    t.string "image"
   end
 
   create_table "users", force: :cascade do |t|
@@ -33,12 +45,15 @@ ActiveRecord::Schema.define(version: 2018_12_20_234603) do
 
   create_table "wishlists", force: :cascade do |t|
     t.bigint "user_id"
-    t.string "restaurant_id", default: "0", null: false
+    t.string "yelp_id", default: "0", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "restaurant_id"
+    t.index ["restaurant_id"], name: "index_wishlists_on_restaurant_id"
     t.index ["user_id"], name: "index_wishlists_on_user_id"
   end
 
   add_foreign_key "main_addresses", "users"
+  add_foreign_key "wishlists", "restaurants"
   add_foreign_key "wishlists", "users"
 end

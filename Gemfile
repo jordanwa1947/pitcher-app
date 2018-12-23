@@ -9,7 +9,7 @@ gem 'puma', '~> 3.11'        # Use Puma as the app server
 gem 'sass-rails', '~> 5.0'   # Use SCSS for stylesheets
 gem 'uglifier', '>= 1.3.0'   # Use Uglifier as compressor for JavaScript assets
 # See https://github.com/rails/execjs#readme for more supported runtimes --- # gem 'mini_racer', platforms: :ruby
-
+gem 'turbolinks'
 gem 'coffee-rails', '~> 4.2' # Use CoffeeScript for .coffee assets and views
 gem 'jbuilder', '~> 2.5' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # Use Redis adapter to run Action Cable in production --- # gem 'redis', '~> 4.0'
@@ -22,6 +22,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'google-api-client'
 gem 'omniauth-google-oauth2'
+gem 'geocoder'
 
 
 group :development, :test do
