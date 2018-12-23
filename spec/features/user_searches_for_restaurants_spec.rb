@@ -3,9 +3,11 @@ require 'rails_helper'
 describe 'As a registered user' do
 
   before(:each) do
-    user = create(:user)
-    address = create(:main_address, user: user)
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+    VCR.use_cassette('geocode_lookup') do
+      user = create(:user)
+      address = create(:main_address, user: user)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+    end
   end
 
   describe 'when I visit the restaurant search path' do
@@ -61,7 +63,11 @@ describe 'As a registered user' do
 
           it "should display restaurant info in my wishlist" do
             expect(page).to have_content("These are all the restaurants you've been interested in from the past.")
-            expect(page).to have_css("li.restaurant", count: 1)
+            expect(page).to have_css("h3.restaurant_name", count: 1)
+            expect(page).to have_css("li.restaurant_address", count: 1)
+            expect(page).to have_css("li.restaurant_phone", count: 1)
+            expect(page).to have_css("li.restaurant_yelp_link", count: 1)
+            expect(page).to have_css("img.photo", count: 1)
           end
         end
       end
@@ -86,7 +92,7 @@ describe 'As a registered user' do
 
           it "should not display restaurant info in my wishlist" do
             expect(page).to have_content("You don't have any recommended restaurants yet.")
-            expect(page).to_not have_css("li.restaurant", count: 1)
+            expect(page).to_not have_css("li.restaurant_name", count: 1)
           end
         end
       end
