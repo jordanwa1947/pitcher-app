@@ -11,7 +11,7 @@
       <% end %>
     </div>
     <div class="photo-feedback-container">
-      <%= button_to "Like", like_path(restaurant_id: @facade.restaurant_id), method: :post, class: "like" %>
+      <%= button_to "Like", like_path(restaurant_info: @facade.restaurant_info), method: :post, class: "like" %>
       <%= button_to "Finish", finish_path, method: :patch,  class: "finish" %>
       <%= button_to "Pass", dislike_path, method: :delete, class: "dislike" %>
     </div>

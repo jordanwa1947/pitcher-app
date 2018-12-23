@@ -1,17 +1,41 @@
-<ul>
-  <li> First Name: <%= current_user.first_name %> </li>
-  <li> Last Name: <%= current_user.last_name %> </li>
-  <li> Email: <%= current_user.email %> </li>
-</ul>
-<%= link_to "Logout", logout_path %>
+<html>
+  <head>
 
-<% if @main_address.id %>
-  Address: <%= @main_address.address %>
-  City: <%= @main_address.city %>
-  State: <%= @main_address.state %>
-  Zip Code: <%= @main_address.zip %>
-  <%= link_to 'Update Main Address', edit_user_main_address_path(current_user.id, @main_address) %>
-  <%= link_to 'Delete Main Address', user_main_address_path(current_user.id, @main_address), method: :delete %>
-<% else %>
-  <%= render '/shared/main_address_form' %>
-<% end %>
+</head>
+  </head>
+  <body>
+    <ul>
+      <li> First Name: <%= current_user.first_name %> </li>
+      <li> Last Name: <%= current_user.last_name %> </li>
+      <li> Email: <%= current_user.email %> </li>
+    </ul>
+    <%= link_to "Logout", logout_path %>
+
+    <% if @main_address.id %>
+      <h3> Main Address </h3>
+      <ul>
+        <li> Address: <%= @main_address.address %> </li>
+        <li> City: <%= @main_address.city %> </li>
+        <li> State: <%= @main_address.state %> </li>
+        <li> Zip Code: <%= @main_address.zip %> </li>
+        <%= link_to 'Update Main Address', edit_user_main_address_path(current_user.id, @main_address) %>
+        <%= link_to 'Delete Main Address', user_main_address_path(current_user.id, @main_address), method: :delete %>
+      </ul>
+    <% else %>
+      <h3> Add A Main Address </h3>
+      <%= render '/shared/main_address_form' %>
+    <% end %>
+
+    <% if @main_address.latitude && @main_address.longitude %>
+      <h2> Your Default Location </h2>
+      <div id="map"></div>
+      <% provide :head_tags do %>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          initMap(<%=@main_address.latitude%>, <%=@main_address.longitude%>)
+        });
+        </script>
+      <% end %>
+    <% end %>
+  </body>
+</html>
