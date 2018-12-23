@@ -16,12 +16,6 @@ class MatchesFacade
     get_json
   end
 
-  # def restaurants
-  #   response = conn.get("search?term=restaurant&location=#{user.build_address}&radius=1609&limit=10&sort_by=distance")
-  #   body = JSON.parse(response.body, symbolize_names: true)
-  #   return body[:businesses]
-  # end
-
   private
 
   attr_reader :user
