@@ -28,10 +28,6 @@ describe 'As a registered user' do
           to_return(body: File.read("./spec/fixtures/business_search_specific.json"))
         stub_request(:get, "https://api.yelp.com/v3/businesses/AufxrKk-COzfAMr9KMVWRA").
           to_return(body: File.read("./spec/fixtures/business_details_4.json"))
-        # stub_request(:get, "https://api.yelp.com/v3/businesses/IFVAm31yNaKw5_Sa1TuP4g").
-        #   to_return(body: File.read("./spec/fixtures/business_details_5.json"))
-        # stub_request(:get, "https://api.yelp.com/v3/businesses/us9NRKZDQZH0iKgEmdhbJQ").
-        #   to_return(body: File.read("./spec/fixtures/business_details_6.json"))
         fill_in "Search for:", with: "1634 18th St, Denver, CO 80202"
         click_on "Find Matches"
       end
@@ -53,10 +49,6 @@ describe 'As a registered user' do
           to_return(body: File.read("./spec/fixtures/business_search_city_state.json"))
         stub_request(:get, "https://api.yelp.com/v3/businesses/mKRMTGAOQKPIdhi8LKB4Tg").
           to_return(body: File.read("./spec/fixtures/business_details_7.json"))
-        # stub_request(:get, "https://api.yelp.com/v3/businesses/eaVcCJO5OmBhAv-kJRpWRg").
-        #   to_return(body: File.read("./spec/fixtures/business_details_8.json"))
-        # stub_request(:get, "https://api.yelp.com/v3/businesses/us9NRKZDQZH0iKgEmdhbJQ").
-        #   to_return(body: File.read("./spec/fixtures/business_details_9.json"))
         fill_in "Search for:", with: "Denver, CO"
         click_on "Find Matches"
       end
