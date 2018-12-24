@@ -61,7 +61,6 @@ describe 'As a registered user' do
           end
 
           it "should display restaurant info in my wishlist" do
-            save_and_open_page
             expect(page).to have_content("These are all the restaurants you've been interested in from the past.")
             expect(page).to have_css("h4.restaurant-name", count: 1)
             expect(page).to have_css("li.restaurant-address", count: 1)
