@@ -17,6 +17,10 @@ class User < ApplicationRecord
     [default.address, default.city, default.state, default.zip].compact.join(' ')
   end
 
+  def default_city
+    "#{main_address.city}, #{main_address.state}"
+  end
+
   def local_restaurants(location)
     response = conn.get("search?term=restaurant&location=#{location}&radius=1609&limit=20&sort_by=distance")
     body = JSON.parse(response.body, symbolize_names: true)
@@ -26,6 +30,8 @@ class User < ApplicationRecord
     end
     return restaurants
   end
+
+  private
 
   def conn
     Faraday.new(:url => "https://api.yelp.com/v3/businesses/") do |faraday|
