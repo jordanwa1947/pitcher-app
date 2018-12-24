@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
+
   protect_from_forgery with: :exception
+
   helper_method :current_user
   helper_method :main_address
 
@@ -14,9 +16,9 @@ class ApplicationController < ActionController::Base
   def user_signed_in?
     !!current_user
   end
-  
-  def four_oh_four
-    raise ActionController::RoutingError.new('Not Found')
-  end
+
+  # def four_oh_four
+  #   raise ActionController::RoutingError.new('Not Found')
+  # end
 
 end

@@ -2,7 +2,7 @@ class DirectionsFacade
 
   def initialize(restaurant)
     @longitude = restaurant.longitude
-    @latitude = restaurant.latitude 
+    @latitude  = restaurant.latitude
   end
 
   def directions

@@ -1,7 +1,9 @@
 class DirectionsController < ApplicationController
 
+  before_action :authenticate
+
   def show
-    @restaurant = Restaurant.find(params[:id]).to_i 
-    @facade = DirectionsFacade.new(params[:id].to_i)
+    @restaurant = Restaurant.find( params[:id] )
+    @facade     = DirectionsFacade.new( @restaurant.id )
   end
 end
