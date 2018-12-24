@@ -61,11 +61,12 @@ describe 'As a registered user' do
           end
 
           it "should display restaurant info in my wishlist" do
+            save_and_open_page
             expect(page).to have_content("These are all the restaurants you've been interested in from the past.")
-            expect(page).to have_css("h3.restaurant_name", count: 1)
-            expect(page).to have_css("li.restaurant_address", count: 1)
-            expect(page).to have_css("li.restaurant_phone", count: 1)
-            expect(page).to have_css("li.restaurant_yelp_link", count: 1)
+            expect(page).to have_css("h4.restaurant-name", count: 1)
+            expect(page).to have_css("li.restaurant-address", count: 1)
+            expect(page).to have_css("li.restaurant-phone", count: 1)
+            expect(page).to have_css("li.restaurant-yelp_link", count: 1)
             expect(page).to have_css("img.photo", count: 1)
           end
         end
