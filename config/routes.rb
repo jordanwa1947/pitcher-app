@@ -17,5 +17,7 @@ Rails.application.routes.draw do
     resources :main_addresses, only: [:create, :destroy, :edit, :update]
   end
 
+  resources :restaurants, only: [:show]
+
   get '/directions/:id', to: 'directions#show'
 end
