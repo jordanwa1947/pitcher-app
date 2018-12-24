@@ -9,7 +9,8 @@ class Restaurant < ApplicationRecord
       phone_number: data[:display_phone],
       address:      data[:location][:display_address],
       name:         data[:name],
-      image:        data[:image_url]
+      image:        data[:image_url],
+      city:         "#{data[:location][:city]}, #{data[:location][:state]}"
     )
   end
 end
