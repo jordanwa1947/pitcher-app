@@ -6,7 +6,8 @@ class Wishlist < ApplicationRecord
 
   belongs_to :user
   belongs_to :restaurant
-  validates_uniqueness_of :restaurant_id
+  # validates_uniqueness_of :restaurant_id
+  validates_uniqueness_of :user, scope: [:restaurant]
 
 
 

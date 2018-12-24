@@ -89,6 +89,7 @@ describe 'As a registered user' do
             click_on "Finish"
           end
 
+
           it "should not display restaurant info in my wishlist" do
             expect(page).to have_content("You don't have any recommended restaurants yet.")
             expect(page).to_not have_css("li.restaurant_name", count: 1)

@@ -21,22 +21,4 @@ class User < ApplicationRecord
     "#{main_address.city}, #{main_address.state}"
   end
 
-  def local_restaurants(location)
-    response = conn.get("search?term=restaurant&location=#{location}&radius=1609&limit=20&sort_by=distance")
-    body = JSON.parse(response.body, symbolize_names: true)
-    restaurants = Hash.new
-    body[:businesses].map do |business|
-      restaurants[business[:id]] = 0
-    end
-    return restaurants
-  end
-
-  private
-
-  def conn
-    Faraday.new(:url => "https://api.yelp.com/v3/businesses/") do |faraday|
-      faraday.headers['Authorization'] = "Bearer #{ENV['YELP_API_KEY']}"
-      faraday.adapter  Faraday.default_adapter
-    end
-  end
 end
