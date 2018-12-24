@@ -1,0 +1,87 @@
+{
+  "id": "KPQ1fifN8sVnINat4xmDXQ",
+  "alias": "jaidens-neveria-y-antojitos-aurora",
+  "name": "Jaiden's Neveria Y Antojitos",
+  "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/2iHVjGqqVRvEv6QvsWs0gg/o.jpg",
+  "is_claimed": false,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/jaidens-neveria-y-antojitos-aurora?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "+17206688933",
+  "display_phone": "(720) 668-8933",
+  "review_count": 2,
+  "categories": [
+    {
+      "alias": "mexican",
+      "title": "Mexican"
+    }
+  ],
+  "rating": 5,
+  "location": {
+    "address1": "1746 S Chambers Rd",
+    "address2": "",
+    "address3": null,
+    "city": "Aurora",
+    "zip_code": "80017",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "1746 S Chambers Rd",
+      "Aurora, CO 80017"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.6844386,
+    "longitude": -104.8096951
+  },
+  "photos": [
+    "https://s3-media1.fl.yelpcdn.com/bphoto/2iHVjGqqVRvEv6QvsWs0gg/o.jpg",
+    "https://s3-media2.fl.yelpcdn.com/bphoto/VeqS9Sph8sUKn9f07snJKw/o.jpg",
+    "https://s3-media2.fl.yelpcdn.com/bphoto/mQWXWGOxpN0gE-Y9PpfRHg/o.jpg"
+  ],
+  "hours": [
+    {
+      "open": [
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2000",
+          "day": 1
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2000",
+          "day": 2
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2000",
+          "day": 3
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2000",
+          "day": 4
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2000",
+          "day": 5
+        },
+        {
+          "is_overnight": false,
+          "start": "1100",
+          "end": "2000",
+          "day": 6
+        }
+      ],
+      "hours_type": "REGULAR",
+      "is_open_now": true
+    }
+  ],
+  "transactions": []
+}
