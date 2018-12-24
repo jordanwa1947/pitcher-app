@@ -17,4 +17,8 @@ class User < ApplicationRecord
     [default.address, default.city, default.state, default.zip].compact.join(' ')
   end
 
+  def default_city
+    "#{main_address.city}, #{main_address.state}"
+  end
+
 end

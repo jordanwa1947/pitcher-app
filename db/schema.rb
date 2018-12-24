@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2018_12_23_082807) do
     t.string "address"
     t.string "name"
     t.string "image"
+    t.string "city"
   end
 
   create_table "users", force: :cascade do |t|

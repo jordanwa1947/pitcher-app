@@ -4,9 +4,7 @@ class WishlistController < ApplicationController
   before_action :authenticate
 
   def index
-    @restaurants = current_user.wishlists.map do |wishlist|
-      wishlist.restaurant
-    end
+    @facade = WishlistFacade.new(current_user)
   end
 
 

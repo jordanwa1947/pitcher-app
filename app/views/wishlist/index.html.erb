@@ -1,24 +1,47 @@
-<% if @restaurants.empty? %>
+<% if @facade.restaurants.empty? %>
 
   <h2>You don't have any recommended restaurants yet.</h2>
 
 <% else %>
 
   <h2>These are all the restaurants you've been interested in from the past.</h2>
-
-  <ul class="wishlists">
-    <% @restaurants.each do |restaurant| %>
-      <h3 class="restaurant_name"><%= restaurant.name %></h3>
-      <li class="restaurant_phone"><%= restaurant.phone_number %></li>
-      <li class="restaurant_address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
-      <li class="restaurant_yelp_link"><%= restaurant.yelp_link %></li>
-      <li class="directions"><%= link_to "Get Directions", "/directions/#{restaurant.id}" %>
-      <img src=<%= restaurant.image %>
-           alt="restaurant or food photo"
-           class="photo"
-           width="300"
-           height="200" />
-    <% end %>
-  </ul>
-
+    <h3>Default City: <%= current_user.default_city %></h3>
+    <div class="default-wishlists">
+      <% @facade.default_restaurants.each do |restaurant| %>
+        <ul class="default-restaurant-<%= restaurant.id %>">
+          <h4 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h4>
+          <li class="restaurant-phone"><%= restaurant.phone_number %></li>
+          <li class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
+          <li class="restaurant-yelp_link"><%= restaurant.yelp_link %></li>
+          <li class="directions"><%= link_to "Get Directions", "/directions/#{restaurant.id}" %>
+          <img src=<%= restaurant.image %>
+              alt="restaurant or food photo"
+              class="photo"
+              width="300"
+              height="200" />
+        </ul>
+      <% end %>
+    </div>
+    <div id="other-wishlists" style="height: 50px; overflow:hidden">
+      <h3 id="other-wishlists-heading"
+          onClick="toggleOtherRestaurantsHeight()">
+          [ + ] Other Locations
+      </h3>
+      <% @facade.other_restaurants.each do |restaurant| %>
+        <ul class="other-restaurant" id="other-restaurant-<%= restaurant.id %>">
+          <h4 class="restaurant-name">
+            <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
+          </h4>
+          <li class="restaurant-phone"><%= restaurant.phone_number %></li>
+          <li class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
+          <li class="restaurant-yelp_link"><%= restaurant.yelp_link %></li>
+          <li class="directions"><%= link_to "Get Directions", "/directions/#{restaurant.id}" %>
+          <img src=<%= restaurant.image %>
+              alt="restaurant or food photo"
+              class="photo"
+              width="300"
+              height="200" />
+        </ul>
+      <% end %>
+    </div>
 <% end %>

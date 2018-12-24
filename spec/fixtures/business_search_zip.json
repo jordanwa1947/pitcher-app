@@ -1,0 +1,901 @@
+{
+  "businesses": [
+    {
+      "id": "idKs48V1lf8LQwvcFJjzGg",
+      "alias": "ali-baba-halal-denver",
+      "name": "Ali Baba Halal",
+      "image_url": "",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/ali-baba-halal-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 1,
+      "categories": [
+        {
+          "alias": "streetvendors",
+          "title": "Street Vendors"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "mideastern",
+          "title": "Middle Eastern"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.7430327,
+        "longitude": -104.9873792
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "Food Cart",
+        "address2": "",
+        "address3": "Civic Center Station - Colfax & Broadway",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "Food Cart",
+          "Civic Center Station - Colfax & Broadway",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 66.19568646807623
+    },
+    {
+      "id": "9EBwv92qSn1aFTZ-oK1wag",
+      "alias": "sandwich-board-denver-3",
+      "name": "Sandwich Board",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/C6rxwuCEQudhxZtVHq6-Xg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/sandwich-board-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 8,
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.7440567016602,
+        "longitude": -104.986724853516
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1740 Broadway",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80274",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1740 Broadway",
+          "Denver, CO 80274"
+        ]
+      },
+      "phone": "+13038614280",
+      "display_phone": "(303) 861-4280",
+      "distance": 75.66534531678143
+    },
+    {
+      "id": "y9UfFDgf5MiypdgBSZi9Aw",
+      "alias": "poke303-denver-2",
+      "name": "Poke303",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/jeovrZ-9V7CSxVed26dwqw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/poke303-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 32,
+      "categories": [
+        {
+          "alias": "poke",
+          "title": "Poke"
+        },
+        {
+          "alias": "hawaiian",
+          "title": "Hawaiian"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.74291,
+        "longitude": -104.98576
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1660 Lincoln St",
+        "address2": "Ste 102",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80264",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1660 Lincoln St",
+          "Ste 102",
+          "Denver, CO 80264"
+        ]
+      },
+      "phone": "+13038322998",
+      "display_phone": "(303) 832-2998",
+      "distance": 94.57839226168686
+    },
+    {
+      "id": "Bj9VTiTsEnTaXCEWKWCnaA",
+      "alias": "pizzeria-colore-denver",
+      "name": "Pizzeria Colore",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uUJflW451AErzj3LbK9Y5w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pizzeria-colore-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 64,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7432287,
+        "longitude": -104.9880444
+      },
+      "transactions": [
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1647 Court Pl",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1647 Court Pl",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13035342111",
+      "display_phone": "(303) 534-2111",
+      "distance": 113.63588677957877
+    },
+    {
+      "id": "yBMsoP9G1d7pbX0dy5bLcw",
+      "alias": "superfruit-republic-denver-5",
+      "name": "Superfruit Republic",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/WkFuFvMyIW_xoAMrClCXsQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/superfruit-republic-denver-5?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 62,
+      "categories": [
+        {
+          "alias": "juicebars",
+          "title": "Juice Bars & Smoothies"
+        },
+        {
+          "alias": "acaibowls",
+          "title": "Acai Bowls"
+        },
+        {
+          "alias": "vegetarian",
+          "title": "Vegetarian"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7442909242824,
+        "longitude": -104.987248298433
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1776 N Broadway",
+        "address2": "Ste 115",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1776 N Broadway",
+          "Ste 115",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13039979407",
+      "display_phone": "(303) 997-9407",
+      "distance": 113.7042326412764
+    },
+    {
+      "id": "fg0ToLv23x3QRXmlx9WX7w",
+      "alias": "ship-tavern-denver-5",
+      "name": "Ship Tavern",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3sn1hb09a-l6R1Oacj8icg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/ship-tavern-denver-5?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 180,
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "desserts",
+          "title": "Desserts"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.74409,
+        "longitude": -104.98774
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "321 17th St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "321 17th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032973111",
+      "display_phone": "(303) 297-3111",
+      "distance": 118.01197643049171
+    },
+    {
+      "id": "7JJFmGrvqpWjzBMLPLXGjQ",
+      "alias": "ellyngtons-at-the-brown-palace-and-spa-denver-2",
+      "name": "Ellyngton's At The Brown Palace and Spa",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/i5iyWM9cin5D10FMnEql7w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/ellyngtons-at-the-brown-palace-and-spa-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 126,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.74409,
+        "longitude": -104.98774
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "321 17th St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "321 17th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032973111",
+      "display_phone": "(303) 297-3111",
+      "distance": 118.01197643049171
+    },
+    {
+      "id": "Sx8IdWF4s7AVp42B34uveA",
+      "alias": "palace-arms-denver-5",
+      "name": "Palace Arms",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WtXzRVTEw3GlzI17xY3hoQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/palace-arms-denver-5?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 115,
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7441132,
+        "longitude": -104.9878576
+      },
+      "transactions": [],
+      "price": "$$$$",
+      "location": {
+        "address1": "321 17th St",
+        "address2": "",
+        "address3": "The Brown Palace",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "321 17th St",
+          "The Brown Palace",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032973111",
+      "display_phone": "(303) 297-3111",
+      "distance": 128.70369934469497
+    },
+    {
+      "id": "hIEau-Ze4rbjmoLWzefnoA",
+      "alias": "churchill-bar-denver-5",
+      "name": "Churchill Bar",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/I0XUV2XVky9y-p60YKfmDg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/churchill-bar-denver-5?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 71,
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.744219,
+        "longitude": -104.987822
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "321 17th St",
+        "address2": "",
+        "address3": "The Brown Palace",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "321 17th St",
+          "The Brown Palace",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032973111",
+      "display_phone": "(303) 297-3111",
+      "distance": 134.59988020339603
+    },
+    {
+      "id": "jUmHnAmaZlExeL-hqWDVnA",
+      "alias": "the-delectable-egg-downtown-denver",
+      "name": "The Delectable Egg - Downtown",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/zZF39lJnf5GRCoj7pJVGdg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-delectable-egg-downtown-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 334,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "creperies",
+          "title": "Creperies"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.74312,
+        "longitude": -104.988405
+      },
+      "transactions": [
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1625 Court Pl",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1625 Court Pl",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13038925720",
+      "display_phone": "(303) 892-5720",
+      "distance": 145.92819141036014
+    },
+    {
+      "id": "aMqgBLM8zuJYUGQIhk3rlw",
+      "alias": "choice-market-denver-3",
+      "name": "Choice Market",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/1yvfj8wMvbvMhAhzm2utVA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/choice-market-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 36,
+      "categories": [
+        {
+          "alias": "convenience",
+          "title": "Convenience Stores"
+        },
+        {
+          "alias": "markets",
+          "title": "Fruits & Veggies"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.744548,
+        "longitude": -104.987053
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1770 N Broadway",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1770 N Broadway",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17204597233",
+      "display_phone": "(720) 459-7233",
+      "distance": 158.01354157473662
+    },
+    {
+      "id": "E-s08VJbxQPTs6BPquDY1g",
+      "alias": "potbelly-sandwich-shop-denver-2",
+      "name": "Potbelly Sandwich Shop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vPPSv8AgRPQvo5f3pZbYzw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/potbelly-sandwich-shop-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 51,
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "hotdogs",
+          "title": "Fast Food"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.742998,
+        "longitude": -104.988756
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "303 16th St",
+        "address2": "Ste 180",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "303 16th St",
+          "Ste 180",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13035869360",
+      "display_phone": "(303) 586-9360",
+      "distance": 178.04049844759174
+    },
+    {
+      "id": "WTe8uL6vF1ZuKAeJIvxR8w",
+      "alias": "la-loma-denver-2",
+      "name": "La Loma",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Eva_5h8P-JR9i7RHltYw-g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/la-loma-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 1013,
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "tex-mex",
+          "title": "Tex-Mex"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.744716,
+        "longitude": -104.987832
+      },
+      "transactions": [
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1801 Broadway",
+        "address2": "Unit 116",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1801 Broadway",
+          "Unit 116",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13034338300",
+      "display_phone": "(303) 433-8300",
+      "distance": 178.88926743539767
+    },
+    {
+      "id": "LpacOKG7MUFVtUlUq3TyZg",
+      "alias": "oasis-mexican-grill-denver",
+      "name": "Oasis Mexican Grill",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IL2ltrXejx4ztNxZqT_quA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/oasis-mexican-grill-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 15,
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "foodstands",
+          "title": "Food Stands"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7419803748459,
+        "longitude": -104.987898960109
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "113 16th St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "113 16th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 182.48735685692762
+    },
+    {
+      "id": "rvwVnMWyWNTdu7mh6GRYzw",
+      "alias": "subway-denver-27",
+      "name": "Subway",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/n34PvK0nbYMUxlooc6DaLA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/subway-denver-27?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 17,
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "hotdogs",
+          "title": "Fast Food"
+        }
+      ],
+      "rating": 2.5,
+      "coordinates": {
+        "latitude": 39.74453,
+        "longitude": -104.985167
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1775 Sherman St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80203",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1775 Sherman St",
+          "Denver, CO 80203"
+        ]
+      },
+      "phone": "+13038316262",
+      "display_phone": "(303) 831-6262",
+      "distance": 185.77034055114555
+    },
+    {
+      "id": "dtcTbF4S7ydNiMqGpcUC2A",
+      "alias": "noodles-and-company-denver-11",
+      "name": "Noodles & Company",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/EYnmlhijFPGPapzrC18CPQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/noodles-and-company-denver-11?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 76,
+      "categories": [
+        {
+          "alias": "noodles",
+          "title": "Noodles"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.7433,
+        "longitude": -104.98869
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "303 16th St",
+        "address2": "Ste 150",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "303 16th St",
+          "Ste 150",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13036231700",
+      "display_phone": "(303) 623-1700",
+      "distance": 194.74875579287576
+    },
+    {
+      "id": "rKhTHJP13m-qw97J4D4vaA",
+      "alias": "bubu-republic-plaza-denver",
+      "name": "bubu Republic Plaza",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/FsPE0IQDj1hr5_PCk3Ofyw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bubu-republic-plaza-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 27,
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "vegan",
+          "title": "Vegan"
+        },
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7433,
+        "longitude": -104.98869
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "303 16th St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "303 16th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13035734919",
+      "display_phone": "(303) 573-4919",
+      "distance": 194.74875579287576
+    },
+    {
+      "id": "g9AHBMeoAeKQCo7wc9-ylQ",
+      "alias": "mcdonalds-denver-10",
+      "name": "McDonald's",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kxGSyodljN_k2hUnS3k-1A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/mcdonalds-denver-10?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 45,
+      "categories": [
+        {
+          "alias": "hotdogs",
+          "title": "Fast Food"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 1.5,
+      "coordinates": {
+        "latitude": 39.741836,
+        "longitude": -104.988097
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "200 16th St",
+        "address2": null,
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "200 16th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13035346567",
+      "display_phone": "(303) 534-6567",
+      "distance": 205.2771065215473
+    },
+    {
+      "id": "5QY2tWZc0sJhWbGrw4DgnQ",
+      "alias": "philadelphia-filly-denver",
+      "name": "Philadelphia Filly",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/r5MAUSw8KOjZE4yDA_M2MA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/philadelphia-filly-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 13,
+      "categories": [
+        {
+          "alias": "foodstands",
+          "title": "Food Stands"
+        },
+        {
+          "alias": "cheesesteaks",
+          "title": "Cheesesteaks"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.741460482669,
+        "longitude": -104.987492939178
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "16TH St Mall At Broadway",
+        "address2": null,
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80238",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "16TH St Mall At Broadway",
+          "Denver, CO 80238"
+        ]
+      },
+      "phone": "+13037228722",
+      "display_phone": "(303) 722-8722",
+      "distance": 220.22391661823247
+    },
+    {
+      "id": "y7WwR_kx99ajbeztqDakXw",
+      "alias": "the-sandwich-board-denver-11",
+      "name": "The Sandwich Board",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/BAPCHN62SCSt1kaRwTMe6g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-sandwich-board-denver-11?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 13,
+      "categories": [
+        {
+          "alias": "delis",
+          "title": "Delis"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7412223815918,
+        "longitude": -104.986717224121
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1560 Broadway",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1560 Broadway",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13039913331",
+      "display_phone": "(303) 991-3331",
+      "distance": 225.31915460291765
+    }
+  ],
+  "total": 503,
+  "region": {
+    "center": {
+      "longitude": -104.98672485351562,
+      "latitude": 39.74335089613333
+    }
+  }
+}

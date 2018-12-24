@@ -1,0 +1,923 @@
+{
+  "businesses": [
+    {
+      "id": "mKRMTGAOQKPIdhi8LKB4Tg",
+      "alias": "little-gingko-asian-cafe-denver-2",
+      "name": "Little Gingko Asian Cafe",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NUE5hIaTPzlsKOnDaVSCAg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/little-gingko-asian-cafe-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 67,
+      "categories": [
+        {
+          "alias": "chinese",
+          "title": "Chinese"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7366885730926,
+        "longitude": -104.972055974762
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1279 N Marion St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1279 N Marion St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13039932327",
+      "display_phone": "(303) 993-2327",
+      "distance": 201.82367349684125
+    },
+    {
+      "id": "e5OmZc9oLQ8iTqBJ6DFEaQ",
+      "alias": "nicolos-pizza-denver",
+      "name": "Nicolo's Pizza",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/u1jlYQtqaAVWW7TIJAl6Gg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/nicolos-pizza-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 228,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "sportsbars",
+          "title": "Sports Bars"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.73699,
+        "longitude": -104.97265
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1209 E 13th Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1209 E 13th Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038317000",
+      "display_phone": "(303) 831-7000",
+      "distance": 258.04503323335985
+    },
+    {
+      "id": "-vpzhgC8GRKGPkSdBEs57A",
+      "alias": "thump-coffee-denver",
+      "name": "Thump Coffee",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Yc_6yxzOEQR9fykjGsmsXA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/thump-coffee-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 438,
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7370258977843,
+        "longitude": -104.972867249372
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1201 E 13th Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1201 E 13th Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+17204566648",
+      "display_phone": "(720) 456-6648",
+      "distance": 279.54377223900553
+    },
+    {
+      "id": "WwY6Gv6aOsvkgBZWRwKQ3g",
+      "alias": "island-bowls-denver",
+      "name": "Island Bowls",
+      "image_url": "",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/island-bowls-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 1,
+      "categories": [
+        {
+          "alias": "hawaiian",
+          "title": "Hawaiian"
+        },
+        {
+          "alias": "foodtrucks",
+          "title": "Food Trucks"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 39.7355804443359,
+        "longitude": -104.797088623047
+      },
+      "transactions": [],
+      "location": {
+        "address1": "123 Mobile St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "123 Mobile St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+18086342142",
+      "display_phone": "(808) 634-2142",
+      "distance": 315.8072509197713
+    },
+    {
+      "id": "Nc0A4vZK_kMvYNYX7vVrAw",
+      "alias": "snarfs-sandwiches-denver-2",
+      "name": "Snarf's Sandwiches",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/oDQJnGFcid1NitpXHoXGQA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/snarfs-sandwiches-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 542,
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.73393,
+        "longitude": -104.97495
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1001 E 11th Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1001 E 11th Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038329999",
+      "display_phone": "(303) 832-9999",
+      "distance": 434.3705687851355
+    },
+    {
+      "id": "4LSF_BgZdsNTWr-nqHBeow",
+      "alias": "sexy-pizza-denver",
+      "name": "Sexy Pizza",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IUEZlRzsh8CM6AH8VB19cw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/sexy-pizza-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 468,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.73355,
+        "longitude": -104.97483
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1018 E 11th Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1018 E 11th Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038308111",
+      "display_phone": "(303) 830-8111",
+      "distance": 448.7273085594925
+    },
+    {
+      "id": "nEkozXuzcppMc5xXNJ1WBA",
+      "alias": "wokano-asian-bistro-denver-2",
+      "name": "Wokano Asian Bistro",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/De3p49LpqFd17QZwjWFi5A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/wokano-asian-bistro-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 447,
+      "categories": [
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "wraps",
+          "title": "Wraps"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7334,
+        "longitude": -104.975
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1078 Ogden St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1078 Ogden St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038318277",
+      "display_phone": "(303) 831-8277",
+      "distance": 466.1235750653916
+    },
+    {
+      "id": "Ghisg_dtjnyWSQ_UO3fPig",
+      "alias": "barricudas-denver-3",
+      "name": "Barricuda's",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hbvhTyt34kSpxgHFH6zzCg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/barricudas-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 193,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "karaoke",
+          "title": "Karaoke"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7333,
+        "longitude": -104.975
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1076 Ogden St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1076 Ogden St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038608353",
+      "display_phone": "(303) 860-8353",
+      "distance": 471.85400976895755
+    },
+    {
+      "id": "No2VmMM6QchZSYtCk6k0vQ",
+      "alias": "dp-dough-denver",
+      "name": "DP Dough",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/n_Jf6frTGSxaS04rokx3_g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/dp-dough-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 262,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.73971,
+        "longitude": -104.97111
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1228 E Colfax Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1228 E Colfax Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038399663",
+      "display_phone": "(303) 839-9663",
+      "distance": 473.8230907508149
+    },
+    {
+      "id": "T0oDpWqZWOjli02HuIO3DQ",
+      "alias": "potager-denver",
+      "name": "Potager",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/VlzD2fAzWRhgCzjv-G3svQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/potager-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 306,
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.73396,
+        "longitude": -104.97542
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "1109 Ogden St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1109 Ogden St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038325788",
+      "display_phone": "(303) 832-5788",
+      "distance": 474.7896964406433
+    },
+    {
+      "id": "aghAlq5-6EqLZsD75fiG3w",
+      "alias": "izu-denver",
+      "name": "Izu",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Neu9Xt_B9Xtzoua81u_F6A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/izu-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 249,
+      "categories": [
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        },
+        {
+          "alias": "sushi",
+          "title": "Sushi Bars"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.73973,
+        "longitude": -104.96889
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1528 E Colfax Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1528 E Colfax Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13032847981",
+      "display_phone": "(303) 284-7981",
+      "distance": 482.8633017307323
+    },
+    {
+      "id": "R3kOhjqh7PTm9grePAjV9Q",
+      "alias": "denver-fresh-mex-denver",
+      "name": "Denver Fresh Mex",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/k6gHStpVK_VNv8nW7UmfYw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/denver-fresh-mex-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 41,
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.739751,
+        "longitude": -104.968226
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1600 E Colfax Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1600 E Colfax Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+17204209955",
+      "display_phone": "(720) 420-9955",
+      "distance": 500.7109784474234
+    },
+    {
+      "id": "YwspX50B_dI7Ae66Uw_l6A",
+      "alias": "3-guys-pies-denver",
+      "name": "3 Guys Pies",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4DP9-uQYr5iZeiXiJ4RUsA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/3-guys-pies-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 193,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        },
+        {
+          "alias": "chicken_wings",
+          "title": "Chicken Wings"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.74018,
+        "longitude": -104.9695
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1501 E Colfax Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1501 E Colfax Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13036234897",
+      "display_phone": "(303) 623-4897",
+      "distance": 529.3556099084666
+    },
+    {
+      "id": "sztJlQL-Nora18xpsnauLg",
+      "alias": "burger-king-denver-11",
+      "name": "Burger King",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/y18CTfoYo5BpCvjc2uwRvw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/burger-king-denver-11?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 29,
+      "categories": [
+        {
+          "alias": "hotdogs",
+          "title": "Fast Food"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ],
+      "rating": 1.5,
+      "coordinates": {
+        "latitude": 39.7396965026855,
+        "longitude": -104.967559814453
+      },
+      "transactions": [
+        "delivery"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1680 E Colfax Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1680 E Colfax Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13033221773",
+      "display_phone": "(303) 322-1773",
+      "distance": 529.9321631384229
+    },
+    {
+      "id": "BwsrH7vf9Ir_-dvxUboVVA",
+      "alias": "spices-cafe-denver",
+      "name": "Spices Cafe",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/N78ivTATTX_EuS3VRkJcDQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/spices-cafe-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 307,
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.740304,
+        "longitude": -104.969427
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1510 Humboldt St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1510 Humboldt St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13035201708",
+      "display_phone": "(303) 520-1708",
+      "distance": 536.0741816746827
+    },
+    {
+      "id": "MWFGHr6NOg7pAoLgbgFdsQ",
+      "alias": "doppio-coffee-denver",
+      "name": "Doppio Coffee",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2IppW9yj8KcuVozMePqxPw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/doppio-coffee-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 27,
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 39.7402,
+        "longitude": -104.97129
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "location": {
+        "address1": "1245 E Colfax Ave",
+        "address2": "Ste 105",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1245 E Colfax Ave",
+          "Ste 105",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13035377794",
+      "display_phone": "(303) 537-7794",
+      "distance": 539.8171882096158
+    },
+    {
+      "id": "ALeBQxSLsm0He_FYdmA6UA",
+      "alias": "rocky-fin-poke-bar-denver",
+      "name": "Rocky Fin Poke Bar",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-6m2XipgC6CJg0HH7mjlbQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/rocky-fin-poke-bar-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 209,
+      "categories": [
+        {
+          "alias": "poke",
+          "title": "Poke"
+        },
+        {
+          "alias": "hawaiian",
+          "title": "Hawaiian"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 39.7402,
+        "longitude": -104.97129
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "1245 E Colfax Ave",
+        "address2": "Ste 103",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1245 E Colfax Ave",
+          "Ste 103",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038611188",
+      "display_phone": "(303) 861-1188",
+      "distance": 539.8171882096158
+    },
+    {
+      "id": "FfwLdr5-TBINeZbR4ey_WQ",
+      "alias": "irish-snug-denver",
+      "name": "Irish Snug",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/w7imN29iPqvcFUo6ZTdQAw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/irish-snug-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 449,
+      "categories": [
+        {
+          "alias": "irish",
+          "title": "Irish"
+        },
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7402,
+        "longitude": -104.97194
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1201 E Colfax Ave",
+        "address2": null,
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1201 E Colfax Ave",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+13038391394",
+      "display_phone": "(303) 839-1394",
+      "distance": 541.9058239564879
+    },
+    {
+      "id": "3TWWt2PrMmU6A5IAhpFONw",
+      "alias": "the-corner-beet-denver",
+      "name": "The Corner Beet",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mImDiWrsWb6JxW63D_fdkA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-corner-beet-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 194,
+      "categories": [
+        {
+          "alias": "juicebars",
+          "title": "Juice Bars & Smoothies"
+        },
+        {
+          "alias": "vegetarian",
+          "title": "Vegetarian"
+        },
+        {
+          "alias": "vegan",
+          "title": "Vegan"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7385320737529,
+        "longitude": -104.975359462606
+      },
+      "transactions": [
+        "delivery"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1401 Ogden St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1401 Ogden St",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+17202954447",
+      "display_phone": "(720) 295-4447",
+      "distance": 550.5340597527891
+    },
+    {
+      "id": "SogywYfZ2MSELE5YuLAUdw",
+      "alias": "triple-tree-cafe-denver",
+      "name": "Triple Tree Cafe",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/yhyJ0vZShzSJkahNr1Im_g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/triple-tree-cafe-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 42,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7403812777677,
+        "longitude": -104.971633069217
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1201 E Colfax Ave",
+        "address2": "Ste 102",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80218",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1201 E Colfax Ave",
+          "Ste 102",
+          "Denver, CO 80218"
+        ]
+      },
+      "phone": "+17209171000",
+      "display_phone": "(720) 917-1000",
+      "distance": 552.9615844114008
+    }
+  ],
+  "total": 198,
+  "region": {
+    "center": {
+      "longitude": -104.97024536132812,
+      "latitude": 39.73552421220229
+    }
+  }
+}

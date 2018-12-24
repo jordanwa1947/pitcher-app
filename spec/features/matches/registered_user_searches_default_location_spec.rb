@@ -37,7 +37,7 @@ describe 'As a registered user' do
       it 'should display photos and like and dislike buttons' do
 
         expect(current_path).to eq("/matches")
-        expect(page).to have_css(".photo", count: 3)
+        expect(page).to have_css(".photo")
         expect(page).to have_css("input.like", count: 1)
         expect(page).to have_css("input.dislike", count: 1)
         expect(page).to have_css("input.finish", count: 1)
@@ -46,13 +46,12 @@ describe 'As a registered user' do
       describe "when I click the like button" do
 
         before(:each) do
-          visit matches_path
           click_on "Like"
         end
 
         it "should display a new set of photos" do
           expect(current_path).to eq("/matches")
-          expect(page).to have_css(".photo", count: 3)
+          expect(page).to have_css(".photo")
         end
 
         describe "when I click the finish button" do
@@ -63,10 +62,10 @@ describe 'As a registered user' do
 
           it "should display restaurant info in my wishlist" do
             expect(page).to have_content("These are all the restaurants you've been interested in from the past.")
-            expect(page).to have_css("h3.restaurant_name", count: 1)
-            expect(page).to have_css("li.restaurant_address", count: 1)
-            expect(page).to have_css("li.restaurant_phone", count: 1)
-            expect(page).to have_css("li.restaurant_yelp_link", count: 1)
+            expect(page).to have_css("h4.restaurant-name", count: 1)
+            expect(page).to have_css("li.restaurant-address", count: 1)
+            expect(page).to have_css("li.restaurant-phone", count: 1)
+            expect(page).to have_css("li.restaurant-yelp_link", count: 1)
             expect(page).to have_css("img.photo", count: 1)
           end
         end
@@ -75,13 +74,12 @@ describe 'As a registered user' do
       describe "when I click the dislike button" do
 
         before(:each) do
-          visit matches_path
           click_on "Pass"
         end
 
         it "should display a new set of photos" do
           expect(current_path).to eq("/matches")
-          expect(page).to have_css(".photo", count: 3)
+          expect(page).to have_css(".photo")
         end
 
         describe "when I click the finish button" do

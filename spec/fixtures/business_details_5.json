@@ -1,0 +1,102 @@
+{
+  "id": "IFVAm31yNaKw5_Sa1TuP4g",
+  "alias": "rodizio-grill-denver-denver",
+  "name": "Rodizio Grill Denver",
+  "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_fcMX4Gnhocq_Gd1QQANWA/o.jpg",
+  "is_claimed": true,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/rodizio-grill-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "+13032949277",
+  "display_phone": "(303) 294-9277",
+  "review_count": 412,
+  "categories": [
+    {
+      "alias": "steak",
+      "title": "Steakhouses"
+    },
+    {
+      "alias": "brazilian",
+      "title": "Brazilian"
+    },
+    {
+      "alias": "buffets",
+      "title": "Buffets"
+    }
+  ],
+  "rating": 3.5,
+  "location": {
+    "address1": "1801 Wynkoop St",
+    "address2": "",
+    "address3": "",
+    "city": "Denver",
+    "zip_code": "80202",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "1801 Wynkoop St",
+      "Denver, CO 80202"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.7539989260745,
+    "longitude": -104.998431005314
+  },
+  "photos": [
+    "https://s3-media1.fl.yelpcdn.com/bphoto/_fcMX4Gnhocq_Gd1QQANWA/o.jpg",
+    "https://s3-media2.fl.yelpcdn.com/bphoto/j7iDpQSAVXjEIzgv7DgmzQ/o.jpg",
+    "https://s3-media4.fl.yelpcdn.com/bphoto/vhY-nLO8TpO1ZDFd945hug/o.jpg"
+  ],
+  "price": "$$$",
+  "hours": [
+    {
+      "open": [
+        {
+          "is_overnight": false,
+          "start": "1630",
+          "end": "2100",
+          "day": 0
+        },
+        {
+          "is_overnight": false,
+          "start": "1630",
+          "end": "2100",
+          "day": 1
+        },
+        {
+          "is_overnight": false,
+          "start": "1630",
+          "end": "2100",
+          "day": 2
+        },
+        {
+          "is_overnight": false,
+          "start": "1630",
+          "end": "2100",
+          "day": 3
+        },
+        {
+          "is_overnight": false,
+          "start": "1130",
+          "end": "2200",
+          "day": 4
+        },
+        {
+          "is_overnight": false,
+          "start": "1130",
+          "end": "2200",
+          "day": 5
+        },
+        {
+          "is_overnight": false,
+          "start": "1130",
+          "end": "2100",
+          "day": 6
+        }
+      ],
+      "hours_type": "REGULAR",
+      "is_open_now": true
+    }
+  ],
+  "transactions": []
+}

@@ -3,8 +3,12 @@ class MatchesController < ApplicationController
   before_action :authenticate
 
   def index
+    return unless params[:location] #render page without a facade if no location
+    session[:locals] = Hash.new unless session[:location] == params[:location] #reset session[:locals] if location has changed
+    session[:location] = params[:location] #save location in sessions
     new_local_session if needs_locals?
     @facade = MatchesFacade.new(current_user, session[:locals].shift)
+    redirect_to matches_path(location: session[:location]) if @facade.images.empty? #skip restaurants without photos
   end
 
   def create
@@ -13,11 +17,11 @@ class MatchesController < ApplicationController
     # is this making duplicate restaurants?
     yelp_id    = data[:id]
     wishlist   = current_user.wishlists.create(yelp_id: yelp_id, restaurant: restaurant)
-    redirect_to matches_path
+    redirect_to matches_path(location: session[:location])
   end
 
   def destroy
-    redirect_to matches_path
+    redirect_to matches_path(location: session[:location])
   end
 
   def update
@@ -35,6 +39,5 @@ class MatchesController < ApplicationController
     target = { target: :location, location: params[:location] }
     session[:locals] = YelpService.new(target).local_restaurants
   end
-
 
 end
