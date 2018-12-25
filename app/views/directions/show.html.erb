@@ -1,1 +1,13 @@
-Directions To <%= @facade.restaurant %> 
+Directions To <%= @restaurant.name %>
+
+<div id="directions_map"></div>
+
+<% provide :head_tags do %>
+<script>
+  var origin = new google.maps.LatLng(<%=@address.latitude%>, <%=@address.longitude%>);
+  var destination = new google.maps.LatLng(<%=@restaurant.latitude%>, <%=@restaurant.longitude%>);
+  document.addEventListener("DOMContentLoaded", function(){
+    genMap(origin, destination);
+  });
+</script>
+<% end %>
