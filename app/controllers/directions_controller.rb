@@ -1,7 +1,7 @@
 class DirectionsController < ApplicationController
 
   def show
-    @restaurant = Restaurant.find(params[:id]).to_i 
-    @facade = DirectionsFacade.new(params[:id].to_i)
+    @restaurant = Restaurant.find(params[:id])
+    @address = current_user.main_address
   end
 end

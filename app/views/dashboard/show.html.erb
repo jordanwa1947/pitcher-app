@@ -31,9 +31,9 @@
       <div id="map"></div>
       <% provide :head_tags do %>
         <script>
-        document.addEventListener("DOMContentLoaded", function(){
-          initMap(<%=@main_address.latitude%>, <%=@main_address.longitude%>)
-        });
+          document.addEventListener("DOMContentLoaded", function(){
+            initMap(<%=@main_address.latitude%>, <%=@main_address.longitude%>)
+          });
         </script>
       <% end %>
     <% end %>
