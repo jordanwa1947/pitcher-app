@@ -1,0 +1,42 @@
+{
+  "id": "9EBwv92qSn1aFTZ-oK1wag",
+  "alias": "sandwich-board-denver-3",
+  "name": "Sandwich Board",
+  "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/C6rxwuCEQudhxZtVHq6-Xg/o.jpg",
+  "is_claimed": false,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/sandwich-board-denver-3?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "+13038614280",
+  "display_phone": "(303) 861-4280",
+  "review_count": 8,
+  "categories": [
+    {
+      "alias": "sandwiches",
+      "title": "Sandwiches"
+    }
+  ],
+  "rating": 3,
+  "location": {
+    "address1": "1740 Broadway",
+    "address2": "",
+    "address3": "",
+    "city": "Denver",
+    "zip_code": "80274",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "1740 Broadway",
+      "Denver, CO 80274"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.7440567016602,
+    "longitude": -104.986724853516
+  },
+  "photos": [
+    "https://s3-media3.fl.yelpcdn.com/bphoto/C6rxwuCEQudhxZtVHq6-Xg/o.jpg"
+  ],
+  "price": "$",
+  "transactions": []
+}

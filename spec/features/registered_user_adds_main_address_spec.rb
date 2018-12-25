@@ -17,7 +17,7 @@ describe 'user visits dashboard page' do
       click_on 'Submit'
 
       expect(current_path).to eq('/dashboard')
-      expect(page).to have_content('success: Main Address Updated')
+      expect(page).to have_content("success: You're Main Address Has Been Updated")
       expect(page).to have_content('Address: 17th St LL100')
       expect(page).to have_content('City: Denver')
       expect(page).to have_content('State: CO')

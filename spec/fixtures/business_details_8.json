@@ -1,0 +1,49 @@
+{
+  "id": "idKs48V1lf8LQwvcFJjzGg",
+  "alias": "ali-baba-halal-denver",
+  "name": "Ali Baba Halal",
+  "image_url": "",
+  "is_claimed": false,
+  "is_closed": false,
+  "url": "https://www.yelp.com/biz/ali-baba-halal-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+  "phone": "",
+  "display_phone": "",
+  "review_count": 1,
+  "categories": [
+    {
+      "alias": "streetvendors",
+      "title": "Street Vendors"
+    },
+    {
+      "alias": "burgers",
+      "title": "Burgers"
+    },
+    {
+      "alias": "mideastern",
+      "title": "Middle Eastern"
+    }
+  ],
+  "rating": 3,
+  "location": {
+    "address1": "Food Cart",
+    "address2": "",
+    "address3": "Civic Center Station - Colfax & Broadway",
+    "city": "Denver",
+    "zip_code": "80202",
+    "country": "US",
+    "state": "CO",
+    "display_address": [
+      "Food Cart",
+      "Civic Center Station - Colfax & Broadway",
+      "Denver, CO 80202"
+    ],
+    "cross_streets": ""
+  },
+  "coordinates": {
+    "latitude": 39.7430327,
+    "longitude": -104.9873792
+  },
+  "photos": [],
+  "price": "$$",
+  "transactions": []
+}

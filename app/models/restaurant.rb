@@ -1,15 +1,16 @@
 class Restaurant < ApplicationRecord
   has_many :wishlists
 
-  def self.create_self(restaurant_info)
+  def self.create_self(data)
     create(
-      longitude: restaurant_info[:coordinates][:longitude], 
-      latitude: restaurant_info[:coordinates][:latitude],
-      yelp_link: restaurant_info[:url],
-      phone_number: restaurant_info[:display_phone],
-      address: restaurant_info[:location][:display_address],
-      name: restaurant_info[:name],
-      image: restaurant_info[:image_url]
+      longitude:    data[:coordinates][:longitude],
+      latitude:     data[:coordinates][:latitude],
+      yelp_link:    data[:url],
+      phone_number: data[:display_phone],
+      address:      data[:location][:display_address],
+      name:         data[:name],
+      image:        data[:image_url],
+      city:         "#{data[:location][:city]}, #{data[:location][:state]}"
     )
   end
 end

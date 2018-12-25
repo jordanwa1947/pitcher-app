@@ -1,0 +1,874 @@
+{
+  "businesses": [
+    {
+      "id": "AufxrKk-COzfAMr9KMVWRA",
+      "alias": "mortons-the-steakhouse-denver-2",
+      "name": "Morton's The Steakhouse",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/c86oV0nZkTOm2Pt9tKFYog/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/mortons-the-steakhouse-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 168,
+      "categories": [
+        {
+          "alias": "steak",
+          "title": "Steakhouses"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7530570684622,
+        "longitude": -104.998126650297
+      },
+      "transactions": [],
+      "price": "$$$$",
+      "location": {
+        "address1": "1745 Wazee St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1745 Wazee St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13038253353",
+      "display_phone": "(303) 825-3353",
+      "distance": 42.8951457669453
+    },
+    {
+      "id": "IFVAm31yNaKw5_Sa1TuP4g",
+      "alias": "rodizio-grill-denver-denver",
+      "name": "Rodizio Grill Denver",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_fcMX4Gnhocq_Gd1QQANWA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/rodizio-grill-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 412,
+      "categories": [
+        {
+          "alias": "steak",
+          "title": "Steakhouses"
+        },
+        {
+          "alias": "brazilian",
+          "title": "Brazilian"
+        },
+        {
+          "alias": "buffets",
+          "title": "Buffets"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7539989260745,
+        "longitude": -104.998431005314
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "1801 Wynkoop St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1801 Wynkoop St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032949277",
+      "display_phone": "(303) 294-9277",
+      "distance": 68.69695804223923
+    },
+    {
+      "id": "mzOAkvH-4WIfQuR3uCs87g",
+      "alias": "hopdoddy-burger-bar-denver",
+      "name": "Hopdoddy Burger Bar",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CdADjEj_McY9D9Mpk6Jvgg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/hopdoddy-burger-bar-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 756,
+      "categories": [
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7534294,
+        "longitude": -104.9991989
+      },
+      "transactions": [
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1747 Wynkoop St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1747 Wynkoop St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13034462337",
+      "display_phone": "(303) 446-2337",
+      "distance": 71.83002191403978
+    },
+    {
+      "id": "AGopPiE4IZUdmw7yo6PIow",
+      "alias": "machete-tequila-tacos-denver-2",
+      "name": "Machete Tequila + Tacos",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/itzCWO24X3YZnmZil8l_wg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/machete-tequila-tacos-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 400,
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7530920474473,
+        "longitude": -104.999181073136
+      },
+      "transactions": [
+        "restaurant_reservation"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1730 Wynkoop St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1730 Wynkoop St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17206127698",
+      "display_phone": "(720) 612-7698",
+      "distance": 74.29847951613952
+    },
+    {
+      "id": "xxIlb8836QDY8iPNldVmfA",
+      "alias": "venice-ristorante-denver",
+      "name": "Venice Ristorante",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ED8m2RIhnMVY2b0nGPlIWQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/venice-ristorante-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 294,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7527782,
+        "longitude": -104.999532
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "1700 Wynkoop St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1700 Wynkoop St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13035342222",
+      "display_phone": "(303) 534-2222",
+      "distance": 107.5641883936665
+    },
+    {
+      "id": "M-juFFD0ALOPWtSb5xrblA",
+      "alias": "icehouse-tavern-denver",
+      "name": "Icehouse Tavern",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/0Yerrv1H5NBylhLA2vxojA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/icehouse-tavern-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 126,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.7543786493017,
+        "longitude": -104.998059878934
+      },
+      "transactions": [
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1801 Wynkoop St",
+        "address2": "Ste 150",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1801 Wynkoop St",
+          "Ste 150",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032923775",
+      "display_phone": "(303) 292-3775",
+      "distance": 114.56409617571293
+    },
+    {
+      "id": "aJbK_xFPvIP46YkbvqaMRg",
+      "alias": "lou-s-hot-and-naked-denver",
+      "name": "Lou’s Hot and Naked",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/6PL5c8raZnACQjsILLPqoA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/lou-s-hot-and-naked-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 4,
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.75337,
+        "longitude": -104.99703
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1800 Wazee St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1800 Wazee St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 116.93864614502326
+    },
+    {
+      "id": "ni3jbdlVOB6k-yds5ylsEg",
+      "alias": "mano-pastaria-denver",
+      "name": "Mano Pastaria",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Imf9fLW2gTQCelL8pcosGQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/mano-pastaria-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 4,
+      "categories": [
+        {
+          "alias": "pastashops",
+          "title": "Pasta Shops"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7531902407197,
+        "longitude": -104.997044150443
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1800 Wazee St",
+        "address2": "Ste 100",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1800 Wazee St",
+          "Ste 100",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 117.66284444670109
+    },
+    {
+      "id": "KwmKhdWpcIzypdjAUNrc7w",
+      "alias": "mercantile-dining-and-provision-denver",
+      "name": "Mercantile Dining & Provision",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/La36RRv14CheGs4x5WAR2Q/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/mercantile-dining-and-provision-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 931,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7536149959513,
+        "longitude": -104.999776429002
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1701 Wynkoop St",
+        "address2": "Ste 155",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1701 Wynkoop St",
+          "Ste 155",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17204603733",
+      "display_phone": "(720) 460-3733",
+      "distance": 120.67495420208995
+    },
+    {
+      "id": "-TBaww1LQBzKfLJ8OSeymA",
+      "alias": "mangiamo-pronto-denver",
+      "name": "Mangiamo Pronto",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/r23-VxZwPYGuhmq9HtDcpA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/mangiamo-pronto-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 165,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.7523487817565,
+        "longitude": -104.998833696898
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1601 17th St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1601 17th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032971229",
+      "display_phone": "(303) 297-1229",
+      "distance": 120.74241972567829
+    },
+    {
+      "id": "hWdupym3JerJ2p_-wRj00A",
+      "alias": "snooze-an-a-m-eatery-denver-11",
+      "name": "Snooze, An A.M. Eatery",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/A3wqc0cQwqBf7Un1ckfkiQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/snooze-an-a-m-eatery-denver-11?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 807,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7534172798151,
+        "longitude": -104.999892472353
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1701 Wynkoop St",
+        "address2": "Ste 150",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1701 Wynkoop St",
+          "Ste 150",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13038253536",
+      "display_phone": "(303) 825-3536",
+      "distance": 127.83415390516647
+    },
+    {
+      "id": "g1lbyi7U9SFheSp5eCRogA",
+      "alias": "huckleberry-roasters-at-dairy-block-denver",
+      "name": "Huckleberry Roasters at Dairy Block",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/5D4jaXjYMvjXgqBohSbtUA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/huckleberry-roasters-at-dairy-block-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 29,
+      "categories": [
+        {
+          "alias": "coffeeroasteries",
+          "title": "Coffee Roasteries"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.75337,
+        "longitude": -104.99703
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1800 Wazee St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1800 Wazee St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 134.00813641399216
+    },
+    {
+      "id": "AKwaSohpf9iaRXaUjV1IHQ",
+      "alias": "bonanno-brothers-denver",
+      "name": "Bonanno Brothers",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/cDzacJ7b9v-erMKYSew68g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bonanno-brothers-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 4,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7533699,
+        "longitude": -104.99703
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1800 Wazee St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1800 Wazee St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 134.00813641399216
+    },
+    {
+      "id": "5lFq507HoSv4Kbw8xYLWiQ",
+      "alias": "maxlunch-denver-2",
+      "name": "Maxlunch",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/BdxlPLammPu8v8HUZqmTlQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/maxlunch-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "hotdogs",
+          "title": "Fast Food"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7542784363031,
+        "longitude": -104.997996836901
+      },
+      "transactions": [],
+      "price": "$$$$",
+      "location": {
+        "address1": "1899 Wynkoop St",
+        "address2": "Ste 125",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1899 Wynkoop St",
+          "Ste 125",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17204571731",
+      "display_phone": "(720) 457-1731",
+      "distance": 134.52030524473201
+    },
+    {
+      "id": "lqNe_QMrAyZLnEr06F9S_w",
+      "alias": "jax-fish-house-lodo-denver",
+      "name": "Jax Fish House LoDo",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/hMx-pEFzspAQUDsFjzB2fg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/jax-fish-house-lodo-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 729,
+      "categories": [
+        {
+          "alias": "seafood",
+          "title": "Seafood"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.7521259302617,
+        "longitude": -104.998515626984
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1539 17th St",
+        "address2": "",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1539 17th St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032925767",
+      "display_phone": "(303) 292-5767",
+      "distance": 139.99170277508148
+    },
+    {
+      "id": "Ko0xWJX2GIUq5NVoG-2-Uw",
+      "alias": "pigtrain-coffee-co-denver-2",
+      "name": "Pigtrain Coffee Co",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_C5LiwcB_lHWpXYo8NmDKA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pigtrain-coffee-co-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 192,
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "desserts",
+          "title": "Desserts"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.7529491832963,
+        "longitude": -105.000133871164
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1701 Wynkoop St",
+        "address2": "",
+        "address3": "Union Station",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1701 Wynkoop St",
+          "Union Station",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17204603708",
+      "display_phone": "(720) 460-3708",
+      "distance": 156.00593217594073
+    },
+    {
+      "id": "fdeVBWzB4jZV7QupbQSXUg",
+      "alias": "urban-farmer-denver-denver",
+      "name": "Urban Farmer Denver",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/WYSejWENjOPSn10RIttdkw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/urban-farmer-denver-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 221,
+      "categories": [
+        {
+          "alias": "steak",
+          "title": "Steakhouses"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.75208,
+        "longitude": -104.99929
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "1659 Wazee St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1659 Wazee St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032626070",
+      "display_phone": "(303) 262-6070",
+      "distance": 159.91007219624987
+    },
+    {
+      "id": "y7v8I2jUO-JV66MlBNb3gQ",
+      "alias": "acme-delicatessen-denver-2",
+      "name": "Acme Delicatessen",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/fo9S_Ucih8XhP6GUuS7j1w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/acme-delicatessen-denver-2?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 40,
+      "categories": [
+        {
+          "alias": "delis",
+          "title": "Delis"
+        }
+      ],
+      "rating": 2.5,
+      "coordinates": {
+        "latitude": 39.7530550976684,
+        "longitude": -105.000243522227
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1701 Wynkoop St",
+        "address2": "",
+        "address3": "The Great Hall Of Denver Union Station",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1701 Wynkoop St",
+          "The Great Hall Of Denver Union Station",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17204603706",
+      "display_phone": "(720) 460-3706",
+      "distance": 161.90747835960073
+    },
+    {
+      "id": "7J5A3Bkq5dAfAzvBxp1lnA",
+      "alias": "next-door-union-station-denver-4",
+      "name": "Next Door - Union Station",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/f-cs-VYBAJF_MLqcRXg0Wg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/next-door-union-station-denver-4?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 281,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.75305,
+        "longitude": -104.99995
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1701 Wynkoop St",
+        "address2": "Ste 100",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1701 Wynkoop St",
+          "Ste 100",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+17204603730",
+      "display_phone": "(720) 460-3730",
+      "distance": 165.39805897280516
+    },
+    {
+      "id": "K_LyxTyTfafUytd75mMmMg",
+      "alias": "ultreia-denver",
+      "name": "Ultreia",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/tC3i5xYmEmkcmErD6pfEhQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/ultreia-denver?adjust_creative=87PBg7bGZgP_uA1xaaYqzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=87PBg7bGZgP_uA1xaaYqzw",
+      "review_count": 120,
+      "categories": [
+        {
+          "alias": "tapas",
+          "title": "Tapas Bars"
+        },
+        {
+          "alias": "portuguese",
+          "title": "Portuguese"
+        },
+        {
+          "alias": "basque",
+          "title": "Basque"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 39.75305,
+        "longitude": -104.99995
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1701 Wynkoop St",
+        "address2": "Ste 125",
+        "address3": "",
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1701 Wynkoop St",
+          "Ste 125",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13035341970",
+      "display_phone": "(303) 534-1970",
+      "distance": 165.39805897280516
+    }
+  ],
+  "total": 492,
+  "region": {
+    "center": {
+      "longitude": -104.99839782714844,
+      "latitude": 39.75338164558922
+    }
+  }
+}

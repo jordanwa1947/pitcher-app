@@ -15,5 +15,17 @@
       <%= button_to "Finish", finish_path, method: :patch,  class: "finish" %>
       <%= button_to "Pass", dislike_path, method: :delete, class: "dislike" %>
     </div>
+  <% else %>
+    <h2>No location specified.  Please specify a location or click "Default Location".</h2>
   <% end %>
 </main>
+<aside>
+  <div class="location-search-container">
+    <h3 >Specify a Location</h3> 
+    <%= form_tag(matches_path, method: "get") do %>
+      <%= label_tag(:location, "Search for:") %>
+      <%= text_field_tag(:location) %>
+      <%= submit_tag("Find Matches") %>
+    <% end %>
+  </div>
+</aside>
