@@ -23,7 +23,7 @@ gem 'faraday'
 gem 'google-api-client'
 gem 'omniauth-google-oauth2'
 gem 'geocoder'
-
+gem 'rails_12factor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
