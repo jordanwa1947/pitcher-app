@@ -1,0 +1,14 @@
+<% @visited.each do |visit| %>
+  <%restaurant = visit.restaurant %>
+  <div class='restaurant'>
+  <h4 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h4>
+  <li class="restaurant-phone"><%= restaurant.phone_number %></li>
+  <li class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
+  <a class="restaurant-yelp_link" href="<%= restaurant.yelp_link %>"> Yelp Reviews </a>
+  <img src=<%= restaurant.image %>
+      alt="restaurant or food photo"
+      class="photo"
+      width="300"
+      height="200" />
+  </div>
+<% end %>
