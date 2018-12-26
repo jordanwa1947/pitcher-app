@@ -65,7 +65,7 @@ describe 'As a registered user' do
             expect(page).to have_css("h4.restaurant-name", count: 1)
             expect(page).to have_css("li.restaurant-address", count: 1)
             expect(page).to have_css("li.restaurant-phone", count: 1)
-            expect(page).to have_css("li.restaurant-yelp_link", count: 1)
+            expect(page).to have_css("a.restaurant-yelp_link", count: 1)
             expect(page).to have_css("img.photo", count: 1)
           end
         end
