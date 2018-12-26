@@ -44,7 +44,7 @@ describe 'User edits their wishlist' do
     it 'deletes a wishlist item from their wishlist' do
 
       visit wishlist_path
-save_and_open_page 
+
       click_button "Delete"
 
       expect(current_path).to eq("/wishlist")
