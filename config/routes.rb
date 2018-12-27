@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   root to: "home#show"
 
   get '/wishlist', to: 'wishlist#index', as: 'wishlist'
+  delete '/wishlist/:id', to: 'wishlist#destroy'
+
+  post '/visited/:id', to: 'visits#create'
+  get '/visited', to: 'visits#index'
+
 
   resources :users do
     resources :main_addresses, only: [:create, :destroy, :edit, :update]

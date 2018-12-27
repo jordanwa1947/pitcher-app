@@ -35,6 +35,15 @@ describe "User" do
     expect(page).to have_css('.nav')
   end
 
+  it 'can click Visited link' do
+    expect(page).to have_css('.nav')
+    within('.nav') do
+      click_link "Visited"
+    end
+    expect(page).to have_current_path('/visited')
+    expect(page).to have_css('.nav')
+  end
+
   # it 'can click Matches link' do
   #   within('.nav') do
   #     click_link "Wishlist"
