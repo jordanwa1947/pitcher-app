@@ -1,1 +1,18 @@
 <h1><%= @restaurant.name %></h1>
+
+<h2>Reviews<h2>
+
+<% if @restaurant.reviews %>
+
+  <% @restaurant.reviews.each do |review| %>
+    <ul>
+      <li><%= review.title %></li>
+      <li><%= review.author %></li>
+      <li><%= review.rating %></li>
+      <li><%= review.review %></li>
+    </ul>
+  <% end %>
+
+<% else %>
+  <p>This restaurant has no reviews.</p>
+<% end %>
