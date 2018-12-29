@@ -1,5 +1,6 @@
 class Restaurant < ApplicationRecord
   has_many :wishlists
+  has_many :reviews
 
   def self.create_self(data)
     create(
