@@ -1,6 +1,14 @@
 require 'rails_helper'
 
-describe 'User' do
+describe User, type: :model do
+
+  describe 'Relationships' do
+    it { should have_one :main_address }
+    it { should have_many :wishlists }
+    it { should have_many :visits }
+    it { should have_many :reviews }
+  end
+
   describe 'Instance Methods' do
 
     before(:each) do
@@ -22,14 +30,9 @@ describe 'User' do
       expect(@user.build_address).to eq('17th St LL100 Denver CO 80202')
     end
 
-    # it '.local_restaurants' do
-    #   VCR.use_cassette("user_local_restaurants_spec", record: :all) do
-    #     skip("This test is no longer needed here")
-    #     restaurants = @user.local_restaurants(@user.build_address)
-    #     expect(restaurants).to be_a(Hash)
-    #     expect(restaurants.keys.count).to eq(20)
-    #   end
-    # end
-    #
+    it '.default_city' do
+      expect(@user.default_city).to eq('Denver, CO')
+    end
+
   end
 end
