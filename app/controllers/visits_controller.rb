@@ -11,5 +11,6 @@ class VisitsController < ApplicationController
 
   def index
     @visited = current_user.visits
+    @review = Review.new
   end
 end
