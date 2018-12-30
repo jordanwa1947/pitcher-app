@@ -2,6 +2,14 @@ class Restaurant < ApplicationRecord
   has_many :wishlists
   has_many :reviews
 
+  validates_presence_of :longitude,
+                        :latitude,
+                        :yelp_link,
+                        :address,
+                        :name,
+                        :city
+  validates :yelp_id, presence: true, uniqueness: true
+
   def self.create_self(data)
     create(
       longitude:    data[:coordinates][:longitude],
