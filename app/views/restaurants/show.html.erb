@@ -1,10 +1,65 @@
-<h1><%= @restaurant.name %></h1>
+<h1><%= @facade.restaurant.name %></h1>
+<p><%= JSON.parse(@facade.restaurant.address).join(' ') %></p>
+<p><%= @facade.restaurant.phone_number %></p>
+
+<% if @facade.recommended? || @facade.visited? %>
+  <h2 class="user-status-banner">
+    <%= "Recommended!" if @facade.recommended? %>
+    <%= "Visited!" if @facade.visited? %>   
+  </h2>
+<% end %>
+
+<div class="yelp-info">
+  <h2>Yelp Rating:  <%= @facade.restaurant.yelp_rating %>
+      <a class="yelp-reviews-count" 
+         href="<%= @facade.restaurant.yelp_link %>">
+         (<%= @facade.restaurant.yelp_reviews %> reviews)
+      </a>
+  </h2>
+</div>
+
+<h2 class="user-rating">
+  Pitcher User Rating: <%= @facade.user_rating ? @facade.user_rating : "N/A" %>
+</h2>
+
+<div class="restaurant-photo">
+  <img src=<%= @facade.restaurant.image %>
+      alt="restaurant or food photo"
+      class="photo"
+      width="300"
+      height="300" />
+</div>
+
+<div class="photo-gallery">
+  <h2>Photos</h2>
+  <% @facade.restaurant.photos.each do |photo| %>
+    <img src=<%= photo.url %>
+        alt="restaurant or food photo"
+        class="photo"
+        width="200"
+        height="200" />
+  <% end %>
+</div>
+
+<div id="map"></div>
+  <% provide :head_tags do %>
+    <script>
+      document.addEventListener("turbolinks:load", function(){
+        initMap(<%=@facade.restaurant.latitude%>, <%=@facade.restaurant.longitude%>)
+      });
+    </script>
+  <% end %>
+</div>
 
 <h2>Reviews<h2>
 
-<% if @restaurant.reviews %>
+<% if @facade.restaurant.reviews.empty? %>
 
-  <% @restaurant.reviews.each do |review| %>
+  <p>This restaurant doesn't have any reviews yet.</p>
+
+<% else %>
+
+  <% @facade.restaurant.reviews.each do |review| %>
     <ul>
       <li><%= review.title %></li>
       <li><%= review.author %></li>
@@ -13,6 +68,4 @@
     </ul>
   <% end %>
 
-<% else %>
-  <p>This restaurant has no reviews.</p>
 <% end %>
