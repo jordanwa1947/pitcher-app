@@ -14,7 +14,9 @@ class MatchesController < ApplicationController
   def create
     data       = params[:restaurant_info]
     restaurant = Restaurant.create_self( data )
-    # is this making duplicate restaurants?
+    photos     = data[:photos].each do |photo|
+      restaurant.photos.create(url: photo)
+    end
     yelp_id    = data[:id]
     wishlist   = current_user.wishlists.create(yelp_id: yelp_id, restaurant: restaurant)
     redirect_to matches_path(location: session[:location])
