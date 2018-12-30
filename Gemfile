@@ -44,6 +44,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'awesome_print'
+  gem 'jasmine-rails'
 end
 
 group :development do
