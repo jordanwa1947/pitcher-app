@@ -48,12 +48,18 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 
+require "./spec/fixtures/business_stubs"
+require "./spec/fixtures/business_search_stubs"
 RSpec.configure do |config|
   config.fixture_path  = "#{::Rails.root}/spec/fixtures" # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.use_transactional_fixtures = true               # If you're not using ActiveRecord, or you'd prefer not to run each of your # examples within a transaction, remove the following line or assign false # instead of true.
   OmniAuth.config.test_mode = true
 
   Capybara.default_host = 'http://localhost:3000'
+
+
+  include BusinessStubs
+  include BusinessSearchStubs
 
   def stub_omniauth
     OmniAuth.config.test_mode = true

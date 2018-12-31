@@ -17,13 +17,14 @@ gem 'jbuilder', '~> 2.5' # Build JSON APIs with ease. Read more: https://github.
 # Use ActiveStorage variant                           --- # gem 'mini_magick', '~> 4.8'
 # Use Capistrano for deployment                       --- # gem 'capistrano-rails', group: :development
 gem 'bootsnap', '>= 1.1.0', require: false  # Reduces boot times through caching; required in config/boot.rb
-
+gem 'bootstrap'
+gem 'jquery-rails'
 gem 'figaro'
 gem 'faraday'
 gem 'google-api-client'
 gem 'omniauth-google-oauth2'
 gem 'geocoder'
-gem 'rails_12factor'
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

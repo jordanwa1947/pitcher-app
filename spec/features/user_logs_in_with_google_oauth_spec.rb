@@ -5,7 +5,7 @@ describe 'Google Oauth' do
     stub_omniauth
 
     visit '/'
-    click_link("Sign in with Google")
+    click_link("Login with Google")
 
     expect(current_path).to eq('/dashboard')
     expect(page).to have_content("success: You've Successfully Logged In!")
@@ -15,7 +15,7 @@ describe 'Google Oauth' do
     stub_omniauth
 
     visit '/'
-    click_link("Sign in with Google")
+    click_link("Login with Google")
 
     expect(current_path).to eq('/dashboard')
 

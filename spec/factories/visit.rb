@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :wishlist do
+  factory :visit do
     user       { nil }
     restaurant { nil }
   end

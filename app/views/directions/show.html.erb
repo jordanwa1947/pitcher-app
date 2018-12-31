@@ -5,29 +5,27 @@
     Directions To <%= @restaurant.name %>
 
     <div id="directions_map"></div>
+<% provide :head_tags do %>
+<script>
+  var origin = new google.maps.LatLng(<%=@address.latitude%>, <%=@address.longitude%>);
+  var destination = new google.maps.LatLng(<%=@restaurant.latitude%>, <%=@restaurant.longitude%>);
 
-    <% provide :head_tags do %>
-    <script>
-      var origin = new google.maps.LatLng(<%=@address.latitude%>, <%=@address.longitude%>);
-      var destination = new google.maps.LatLng(<%=@restaurant.latitude%>, <%=@restaurant.longitude%>);
+  function genMap () {
+    var directionsDisplay = new google.maps.DirectionsRenderer();
+    var directionsService = new google.maps.DirectionsService();
 
-      function genMap () {
-        var directionsDisplay = new google.maps.DirectionsRenderer();
-        var directionsService = new google.maps.DirectionsService();
+    var mapOptions = {
+      zoom: 12,
+      center: origin
+    };
+    var directions_map = new google.maps.Map(document.getElementById('directions_map'), mapOptions);
+    directionsDisplay.setMap(directions_map);
+    calculateRoute(origin, destination, directionsDisplay, directionsService);
+  }
 
-        var mapOptions = {
-          zoom: 12,
-          center: origin
-        };
-        var directions_map = new google.maps.Map(document.getElementById('directions_map'), mapOptions);
-        directionsDisplay.setMap(directions_map);
-        calculateRoute(origin, destination, directionsDisplay, directionsService);
-      }
+  document.addEventListener("turbolinks:load", function(){
+    genMap();
+  });
+</script>
 
-      window.addEventListener("load", function(){
-        genMap();
-      });
-    </script>
-    <% end %>
-  </body>
-</html>
+<% end %>
