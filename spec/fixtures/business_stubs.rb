@@ -1,5 +1,4 @@
 
-# module WishlistStubs
 module BusinessStubs
 
   def stub_business_1
