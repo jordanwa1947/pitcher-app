@@ -4,7 +4,7 @@
     <h4 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h4>
     <li class="restaurant-phone"><%= restaurant.phone_number %></li>
     <li class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
-    <a class="restaurant-yelp_link" href="<%= restaurant.yelp_link %>"> Yelp Reviews </a>
+    <li> <a class="restaurant-yelp-link" href="<%= restaurant.yelp_link %>"> Yelp Reviews </a> </li> 
     <img src=<%= restaurant.image %>
         alt="restaurant or food photo"
         class="photo"
@@ -21,17 +21,30 @@
           <li><%= my_review.review %></li>
         </ul>
       <% else %>
-        <h5>Leave a Review</h5>
-        <%= form_for [restaurant,@review] do |f| %>
-          <%= f.hidden_field :user_id, value: current_user.id %>
-          <%= f.label :title, "Review Title" %>
-          <%= f.text_field :title %>
-          <%= f.label :rating %>
-          <%= f.number_field :rating, min: 1, max: 5 %>
-          <%= f.label :review %>
-          <%= f.text_area :review %>
-          <%= f.submit  %>
-        <% end %>
+        <div class='container'>
+          <button type="button" class="btn btn-primary" id="expand_review" data-toggle="collapse" data-target="#review_form">Leave A Review</button>
+          <%= form_for [restaurant,@review] do |f| %>
+            <div id="review_form" class="collapse">
+              <%= f.hidden_field :user_id, value: current_user.id %>
+                <div class='form-group'>
+                  <%= f.label :title, "Review Title" %>
+                  <div class="col-md-8">
+                    <%= f.text_field :title %>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <%= f.label :rating %>
+                  <%= f.number_field :rating, min: 1, max: 5 %>
+                </div>
+                <div class='form-group'>
+                  <div class="col-md-8">
+                    <%= f.text_area :review %>
+                  </div>
+                </div>
+              <%= f.submit class: "btn btn-default btn-primary"%>
+            <% end %>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
