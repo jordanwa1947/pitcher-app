@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :visit do
-    yelp_id {1234}
+    user       { nil }
+    restaurant { nil }
   end
 end

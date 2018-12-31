@@ -20,9 +20,10 @@ end
 
 describe "User" do
 
+  let(:user) { User.create(first_name: "First", last_name: "Last", email: "email") }
+
   before(:each) do
-    @user = User.create(first_name: "First", last_name: "Last", email: "email")
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     visit dashboard_path
   end
 

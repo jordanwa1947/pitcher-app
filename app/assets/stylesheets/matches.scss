@@ -1,0 +1,103 @@
+html, body, main, .row {
+  height: 100%;
+  color: #333322;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #5F372A;
+}
+
+.jumbotron {
+  height: 240px;
+  margin-bottom: 0;
+  background-color: #B8B8B5
+}
+
+.title, .heading {
+  display: inline-block;
+  position: relative;
+}
+
+.title {
+  top: -20px;
+}
+
+.heading {
+  left: 200px;
+  top: 10px;
+  width: calc(100% - 350px);
+}
+
+.main-container {
+  max-width: unset;
+  height: calc(100% - 280px);
+}
+
+.image-container {
+  text-align: center;
+}
+
+.photo {
+  width: 300px;
+  height: 200px;
+  margin: 50px 25px;
+  border: 3px solid #645F5C;
+  border-radius: 3px;
+  box-shadow: 7px 7px 5px lightgray;
+}
+
+.feedback-container {
+  text-align: center
+}
+
+.like-button {
+  width: 100px;
+  height: 100px;
+  margin: 10px 50px 20px 50px;
+  background: url('../images/like.svg');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: 15px 10px;
+  border-radius: 50%;
+  border-color: black;
+  box-shadow: 7px 7px 5px lightgray;
+  cursor: pointer;
+  &:hover {
+    border-color: green;
+    border-width: 3px;
+    margin-bottom: 18px;
+    // background: url('../images/like-hover.svg');
+  }
+  &.dislike {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    box-shadow: -7px -7px 5px lightgray;
+    &:hover {
+      border-color: red;
+      border-width: 3px;
+      margin-bottom: 18px;
+      background-position: 11px 6px;
+      // background: url('../images/dislike-hover.svg');
+    }
+  }
+}
+
+form {
+  display: inline-block;
+}
+
+#location {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.search-button {
+  border: 1px black solid;
+}
+
+.aside {
+  padding: 20px;
+  height: 100%;
+  background-color: #A78C74;
+}
+
