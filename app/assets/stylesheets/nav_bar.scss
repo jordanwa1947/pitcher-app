@@ -1,0 +1,13 @@
+nav.nav-bar {
+  background-color: black;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  text-align: right;
+}
+
+a {
+  white-space: nowrap;
+  padding: 10px;
+}
