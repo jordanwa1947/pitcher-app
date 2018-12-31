@@ -15,7 +15,8 @@ class MatchesController < ApplicationController
     data       = params[:restaurant_info]
     id         = data[:id]
     restaurant = Restaurant.find_by(yelp_id: id) || Restaurant.create_self( data )
-    wishlist   = current_user.wishlists.create(yelp_id: id, restaurant: restaurant)
+    # wishlist   = current_user.wishlists.create(yelp_id: id, restaurant: restaurant)
+    wishlist   = current_user.wishlists.create(restaurant: restaurant)
     redirect_to matches_path(location: session[:location])
   end
 

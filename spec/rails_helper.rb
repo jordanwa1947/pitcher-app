@@ -48,12 +48,16 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 
+require "./spec/fixtures/stubs_for_wishlist"
 RSpec.configure do |config|
   config.fixture_path  = "#{::Rails.root}/spec/fixtures" # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.use_transactional_fixtures = true               # If you're not using ActiveRecord, or you'd prefer not to run each of your # examples within a transaction, remove the following line or assign false # instead of true.
   OmniAuth.config.test_mode = true
 
   Capybara.default_host = 'http://localhost:3000'
+
+
+  include WishlistStubs
 
   def stub_omniauth
     OmniAuth.config.test_mode = true

@@ -11,25 +11,23 @@ describe 'Wishlist' do
 
   describe "User" do
 
+    let(:user)     { create(:user) }
+    let(:facade_1) { MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA") }
+    let(:facade_2) { MatchesFacade.new(user, "eaVcCJO5OmBhAv-kJRpWRg") }
+    let(:facade_3) { MatchesFacade.new(user, "KPQ1fifN8sVnINat4xmDXQ") }
+
     before(:each) do
       VCR.use_cassette('geocode_lookup') do
-        stub_request(:get, "https://api.yelp.com/v3/businesses/cL8rbKfItlQOoFzLIQAsdA").
-          to_return(body: File.read("./spec/fixtures/business_details_1.json"))
-        stub_request(:get, "https://api.yelp.com/v3/businesses/eaVcCJO5OmBhAv-kJRpWRg").
-          to_return(body: File.read("./spec/fixtures/business_details_2.json"))
-        stub_request(:get, "https://api.yelp.com/v3/businesses/KPQ1fifN8sVnINat4xmDXQ").
-          to_return(body: File.read("./spec/fixtures/business_details_10.json"))
-        user = create(:user)
+        stub_business_1
+        stub_business_2
+        stub_business_3
         address = create(:main_address, user: user)
-        facade_1 = MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA")
-        facade_2 = MatchesFacade.new(user, "eaVcCJO5OmBhAv-kJRpWRg")
-        facade_3 = MatchesFacade.new(user, "KPQ1fifN8sVnINat4xmDXQ")
         @restaurant_1 = Restaurant.create_self(facade_1.restaurant_info)
         @restaurant_2 = Restaurant.create_self(facade_2.restaurant_info)
         @restaurant_3 = Restaurant.create_self(facade_3.restaurant_info)
-        user.wishlists.create(yelp_id: facade_1.restaurant_info[:id], restaurant_id: @restaurant_1.id)
-        user.wishlists.create(yelp_id: facade_2.restaurant_info[:id], restaurant_id: @restaurant_2.id)
-        user.wishlists.create(yelp_id: facade_3.restaurant_info[:id], restaurant_id: @restaurant_3.id)
+        user.wishlists.create(restaurant: @restaurant_1)
+        user.wishlists.create(restaurant: @restaurant_2)
+        user.wishlists.create(restaurant: @restaurant_3)
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
         visit wishlist_path
       end
@@ -43,16 +41,16 @@ describe 'Wishlist' do
       click_on @restaurant_1.name
 
       expect(current_path).to eq("/restaurants/#{@restaurant_1.id}")
-      expect(page).to have_content(@restaurant_1.name)
+      expect(page).to     have_content(@restaurant_1.name)
       expect(page).to_not have_content(@restaurant_2.name)
       expect(page).to_not have_content(@restaurant_3.name)
     end
 
     xit "Only wishlist items in my default location city are visible" do
-      expect(page).to have_content(@restaurant_1.name)
-      expect(page).to have_content(@restaurant_1.phone_number)
-      expect(page).to have_content(@restaurant_2.name)
-      expect(page).to have_content(@restaurant_2.phone_number)
+      expect(page).to     have_content(@restaurant_1.name)
+      expect(page).to     have_content(@restaurant_1.phone_number)
+      expect(page).to     have_content(@restaurant_2.name)
+      expect(page).to     have_content(@restaurant_2.phone_number)
       expect(page).to_not have_content(@restaurant_3.name)
       expect(page).to_not have_content(@restaurant_3.phone_number)
     end
