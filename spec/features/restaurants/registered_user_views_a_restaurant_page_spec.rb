@@ -22,7 +22,7 @@ describe 'As a registered user' do
     it 'should redirect to the restaurant show page' do
       expect(current_path).to eq(restaurant_path(@restaurant.id))
       expect(page).to have_content(@restaurant.name)
-      expect(page).to have_content(@restaurant.address)
+      expect(page).to have_content(JSON.parse(@restaurant.address).join(' '))
       expect(page).to have_content(@restaurant.phone_number)
       expect(page).to have_content("Yelp Rating:")
       expect(page).to have_content("Pitcher User Rating: N/A")
@@ -32,7 +32,7 @@ describe 'As a registered user' do
     describe 'if the restaurant is in my wishlist' do
 
       it 'should display a wishlist banner' do
-        expect(page).to have_css("div.user-status-banner", value: "Recommended")
+        expect(page).to have_css(".user-status-banner", text: "Recommended")
       end
 
     end
@@ -42,32 +42,33 @@ describe 'As a registered user' do
       before(:each) do
         visit wishlist_path
         click_button "Move to Visited"
+        click_on @restaurant.name
       end
 
       it 'should display a visited banner' do
-        expect(page).to have_css("div.user-status-banner", valude: "Visited")
-      end
-    end
-
-    describe 'if the restaurant has reviews' do
-
-      before(:each) do
-        visit wishlist_path
-        fill_in 'Review Title', with: 'First Review'
-        fill_in 'Rating', with: 5
-        fill_in 'Review', with: 'This is my first review.'
-        click_button 'Create Review'
+        expect(page).to have_css(".user-status-banner", text: "Visited")
       end
 
-      it 'should display the average user rating for the restaurant' do
-        expect(page).to have_content("Pitcher User Rating: 5")
-      end
+      describe 'if the restaurant has reviews' do
 
-      it 'should display the review' do
-        expect(page).to_not have_content("This restaurant doesn't have any reviews yet.")
-        expect(page).to have_content('First Review')
-        expect(page).to have_content('This is my first review.')
-        expect(page).to have_content(@user.first_name)
+        before(:each) do
+          visit visited_path
+          fill_in 'Review Title', with: 'First Review'
+          fill_in 'Rating', with: 5
+          fill_in 'Review', with: 'This is my first review.'
+          click_button 'Create Review'
+        end
+
+        it 'should display the average user rating for the restaurant' do
+          expect(page).to have_content("Pitcher User Rating: 5")
+        end
+
+        it 'should display the review' do
+          expect(page).to_not have_content("This restaurant doesn't have any reviews yet.")
+          expect(page).to have_content('First Review')
+          expect(page).to have_content('This is my first review.')
+          expect(page).to have_content(@user.first_name)
+        end
       end
     end
   end
