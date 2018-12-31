@@ -4,7 +4,8 @@ class MainAddress < ApplicationRecord
 
   validates_presence_of :state, :city
   geocoded_by :build_address
-  after_validation :geocode
+  after_validation :geocode, 
+    if: lambda{ |address| address.address_changed? }
 
   def build_address
     [address, city, state, zip].compact.join(' ')
