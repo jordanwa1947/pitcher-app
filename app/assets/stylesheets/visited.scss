@@ -1,0 +1,24 @@
+a.restaurant-yelp-link {
+  background-color: #ed0008;
+  text-decoration-color: none;
+  display: inline-block;
+  color: white;
+  border: 1px;
+}
+
+div.restaurant > li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.restaurant {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+}
+
+.restaurant > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
