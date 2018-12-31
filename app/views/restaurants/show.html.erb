@@ -1,18 +1,86 @@
-<h1><%= @restaurant.name %></h1>
+<main>
+  <div class="jumbotron">
+    <div class="title">
+      <img src=<%= @facade.restaurant.image %>
+          alt="restaurant or food photo"
+          class="photo restaurant-show-photo" />
+    </div>
+    <div class="restaurant-info">
+      <h1><%= @facade.restaurant.name %></h1>
+      <p><%= JSON.parse(@facade.restaurant.address).join(' ') %><br>
+        <%= @facade.restaurant.phone_number %></p>
+    </div>
+  </div>
+  <div class="container main-container">
+    <div class="row">
+      <div class="col-10">
+        <div class="row">
 
-<h2>Reviews<h2>
+          <div class="col">
+            <h2>Map</h2>
+            <div id="map">
+              <% provide :head_tags do %>
+                <script>
+                  document.addEventListener("turbolinks:load", function(){
+                    initMap(<%=@facade.restaurant.latitude%>, <%=@facade.restaurant.longitude%>)
+                  });
+                </script>
+              <% end %>
+            </div>
+          </div>
 
-<% if @restaurant.reviews %>
+          <div class="col">
+            <h2>Photos</h2>
+            <div class="image-container">
+              <% @facade.restaurant.photos.each do |photo| %>
+                <img src=<%= photo.url %>
+                    alt="restaurant or food photo"
+                    class="photo-tight" />
+              <% end %>
+            </div>
+          </div>
+        </div>
 
-  <% @restaurant.reviews.each do |review| %>
-    <ul>
-      <li><%= review.title %></li>
-      <li><%= review.author %></li>
-      <li><%= review.rating %></li>
-      <li><%= review.review %></li>
-    </ul>
-  <% end %>
+        <div>
+          <h2>Reviews</h2>
+          <% if @facade.restaurant.reviews.empty? %>
+            <p>This restaurant doesn't have any reviews yet.</p>
+          <% else %>
+            <% @facade.restaurant.reviews.each do |review| %>
+              <div class="review-container">
+                <h4>Reviewed by: <%= review.author %>, <%= review.rating %> stars</h4>
+                <p><strong><%= review.title %></strong>&nbsp;<%= review.review %></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
 
-<% else %>
-  <p>This restaurant has no reviews.</p>
-<% end %>
+      <div class="col-2 aside">
+
+        <% if @facade.recommended? || @facade.visited? %>
+          <h1 class="badge badge-pill badge-light  ">
+            <%= "Recommended!" if @facade.recommended? %>
+            <%= "Visited!" if @facade.visited? %>   
+          </h1>
+        <% end %>
+
+        <div class="yelp-info">
+          <h4>Yelp Rating: <span class="text"><%= @facade.restaurant.yelp_rating %><br>
+              (<%= @facade.restaurant.yelp_reviews %> reviews)</span></h4>
+              <a href="<%= @facade.restaurant.yelp_link %>"
+                class="yelp-link">See on Yelp!</a>
+          </h4>
+        </div>
+
+        <h4 class="user-rating">
+          Pitcher User Rating: 
+            <span class="text">
+              <%= @facade.user_rating ? @facade.user_rating : "N/A" %>
+            </span>
+        </h4>
+
+      </div>
+    </div>
+  </div>
+</main>

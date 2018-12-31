@@ -15,6 +15,9 @@ class MatchesController < ApplicationController
     data       = params[:restaurant_info]
     id         = data[:id]
     restaurant = Restaurant.find_by(yelp_id: id) || Restaurant.create_self( data )
+    photos     = data[:photos].each do |photo|
+      restaurant.photos.create(url: photo)
+    end
     wishlist   = current_user.wishlists.create(restaurant: restaurant)
     redirect_to matches_path(location: session[:location])
   end

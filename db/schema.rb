@@ -26,16 +26,26 @@ ActiveRecord::Schema.define(version: 2018_12_31_042130) do
     t.index ["user_id"], name: "index_main_addresses_on_user_id"
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.string "url"
+    t.bigint "restaurant_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_photos_on_restaurant_id"
+  end
+
   create_table "restaurants", force: :cascade do |t|
     t.float "longitude"
     t.float "latitude"
+    t.string "yelp_id"
     t.string "yelp_link"
+    t.string "yelp_rating"
+    t.integer "yelp_reviews"
     t.string "phone_number"
     t.string "address"
     t.string "name"
     t.string "image"
     t.string "city"
-    t.string "yelp_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -76,6 +86,7 @@ ActiveRecord::Schema.define(version: 2018_12_31_042130) do
   end
 
   add_foreign_key "main_addresses", "users"
+  add_foreign_key "photos", "restaurants"
   add_foreign_key "reviews", "restaurants"
   add_foreign_key "reviews", "users"
   add_foreign_key "visits", "restaurants"
