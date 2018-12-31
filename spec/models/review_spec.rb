@@ -27,7 +27,6 @@ describe Review, type: :model do
 
     it "gets author name" do
       author = review.author
-      # binding.pry
       expect(author).to eq(user.first_name)
     end
 
