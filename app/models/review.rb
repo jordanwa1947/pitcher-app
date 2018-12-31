@@ -2,7 +2,7 @@ class Review < ApplicationRecord
   belongs_to :restaurant
   belongs_to :user
 
-  validates_uniqueness_of :user, scope: [:restaurant]
+  validates_uniqueness_of :restaurant, scope: [:user]
 
   validates_presence_of :title
   validates_presence_of :rating

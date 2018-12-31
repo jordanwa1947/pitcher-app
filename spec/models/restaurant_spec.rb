@@ -17,6 +17,6 @@ describe Restaurant, type: :model do
 
     it { should validate_presence_of   :yelp_id }
     it { should validate_uniqueness_of :yelp_id }
-
   end
+
 end
