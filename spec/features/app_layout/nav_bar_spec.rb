@@ -7,7 +7,7 @@ describe 'Visitor' do
   end
 
   it 'sees the nav bar' do
-    expect(page).to have_css('.nav')
+    expect(page).to have_css(".navbar-nav")
   end
 
   it 'does not see user links' do
@@ -28,21 +28,21 @@ describe "User" do
   end
 
   it 'can click Wishlist link' do
-    expect(page).to have_css('.nav')
-    within('.nav') do
+    expect(page).to have_css(".navbar-nav")
+    within('.navbar-nav') do
       click_link "Wishlist"
     end
     expect(page).to have_current_path(wishlist_path)
-    expect(page).to have_css('.nav')
+    expect(page).to have_css(".navbar-nav")
   end
 
   it 'can click Visited link' do
-    expect(page).to have_css('.nav')
-    within('.nav') do
+    expect(page).to have_css(".navbar-nav")
+    within('.navbar-nav') do
       click_link "Visited"
     end
     expect(page).to have_current_path('/visited')
-    expect(page).to have_css('.nav')
+    expect(page).to have_css(".navbar-nav")
   end
 
   # it 'can click Matches link' do

@@ -24,13 +24,13 @@ class MainAddressesController < ApplicationController
   end
 
   def update
-    MainAddress.find_by(user: current_user).delete
-    make_address
-    if @main_address.save!
+    address = MainAddress.find_by(user: current_user)
+    address.update(address_params)
+    if address.save!
       flash[:success] = address_alert[:success]
       redirect_to dashboard_path
     else
-      flash[:error] = address_alert[:failture]
+      flash[:error] = address_alert[:failure]
       render :dashboard
     end
   end
