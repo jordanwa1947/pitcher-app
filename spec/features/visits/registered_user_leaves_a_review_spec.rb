@@ -5,7 +5,7 @@ describe 'As a registered user' do
   describe 'when I visit the visited restaurants page' do
 
     let(:user)       { create(:user) }
-    let(:restaurant) {create(:restaurant)}
+    let(:restaurant) { create(:restaurant) }
 
     before(:each) do
       VCR.use_cassette('geocode_lookup', record: :all) do
