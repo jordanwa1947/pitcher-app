@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 2018_12_31_042130) do
     t.string "name"
     t.string "image"
     t.string "city"
-    t.string "yelp_id"
   end
 
   create_table "reviews", force: :cascade do |t|
