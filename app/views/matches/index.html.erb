@@ -17,30 +17,32 @@
   <div class="container main-container">
     <div class="row">
 
-      <div class="col-10">
+      <% if @facade %>
+        <div class="col-10">
 
-        <div class="container images-container">
-          <div class="row">
-            <% @facade.images.each do |image| %>
-              <div class="col-sm image-container">
-                <%= image_tag "#{image}", 
-                  alt: "restaurant or food photo", 
-                  class: "photo" %>
-              </div>
-            <% end %>
+          <div class="container images-container">
+            <div class="row">
+              <% @facade.images.each do |image| %>
+                <div class="col-sm image-container">
+                  <%= image_tag "#{image}", 
+                    alt: "restaurant or food photo", 
+                    class: "photo" %>
+                </div>
+              <% end %>
+            </div>
           </div>
-        </div>
 
-        <div class="container feedback-container">
-          <%= button_to "", like_path(restaurant_info: @facade.restaurant_info), method: :post, class: "like-button" %>
-          <%= button_to "", dislike_path, method: :delete, class: "like-button dislike" %>
-        </div>
+          <div class="container feedback-container">
+            <%= button_to "", like_path(restaurant_info: @facade.restaurant_info), method: :post, class: "like-button", id: "Like" %>
+            <%= button_to "", dislike_path, method: :delete, class: "like-button dislike", id: "Pass" %>
+          </div>
 
-        <div class="container feedback-container">
-          <%= button_to "Done", finish_path, method: :patch,  class: "btn btn-success" %>
-        </div>
+          <div class="container feedback-container">
+            <%= button_to "Done", finish_path, method: :patch,  class: "btn btn-success", id: "Finish" %>
+          </div>
 
-      </div>
+        </div>
+      <% end %>
 
       <div class="col-2 aside">
         <h3 >Specify a Location</h3> 

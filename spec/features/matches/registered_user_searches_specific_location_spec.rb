@@ -36,9 +36,9 @@ describe 'As a registered user' do
 
         expect(current_path).to eq("/matches")
         expect(page).to have_css(".photo")
-        expect(page).to have_css("input.like", count: 1)
-        expect(page).to have_css("input.dislike", count: 1)
-        expect(page).to have_css("input.finish", count: 1)
+        expect(page).to have_css("input#Like", count: 1)
+        expect(page).to have_css("input#Pass", count: 1)
+        expect(page).to have_css("input#Finish", count: 1)
       end
     end
 
@@ -57,9 +57,9 @@ describe 'As a registered user' do
 
         expect(current_path).to eq("/matches")
         expect(page).to have_css(".photo")
-        expect(page).to have_css("input.like", count: 1)
-        expect(page).to have_css("input.dislike", count: 1)
-        expect(page).to have_css("input.finish", count: 1)
+        expect(page).to have_css("input#Like", count: 1)
+        expect(page).to have_css("input#Pass", count: 1)
+        expect(page).to have_css("input#Finish", count: 1)
       end
     end
 
@@ -82,9 +82,9 @@ describe 'As a registered user' do
 
         expect(current_path).to eq("/matches")
         expect(page).to have_css(".photo")
-        expect(page).to have_css("input.like", count: 1)
-        expect(page).to have_css("input.dislike", count: 1)
-        expect(page).to have_css("input.finish", count: 1)
+        expect(page).to have_css("input#Like", count: 1)
+        expect(page).to have_css("input#Pass", count: 1)
+        expect(page).to have_css("input#Finish", count: 1)
       end
 
     end
