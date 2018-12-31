@@ -1,4 +1,4 @@
-nav.nav-bar {
+nav.nav {
   background-color: black;
   height: auto;
   display: flex;
@@ -10,4 +10,8 @@ nav.nav-bar {
 a {
   white-space: nowrap;
   padding: 10px;
+}
+
+div > img {
+  width: 100px;
 }
