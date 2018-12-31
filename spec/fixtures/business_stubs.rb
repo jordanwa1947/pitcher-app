@@ -1,5 +1,6 @@
 
-module WishlistStubs
+# module WishlistStubs
+module BusinessStubs
 
   def stub_business_1
     stub_request(:get, "https://api.yelp.com/v3/businesses/cL8rbKfItlQOoFzLIQAsdA").
