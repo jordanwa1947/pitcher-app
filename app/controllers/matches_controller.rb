@@ -13,12 +13,12 @@ class MatchesController < ApplicationController
 
   def create
     data       = params[:restaurant_info]
-    restaurant = Restaurant.create_self( data )
+    id         = data[:id]
+    restaurant = Restaurant.find_by(yelp_id: id) || Restaurant.create_self( data )
     photos     = data[:photos].each do |photo|
       restaurant.photos.create(url: photo)
     end
-    yelp_id    = data[:id]
-    wishlist   = current_user.wishlists.create(yelp_id: yelp_id, restaurant: restaurant)
+    wishlist   = current_user.wishlists.create(restaurant: restaurant)
     redirect_to matches_path(location: session[:location])
   end
 

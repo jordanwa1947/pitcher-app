@@ -2,27 +2,23 @@ require 'rails_helper'
 
 describe 'User edits their wishlist' do
 
+  let(:user)   { create(:user) }
+  let(:facade) { MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA") }
+
   before(:each) do
     VCR.use_cassette('geocode_lookup') do
-      stub_request(:get, "https://api.yelp.com/v3/businesses/cL8rbKfItlQOoFzLIQAsdA")
-      .to_return(body: File.read("./spec/fixtures/business_details_1.json"))
-
-      user = create(:user)
+      stub_business_1
       address = create(:main_address, user: user)
-
-      facade = MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA")
       @restaurant = Restaurant.create_self(facade.restaurant_info)
-
-      user.wishlists.create(yelp_id: facade.restaurant_info[:id], restaurant_id: @restaurant.id)
-
+      user.wishlists.create(restaurant: @restaurant)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+      visit wishlist_path
     end
   end
+
   describe 'they click on a restaurants move to visited list' do
+
     it 'moves the restaurant to the visited page' do
-
-      visit wishlist_path
-
       click_button "Move to Visited"
 
       expect(current_path).to eq("/visited")
@@ -41,10 +37,8 @@ describe 'User edits their wishlist' do
   end
 
   describe 'to user clicks on a wishlist items delete button' do
+
     it 'deletes a wishlist item from their wishlist' do
-
-      visit wishlist_path
-
       click_button "Delete"
 
       expect(current_path).to eq("/wishlist")

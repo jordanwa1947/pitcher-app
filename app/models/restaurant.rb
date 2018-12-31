@@ -3,7 +3,13 @@ class Restaurant < ApplicationRecord
   has_many :reviews
   has_many :photos
 
-  validates_uniqueness_of :yelp_id
+  validates_presence_of :longitude,
+                        :latitude,
+                        :yelp_link,
+                        :address,
+                        :name,
+                        :city
+  validates :yelp_id, presence: true, uniqueness: true
 
   def self.create_self(data)
     create(
