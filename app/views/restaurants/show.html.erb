@@ -49,7 +49,7 @@
             <% @facade.restaurant.reviews.each do |review| %>
               <div class="review-container">
                 <h4>Reviewed by: <%= review.author %>, <%= review.rating %> stars</h4>
-                <p><%= review.review %></p>
+                <p><strong><%= review.title %></strong>&nbsp;<%= review.review %></p>
               </div>
             <% end %>
           <% end %>

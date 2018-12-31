@@ -32,7 +32,7 @@ describe 'As a registered user' do
     describe 'if the restaurant is in my wishlist' do
 
       it 'should display a wishlist banner' do
-        expect(page).to have_css(".user-status-banner", text: "Recommended")
+        expect(page).to have_css(".badge", text: "Recommended")
       end
 
     end
@@ -46,7 +46,7 @@ describe 'As a registered user' do
       end
 
       it 'should display a visited banner' do
-        expect(page).to have_css(".user-status-banner", text: "Visited")
+        expect(page).to have_css(".badge", text: "Visited")
       end
 
       describe 'if the restaurant has reviews' do
