@@ -1,0 +1,27 @@
+.default-city {
+  left: 300px;
+  top: 190px;
+  width: calc(100% - 350px);
+}
+
+.wishlist-heading, .visit-heading {
+  margin-left: 20px;
+}
+
+.restaurant-actions-container {
+  margin: 65px 0 0 30px;
+}
+
+.restaurant-actions-container form {
+  margin: 15px;
+}
+
+#other-wishlists {
+   overflow: hidden;
+}
+
+#other-wishlists-heading {
+  text-decoration: underline;
+  margin-left: 20px;
+  cursor: pointer;
+}
