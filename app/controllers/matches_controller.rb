@@ -39,7 +39,8 @@ class MatchesController < ApplicationController
 
   def new_local_session
     target = { target: :location, location: params[:location] }
-    session[:locals] = YelpService.new(target).local_restaurants
+    yelp_ids = YelpService.new(target).local_restaurants
+    session[:locals] = current_user.no_repeat_restaurants(yelp_ids)
   end
 
 end

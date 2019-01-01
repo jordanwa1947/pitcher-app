@@ -23,4 +23,23 @@ class User < ApplicationRecord
     "#{main_address.city}, #{main_address.state}"
   end
 
+  def no_repeat_restaurants(yelp_ids)
+    used_restaurants = [wish_yelp_ids, visit_yelp_ids].flatten
+    yelp_ids.delete_if do |yelp_id|
+      used_restaurants.include?(yelp_id)
+    end
+  end
+
+  def wish_yelp_ids
+    wish_yelp_ids = wishlists.map do |wishlist|
+      wishlist.restaurant.yelp_id
+    end
+  end
+
+  def visit_yelp_ids
+    visits.map do |visit|
+      visit.restaurant.yelp_id
+    end
+  end
+
 end
