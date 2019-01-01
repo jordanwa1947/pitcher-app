@@ -4,7 +4,9 @@
       <h1>Wishlist</h1>
     </div>
     <div class="default-city">
-      <h3>Default City: <%= current_user.default_city %></h3>
+      <% if current_user.main_address %>
+        <h3>Default City: <%= current_user.default_city %></h3>
+      <% end %>
     </div>
   </div>  
   <% if @facade.restaurants.empty? %>
@@ -29,7 +31,7 @@
               <h2 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h2>
               <p class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></p>
               <p class="restaurant-phone"><%= restaurant.phone_number %></p>
-              <%= button_to 'Yelp Reviews', "#{restaurant.yelp_link}", method: :get, class: "btn btn-danger"%>
+              <%= button_to 'Yelp Reviews', "#{restaurant.yelp_link}", method: :get, class: "btn btn-danger restaurant-yelp_link"%>
             </div>
             <div class="restaurant-actions-container">
               <%= button_to "Get Directions", "/directions/#{restaurant.id}", method: :get, class: "btn btn-success" %>
