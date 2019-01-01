@@ -1,54 +1,69 @@
 <main>
-  <% @visited.each do |visit| %>
-    <%restaurant = visit.restaurant %>
-    <div class='row'>
-      <div class='col'>
-        <div class='restaurant-container'>
-          <div class='restaurant-image-container'>
-            <img src=<%= restaurant.image %>
-                alt="restaurant or food photo"
-                class="photo-visit" />
-          </div>
-          <div class='restaurant-info-container'>
-            <h2 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h2>
-            <p class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></p>
-            <p class="restaurant-phone"><%= restaurant.phone_number %></p>
-            <%= button_to 'Yelp Reviews', "#{restaurant.yelp_link}", class: "btn btn-danger"%>
-          </div>
-        </div>
-      </div>
-      <div class='col'>
-        <div class="review-container">
-          <% my_review = restaurant.reviews.find_by(user_id: current_user.id) %>
-          <% if my_review %>
-            <h4>My Review</h4>
-            <h5><%= my_review.title %>, <%= my_review.rating %> stars</h5>
-            <p><%= my_review.review %></p>
-          <% else %>
-            <div class='container'>
-              <button type="button" class="btn btn-primary" id="expand_review" data-toggle="collapse" data-target="#review_form-<%= restaurant.id %>">Leave A Review</button>
-              <%= form_for [restaurant,@review] do |f| %>
-                <div id="review_form-<%= restaurant.id %>" class="collapse">
-                  <%= f.hidden_field :user_id, value: current_user.id %>
-                    <div class='form-group'>
-                      <%= f.label :title, "Review Title" %>
-                      <%= f.text_field :title %>
-                    </div>
-                    <div class='form-group'>
-                      <%= f.label :rating %>
-                      <%= f.number_field :rating, min: 1, max: 5 %>
-                    </div>
-                    <div class='form-group'>
-                      <%= f.label :review %>
-                      <%= f.text_area :review %>
-                    </div>
-                  <%= f.submit class: "btn btn-default btn-primary"%>
-                <% end %>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
+  <div class="jumbotron">
+    <div class="title">
+      <h1>Visited Restaurants</h1>
     </div>
+  </div>  
+  <% if @visited.empty? %>
+    <div class="visit-heading">
+      <h2>You don't have any visited restaurants.</h2>
+      <p>Go to "Wishlist" and mark a restaurant as visited to list it here.</p>
+    </div>
+  <% else %>
+    <div class="visit-heading">
+      <h2>These are all the restaurants you have marked as visited.</h2>
+    </div>
+    <% @visited.each do |visit| %>
+      <%restaurant = visit.restaurant %>
+      <div class='row'>
+        <div class='col'>
+          <div class='restaurant-container'>
+            <div class='restaurant-image-container'>
+              <img src=<%= restaurant.image %>
+                  alt="restaurant or food photo"
+                  class="photo-visit" />
+            </div>
+            <div class='restaurant-info-container'>
+              <h2 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h2>
+              <p class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></p>
+              <p class="restaurant-phone"><%= restaurant.phone_number %></p>
+              <%= button_to 'Yelp Reviews', "#{restaurant.yelp_link}", class: "btn btn-danger"%>
+            </div>
+          </div>
+        </div>
+        <div class='col'>
+          <div class="review-container">
+            <% my_review = restaurant.reviews.find_by(user_id: current_user.id) %>
+            <% if my_review %>
+              <h4>My Review</h4>
+              <h5><%= my_review.title %>, <%= my_review.rating %> stars</h5>
+              <p><%= my_review.review %></p>
+            <% else %>
+              <div class='container'>
+                <button type="button" class="btn btn-primary" id="expand_review" data-toggle="collapse" data-target="#review_form-<%= restaurant.id %>">Leave A Review</button>
+                <%= form_for [restaurant,@review] do |f| %>
+                  <div id="review_form-<%= restaurant.id %>" class="collapse">
+                    <%= f.hidden_field :user_id, value: current_user.id %>
+                      <div class='form-group'>
+                        <%= f.label :title, "Review Title" %>
+                        <%= f.text_field :title %>
+                      </div>
+                      <div class='form-group'>
+                        <%= f.label :rating %>
+                        <%= f.number_field :rating, min: 1, max: 5 %>
+                      </div>
+                      <div class='form-group'>
+                        <%= f.label :review %>
+                        <%= f.text_area :review %>
+                      </div>
+                    <%= f.submit class: "btn btn-default btn-primary"%>
+                  <% end %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
   <% end %>
 </main>
