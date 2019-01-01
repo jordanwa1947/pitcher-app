@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-10">
         <div class="row">
-          <div class="col">
+          <div class="col main-address">
             <% if @main_address.id %>
               <h2> Main Address </h2>
               <h5> <%= @main_address.address %> </h5>
@@ -40,13 +40,13 @@
       </div>
       <div class="col-2 aside">
         <% if @main_address.id %>
-          <%= button_to 'Update Main Address', 
+          <%= link_to 'Update Main Address', 
             edit_user_main_address_path(current_user.id, @main_address), 
-            class: "btn btn-primary aside-button"%>
-          <%= button_to 'Delete Main Address', 
+            class: "btn aside-button" %>
+          <%= link_to 'Delete Main Address', 
             user_main_address_path(current_user.id, @main_address), 
-            class: "btn btn-secondary aside-button",
-            method: :delete %>
+            class: "btn aside-button",
+            :method => 'delete'  %>
         <% else %>
           <p>Add a main address to begin</p>
         <% end %>
