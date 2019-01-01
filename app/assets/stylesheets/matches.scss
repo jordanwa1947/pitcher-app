@@ -3,6 +3,10 @@ html, body {
   color: #333322;
 }
 
+main {
+  padding-top: 116px;
+}
+
 .row {
   display: flex;
 }
@@ -96,7 +100,7 @@ h4 {
   }
 }
 
-form {
+feedback-container form {
   display: inline-block;
 }
 
@@ -113,6 +117,7 @@ form {
 }
 
  .aside-button {
+   color: white;
    background-color: #343A40;
    margin: 10px 0;
  }
