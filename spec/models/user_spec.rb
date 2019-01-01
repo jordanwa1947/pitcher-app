@@ -36,5 +36,30 @@ describe User, type: :model do
       expect(user.default_city).to eq('Denver, CO')
     end
 
+    it '.no_repeat_restaurants' do
+      yelp_ids = ["cL8rbKfItlQOoFzLIQAsdA", "eaVcCJO5OmBhAv-kJRpWRg",
+                  "us9NRKZDQZH0iKgEmdhbJQ", "4a-dMSzzPiIyZqj0pTlCGQ",
+                  "kRmYd-YMlTswHBnK4LBf2A", "RtbHHTs4vdKUJdVQAGrwfw",
+                  "rY6nzLptDIfZ2XA205u-rA", "SeYUNIIf5D-Nz715rAJjig",
+                  "OfXj0dgT4fSXP9QRVBiW7g", "BkSzW46iEOPsfGwelzzp9w",
+                  "iJ6FqDjSW96Uz42bSk9t8g", "UM9gzn5tmWwGeNyVgyNaBg",
+                  "YxeTWblmRB3m7egJzgAJCg", "khGook-ivF2pwlv32N4wCQ",
+                  "wL04ets5vd2CGxbzj3ii5w", "1RUhg_pr4ypX7BquEjirRQ",
+                  "RcwpMQlFG9Di-g9OMMhyGg", "IObqOwWu1IdqdI7A-BzD7A",
+                  "hks-LDU4R-mJJvr9bBfguQ", "UTV40d3C0P7vfUUqmPl3vA"]
+
+      restaurant = create(:restaurant)
+      restaurant_2 = create(:restaurant, yelp_id: "YxeTWblmRB3m7egJzgAJCg")
+
+      Visit.create(user_id: user.id, restaurant_id: restaurant.id)
+      Wishlist.create(user_id: user.id, restaurant_id: restaurant_2.id)
+
+      never_chosen = user.no_repeat_restaurants(yelp_ids)
+
+      expect(never_chosen.count).to eq 18
+      expect(never_chosen.include?("YxeTWblmRB3m7egJzgAJCg")).to eq false
+      expect(never_chosen.include?("eaVcCJO5OmBhAv-kJRpWRg")).to eq false
+    end
+
   end
 end
