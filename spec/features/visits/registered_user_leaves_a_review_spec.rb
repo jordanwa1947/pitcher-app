@@ -66,8 +66,8 @@ describe 'As a registered user' do
 
         expect(page).to_not have_content("Leave A Review")
         expect(page).to     have_content("My Review")
-        expect(page).to     have_content("Rating: 5")
-        expect(page).to     have_content("Title: First Review")
+        expect(page).to     have_content("5 stars")
+        expect(page).to     have_content("First Review")
         expect(page).to     have_content("This is my first review.")
       end
     end

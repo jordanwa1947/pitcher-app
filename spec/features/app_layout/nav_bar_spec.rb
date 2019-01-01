@@ -29,7 +29,7 @@ describe "User" do
 
   it 'can click Wishlist link' do
     expect(page).to have_css(".navbar-nav")
-    within('.navbar-nav') do
+    within('nav') do
       click_link "Wishlist"
     end
     expect(page).to have_current_path(wishlist_path)
@@ -38,22 +38,10 @@ describe "User" do
 
   it 'can click Visited link' do
     expect(page).to have_css(".navbar-nav")
-    within('.navbar-nav') do
+    within('nav') do
       click_link "Visited"
     end
     expect(page).to have_current_path('/visited')
     expect(page).to have_css(".navbar-nav")
   end
-
-  # it 'can click Matches link' do
-  #   within('.nav') do
-  #     click_link "Wishlist"
-  #   end
-  #   expect(page).to have_current_path(wishlist_path)
-  #   expect(page).to have_css('.nav')
-  # end
-
-
-
-
 end
