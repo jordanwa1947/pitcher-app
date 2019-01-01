@@ -1,6 +1,14 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 99;
+}
+
 nav.nav {
   background-color: black;
-  height: auto;
+  height: 116px;
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;

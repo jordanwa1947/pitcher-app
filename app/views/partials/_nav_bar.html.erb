@@ -13,16 +13,18 @@
       <li class="nav-item">
         <a class="nav-link" href="/visited">Visited</a>
       </li>
-      <% if current_user.main_address %>
         <li class="nav-item">
+      <% if current_user.main_address %>
           <a class="nav-link" href=<%=matches_path(location: current_user.build_address)%>>Default Location</a>
-        </li>
       <% end %>
+        </li>
     <% end %>
   </ul>
   <div class="navbar-nav float-right">
-    <span class="nav-user-name"><%= current_user.first_name %> <%= current_user.last_name %></span>
-    <a class="nav-link" href=<%=logout_path%>>Logout</a>
+    <% if current_user %>
+      <span class="nav-user-name"><%= current_user.first_name %> <%= current_user.last_name %></span>
+      <a class="nav-link" href=<%=logout_path%>>Logout</a>
+    <% end %>
   </div>
 
 </nav>
