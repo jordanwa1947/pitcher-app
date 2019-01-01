@@ -1,55 +1,78 @@
-<% if @facade.restaurants.empty? %>
-
-  <h2>You don't have any recommended restaurants yet.</h2>
-
-<% else %>
-
-  <h2>These are all the restaurants you've been interested in from the past.</h2>
-    <h3>Default City: <%= current_user.default_city %></h3>
-    <div class="default-wishlists">
-      <% @facade.default_restaurants.each do |restaurant| %>
-        <ul class="default-restaurant-<%= restaurant.id %>">
-          <h4 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h4>
-          <li class="restaurant-phone"><%= restaurant.phone_number %></li>
-          <li class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
-          <a class="restaurant-yelp_link" href="<%= restaurant.yelp_link %>"> Yelp Reviews </a>
-          <li class="directions"><%= link_to "Get Directions", "/directions/#{restaurant.id}" %>
-          <img src=<%= restaurant.image %>
-              alt="restaurant or food photo"
-              class="photo"
-              width="300"
-              height="200" />
-        </ul>
-        <span>
-          <%= button_to 'Move to Visited', "/visited/#{restaurant.id}" %>
-          <%= button_to 'Delete', "/wishlist/#{restaurant.id}", method: :delete , data: {confirm: "Are you sure?"}%>
-        </span>
+<main>
+  <div class="jumbotron">
+    <div class="title">
+      <h1>Wishlist</h1>
+    </div>
+    <div class="default-city">
+      <% if current_user.main_address %>
+        <h3>Default City: <%= current_user.default_city %></h3>
       <% end %>
     </div>
-    <div id="other-wishlists" style="height: 50px; overflow:hidden">
+  </div>  
+  <% if @facade.restaurants.empty? %>
+    <div class="wishlist-heading">
+      <h2>You don't have any recommended restaurants.</h2>
+      <p>Click "Find Local Matches" above to begin.</p>
+    </div>
+  <% else %>
+    <div class="wishlist-heading">
+      <h2>These are all the restaurants you've been interested in from the past.</h2>
+    </div>
+    <div class='row default-wishlists'>
+      <% @facade.default_restaurants.each do |restaurant| %>
+        <div class='col'>
+          <div class='restaurant-container'>
+            <div class='restaurant-image-container'>
+              <img src=<%= restaurant.image %>
+                alt="restaurant or food photo"
+                class="photo-visit" />
+            </div>
+            <div class="restaurant-info-container">
+              <h2 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h2>
+              <p class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></p>
+              <p class="restaurant-phone"><%= restaurant.phone_number %></p>
+              <%= button_to 'Yelp Reviews', "#{restaurant.yelp_link}", method: :get, class: "btn btn-danger restaurant-yelp_link"%>
+            </div>
+            <div class="restaurant-actions-container">
+              <%= button_to "Get Directions", "/directions/#{restaurant.id}", method: :get, class: "btn btn-success" %>
+              <%= button_to 'Mark as Visited', "/visited/#{restaurant.id}", class: "btn btn-success" %>
+              <%= button_to 'Delete', "/wishlist/#{restaurant.id}", method: :delete , data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <% if !@facade.other_restaurants.empty? %>
       <h3 id="other-wishlists-heading"
           onClick="toggleOtherRestaurantsHeight()">
           [ + ] Other Locations
       </h3>
-      <% @facade.other_restaurants.each do |restaurant| %>
-        <ul class="other-restaurant" id="other-restaurant-<%= restaurant.id %>">
-          <h4 class="restaurant-name">
-            <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
-          </h4>
-          <li class="restaurant-phone"><%= restaurant.phone_number %></li>
-          <li class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></li>
-          <a class="restaurant-yelp_link" href="<%= restaurant.yelp_link %>"> Yelp Reviews </a>
-          <li class="directions"><%= link_to "Get Directions", "/directions/#{restaurant.id}" %>
-          <img src=<%= restaurant.image %>
-              alt="restaurant or food photo"
-              class="photo"
-              width="300"
-              height="200" />
-        </ul>
-        <span>
-          <%= button_to 'Move to Visited', "/visited/#{restaurant.id}" %>
-          <%= button_to 'Delete', "/wishlist/#{restaurant.id}", method: :delete , data: {confirm: "Are you sure?"}%>
-        </span>
-      <% end %>
-    </div>
-<% end %>
+      <div id="other-wishlists" style="height:50px">
+        <% @facade.other_restaurants.each do |restaurant| %>
+          <div class='row'>
+            <div class='col'>
+              <div class='restaurant-container'>
+                <div class='restaurant-image-container'>
+                  <img src=<%= restaurant.image %>
+                    alt="restaurant or food photo"
+                    class="photo-visit" />
+                </div>
+                <div class="restaurant-info-container">
+                  <h2 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h2>
+                  <p class="restaurant-address"><%=  JSON.parse(restaurant.address).join(' ') %></p>
+                  <p class="restaurant-phone"><%= restaurant.phone_number %></p>
+                  <%= button_to 'Yelp Reviews', "#{restaurant.yelp_link}", method: :get, class: "btn btn-danger"%>
+                </div>
+                <div class="restaurant-actions-container">
+                  <%= button_to "Get Directions", "/directions/#{restaurant.id}", method: :get, class: "btn btn-success" %>
+                  <%= button_to 'Mark as Visited', "/visited/#{restaurant.id}", class: "btn btn-success" %>
+                  <%= button_to 'Delete', "/wishlist/#{restaurant.id}", method: :delete , data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</main>

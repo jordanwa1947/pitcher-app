@@ -41,7 +41,7 @@ describe 'As a registered user' do
 
       before(:each) do
         visit wishlist_path
-        click_button "Move to Visited"
+        click_button "Mark as Visited"
         click_on @restaurant.name
       end
 

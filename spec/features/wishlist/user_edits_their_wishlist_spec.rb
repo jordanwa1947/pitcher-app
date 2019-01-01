@@ -19,7 +19,7 @@ describe 'User edits their wishlist' do
   describe 'they click on a restaurants move to visited list' do
 
     it 'moves the restaurant to the visited page' do
-      click_button "Move to Visited"
+      click_button "Mark as Visited"
 
       expect(current_path).to eq("/visited")
       expect(page).to have_content(@restaurant.name)

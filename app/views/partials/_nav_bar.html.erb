@@ -15,7 +15,7 @@
       </li>
         <li class="nav-item">
       <% if current_user.main_address %>
-          <a class="nav-link" href=<%=matches_path(location: current_user.build_address)%>>Default Location</a>
+          <a class="nav-link" href=<%=matches_path(location: current_user.build_address)%>>Find Local Matches</a>
       <% end %>
         </li>
     <% end %>

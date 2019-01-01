@@ -29,7 +29,7 @@ h4 {
   background-color: #B8B8B5
 }
 
-.title, .heading, .restaurant-info, .user-info {
+.title, .heading, .restaurant-info, .user-info, .default-city {
   display: inline-block;
   position: absolute;
 }
@@ -40,7 +40,7 @@ h4 {
 
 .heading {
   left: 300px;
-  top: 185px;
+  top: 170px;
   width: calc(100% - 350px);
 }
 
@@ -100,7 +100,7 @@ h4 {
   }
 }
 
-feedback-container form {
+.feedback-container form {
   display: inline-block;
 }
 

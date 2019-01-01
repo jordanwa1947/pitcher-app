@@ -28,7 +28,7 @@ describe 'As a registered user' do
         stub_business_1
         stub_business_2
         stub_business_3
-        click_on "Default Location"
+        click_on "Find Local Matches"
       end
 
       it 'should display photos and like and dislike buttons' do
@@ -58,11 +58,11 @@ describe 'As a registered user' do
 
           it "should display restaurant info in my wishlist" do
             expect(page).to have_content("These are all the restaurants you've been interested in from the past.")
-            expect(page).to have_css("h4.restaurant-name", count: 1)
-            expect(page).to have_css("li.restaurant-address", count: 1)
-            expect(page).to have_css("li.restaurant-phone", count: 1)
-            expect(page).to have_css("a.restaurant-yelp_link", count: 1)
-            expect(page).to have_css("img.photo", count: 1)
+            expect(page).to have_css("h2.restaurant-name", count: 1)
+            expect(page).to have_css("p.restaurant-address", count: 1)
+            expect(page).to have_css("p.restaurant-phone", count: 1)
+            expect(page).to have_css("input.restaurant-yelp_link", count: 1)
+            expect(page).to have_css("img.photo-visit", count: 1)
           end
         end
       end
@@ -85,7 +85,7 @@ describe 'As a registered user' do
           end
 
           it "should not display restaurant info in my wishlist" do
-            expect(page).to have_content("You don't have any recommended restaurants yet.")
+            expect(page).to have_content("You don't have any recommended restaurants.")
             expect(page).to_not have_css("li.restaurant_name", count: 1)
           end
         end
