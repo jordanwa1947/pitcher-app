@@ -1,10 +1,11 @@
 $(document).ready(function() {
   $('#expand_review').on ('click', function(){
-    $(this).toggleClass('expanded')
-    if ( $(this).hasClass( 'btn btn-primary expanded' ) ) {
-      $(this).text( 'Collapse' );
+    if ( $(this).hasClass( 'expanded' ) ) {
+      $(this).text("Leave A Review");
+      $(this).toggleClass('expanded')
     } else {
-      $(this).text( "Leave A Review" );
+      $(this).text('Collapse');
+      $(this).toggleClass('expanded')
     }
   })
 });

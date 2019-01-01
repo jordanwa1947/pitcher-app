@@ -24,15 +24,15 @@ describe 'User edits their wishlist' do
       expect(current_path).to eq("/visited")
       expect(page).to have_content(@restaurant.name)
       expect(page).to have_content(JSON.parse(@restaurant.address).join(' '))
-      expect(page).to have_link("Yelp Reviews")
-      expect(page).to have_css(".restaurant")
+      expect(page).to have_button("Yelp Reviews")
+      expect(page).to have_css(".restaurant-container")
 
       click_link "Wishlist"
 
       expect(page).to_not have_content(@restaurant.name)
       expect(page).to_not have_content(JSON.parse(@restaurant.address).join(' '))
-      expect(page).to_not have_link("Yelp Reviews")
-      expect(page).to_not have_css(".restaurant")
+      expect(page).to_not have_button("Yelp Reviews")
+      expect(page).to_not have_css(".restaurant-container")
     end
   end
 
@@ -45,7 +45,7 @@ describe 'User edits their wishlist' do
 
       expect(page).to_not have_content(@restaurant.name)
       expect(page).to_not have_content(JSON.parse(@restaurant.address).join(' '))
-      expect(page).to_not have_link("Yelp Reviews")
+      expect(page).to_not have_button("Yelp Reviews")
       expect(page).to_not have_css(".restaurant")
     end
   end

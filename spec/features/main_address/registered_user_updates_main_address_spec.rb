@@ -20,15 +20,12 @@ describe 'Registered User with clicks on update main address' do
       expect(current_path).to eq(edit_user_main_address_path(user, user.main_address))
 
       fill_in 'main_address[city]', with: 'Tampa'
-      fill_in 'main_address[state]', with: 'Fl'
+      fill_in 'main_address[state]', with: 'FL'
       click_on 'Submit'
 
       expect(current_path).to eq(dashboard_path)
-      expect(page).to have_content('City: Tampa')
-      expect(page).to have_content('State: Fl')
-      expect(page).to have_content('Zip Code: 80202')
-      expect(page).to_not have_content('State: CO')
-      expect(page).to_not have_content('City: Denver')
+      expect(page).to have_content('Tampa, FL')
+      expect(page).to_not have_content('Denver, CO')
     end
   end
 end

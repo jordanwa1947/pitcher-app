@@ -1,24 +1,62 @@
-a.restaurant-yelp-link {
-  background-color: #ed0008;
-  text-decoration-color: none;
-  display: inline-block;
-  color: white;
-  border: 1px;
+.restaurant-container {
+  display: flex;
+  flex-direction: row;
 }
 
-div.restaurant > li {
-  list-style-type: none;
-  padding: 5px;
+.photo-visit {
+  width: 300px;
+  height: 200px;
+  margin: 50px 25px;
+  border: 3px solid #645F5C;
+  border-radius: 3px;
+  box-shadow: 7px 7px 5px lightgray;
+
 }
 
-.restaurant {
-  display: grid;
-  grid-template-columns: auto;
-  text-align: center;
+.restaurant-info-container a {
+  padding-left: 0;
+  color: inherit;
+  font-size: inherit;
 }
 
-.restaurant > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.restaurant-name {
+  margin-top: 60px;
 }
+
+.review-container {
+  margin: 50px 0 40px 0px  ;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+label {
+  width: 100px;
+}
+
+// a.restaurant-yelp-link {
+//   background-color: #ed0008;
+//   text-decoration-color: none;
+//   display: inline-block;
+//   color: white;
+//   border: 1px;
+// }
+
+// div.restaurant > li {
+//   list-style-type: none;
+//   padding: 5px;
+// }
+
+// .restaurant {
+//   display: grid;
+//   grid-template-columns: auto;
+//   text-align: center;
+// }
+
+// .restaurant > img {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }

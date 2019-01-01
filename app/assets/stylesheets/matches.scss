@@ -3,6 +3,10 @@ html, body {
   color: #333322;
 }
 
+main {
+  padding-top: 116px;
+}
+
 .row {
   display: flex;
 }
@@ -20,23 +24,23 @@ h4 {
 }
 
 .jumbotron {
-  height: 240px;
+  height: 180px;
   margin-bottom: 0;
   background-color: #B8B8B5
 }
 
-.title, .heading, .restaurant-info {
+.title, .heading, .restaurant-info, .user-info {
   display: inline-block;
   position: absolute;
 }
 
 .title {
-  top: 165px;
+  top: 180px;
 }
 
 .heading {
   left: 300px;
-  top: 75px;
+  top: 185px;
   width: calc(100% - 350px);
 }
 
@@ -96,7 +100,7 @@ h4 {
   }
 }
 
-form {
+feedback-container form {
   display: inline-block;
 }
 
@@ -105,14 +109,17 @@ form {
   margin: 10px 0;
 }
 
-.search-button {
-  border: 1px black solid;
-}
-
 .aside {
   flex: 1;
   padding: 20px;
   background-color: #A78C74;
   min-height: calc(100vh - 265px)
 }
+
+ .aside-button {
+   color: white;
+   background-color: #343A40;
+   margin: 10px 0;
+ }
+
 

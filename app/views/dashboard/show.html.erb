@@ -1,41 +1,56 @@
-<html>
-  <head>
+<main>
+  <div class="jumbotron">
+    <div class="title">
+      <h1>Dashboard</h1>
+    </div>
+    <div class="user-info">
+      <h2><%= current_user.first_name %> <%= current_user.last_name %></h2>
+      <p><%= current_user.email %></p>
+    </div>
+  </div>
 
-</head>
-  </head>
-  <body>
-    <ul>
-      <li> First Name: <%= current_user.first_name %> </li>
-      <li> Last Name: <%= current_user.last_name %> </li>
-      <li> Email: <%= current_user.email %> </li>
-    </ul>
-    <%= link_to "Logout", logout_path %>
-
-    <% if @main_address.id %>
-      <h3> Main Address </h3>
-      <ul>
-        <li> Address: <%= @main_address.address %> </li>
-        <li> City: <%= @main_address.city %> </li>
-        <li> State: <%= @main_address.state %> </li>
-        <li> Zip Code: <%= @main_address.zip %> </li>
-        <%= link_to 'Update Main Address', edit_user_main_address_path(current_user.id, @main_address) %>
-        <%= link_to 'Delete Main Address', user_main_address_path(current_user.id, @main_address), method: :delete %>
-      </ul>
-    <% else %>
-      <h3> Add A Main Address </h3>
-      <%= render '/shared/main_address_form' %>
-    <% end %>
-
-    <% if @main_address.latitude && @main_address.longitude %>
-      <h2> Your Default Location </h2>
-      <div id="map"></div>
-      <% provide :head_tags do %>
-        <script>
-          document.addEventListener("turbolinks:load", function(){
-            initMap(<%=@main_address.latitude%>, <%=@main_address.longitude%>)
-          });
-        </script>
-      <% end %>
-    <% end %>
-  </body>
-</html>
+  <div class="container main-container">
+    <div class="row">
+      <div class="col-10">
+        <div class="row">
+          <div class="col main-address">
+            <% if @main_address.id %>
+              <h2> Main Address </h2>
+              <h5> <%= @main_address.address %> </h5>
+              <h5> <%= @main_address.city %>, <%= @main_address.state %>  <%= @main_address.zip %> 
+            <% else %>
+              <h3> Add A Main Address </h3>
+              <%= render '/shared/main_address_form' %>
+            <% end %>
+          </div>
+          <div class="col">
+            <% if @main_address.latitude && @main_address.longitude %>
+              <h2> Default Location </h2>
+              <div id="map"></div>
+              <% provide :head_tags do %>
+                <script>
+                  document.addEventListener("turbolinks:load", function(){
+                    initMap(<%=@main_address.latitude%>, <%=@main_address.longitude%>)
+                  });
+                </script>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 aside">
+        <% if @main_address.id %>
+          <%= link_to 'Update Main Address', 
+            edit_user_main_address_path(current_user.id, @main_address), 
+            class: "btn aside-button" %>
+          <%= link_to 'Delete Main Address', 
+            user_main_address_path(current_user.id, @main_address), 
+            class: "btn aside-button",
+            :method => 'delete'  %>
+        <% else %>
+          <p>Add a main address to begin</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>
