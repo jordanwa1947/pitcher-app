@@ -12,18 +12,14 @@ module BusinessStubs
   end
 
   def stub_business_3
-    stub_request(:get, "https://api.yelp.com/v3/businesses/KPQ1fifN8sVnINat4xmDXQ").
-      # to_return(body: File.read("./spec/fixtures/business_details_10.json"))
+    stub_request(:get, "https://api.yelp.com/v3/businesses/us9NRKZDQZH0iKgEmdhbJQ").
       to_return(body: File.read("./spec/fixtures/business_details_3.json"))
-      # WHY IS THIS #10 ^^^ ?
-      # It doesn't break when changed, why are 3 stubs used in the tests using this method
   end
 
   def stub_business_4
     stub_request(:get, "https://api.yelp.com/v3/businesses/AufxrKk-COzfAMr9KMVWRA").
       to_return(body: File.read("./spec/fixtures/business_details_4.json"))
   end
-
 
   def stub_business_7
     stub_request(:get, "https://api.yelp.com/v3/businesses/mKRMTGAOQKPIdhi8LKB4Tg").
@@ -40,5 +36,9 @@ module BusinessStubs
       to_return(body: File.read("./spec/fixtures/business_details_9.json"))
   end
 
+  def stub_business_10
+    stub_request(:get, "https://api.yelp.com/v3/businesses/KPQ1fifN8sVnINat4xmDXQ").
+      to_return(body: File.read("./spec/fixtures/business_details_10.json"))
+  end
 
 end

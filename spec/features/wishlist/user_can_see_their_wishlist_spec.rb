@@ -26,7 +26,7 @@ describe 'Wishlist' do
       VCR.use_cassette('geocode_lookup') do
         stub_business_1
         stub_business_2
-        stub_business_3
+        stub_business_10
         address = create(:main_address, user: user)
         user.wishlists.create(restaurant: restaurant_1)
         user.wishlists.create(restaurant: restaurant_2)
@@ -49,23 +49,25 @@ describe 'Wishlist' do
       expect(page).to_not have_content(restaurant_3.name)
     end
 
-    xit "Only wishlist items in my default location city are visible" do
-      expect(page).to     have_content(restaurant_1.name)
-      expect(page).to     have_content(restaurant_1.phone_number)
-      expect(page).to     have_content(restaurant_2.name)
-      expect(page).to     have_content(restaurant_2.phone_number)
-      expect(page).to_not have_content(restaurant_3.name)
-      expect(page).to_not have_content(restaurant_3.phone_number)
+    it "Only wishlist items in my default location city are visible" do
+
+      within(".default-wishlists") do
+        expect(page).to     have_content(restaurant_1.name)
+        expect(page).to     have_content(restaurant_1.phone_number)
+        expect(page).to     have_content(restaurant_2.name)
+        expect(page).to     have_content(restaurant_2.phone_number)
+        expect(page).to_not have_content(restaurant_3.name)
+        expect(page).to_not have_content(restaurant_3.phone_number)
+      end
     end
 
-    xit "Displays wishlist items from other cities when I click expand" do
-      click_on("Aurora, CO")
+    it "Displays wishlist items from other cities when I click expand" do
 
-      expect(page).to have_content(restaurant_3.name)
-      expect(page).to have_content(restaurant_3.city)
+      within("#other-wishlists") do
+        expect(page).to have_content(restaurant_3.name)
+        expect(page).to have_content(restaurant_3.city)
+      end
+
     end
-
   end
-
-
 end
