@@ -1,0 +1,41 @@
+.restaurant-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-visit {
+  width: 300px;
+  height: 200px;
+  margin: 50px 25px;
+  border: 3px solid #645F5C;
+  border-radius: 3px;
+  box-shadow: 7px 7px 5px lightgray;
+
+}
+
+.restaurant-info-container a {
+  padding-left: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+.restaurant-name {
+  margin-top: 60px;
+}
+
+.review-container {
+  margin: 50px 0 40px 0px  ;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+label {
+  width: 100px;
+}
+
+.show {
+  margin-top: 10px;
+}

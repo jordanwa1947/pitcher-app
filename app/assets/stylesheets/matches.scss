@@ -1,37 +1,55 @@
-html, body, main, .row {
-  height: 100%;
+html, body {
+  min-height: 100vh;
   color: #333322;
+}
+
+main {
+  padding-top: 116px;
+}
+
+.row {
+  display: flex;
 }
 
 h1, h2, h3, h4, h5 {
   color: #5F372A;
 }
 
+h2 {
+  margin-top: 24px;
+}
+
+h4 {
+  margin-top: 18px;
+}
+
 .jumbotron {
-  height: 240px;
+  height: 180px;
   margin-bottom: 0;
   background-color: #B8B8B5
 }
 
-.title, .heading {
+.title, .heading, .restaurant-info, .user-info, .default-city {
   display: inline-block;
-  position: relative;
+  position: absolute;
 }
 
 .title {
-  top: -20px;
+  top: 180px;
 }
 
 .heading {
-  left: 200px;
-  top: 10px;
+  left: 300px;
+  top: 170px;
   width: calc(100% - 350px);
 }
 
 .main-container {
   max-width: unset;
-  height: calc(100% - 280px);
-}
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 265px)
+  }
 
 .image-container {
   text-align: center;
@@ -82,7 +100,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-form {
+.feedback-container form {
   display: inline-block;
 }
 
@@ -91,13 +109,17 @@ form {
   margin: 10px 0;
 }
 
-.search-button {
-  border: 1px black solid;
+.aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #A78C74;
+  min-height: calc(100vh - 265px)
 }
 
-.aside {
-  padding: 20px;
-  height: 100%;
-  background-color: #A78C74;
-}
+ .aside-button {
+   color: white;
+   background-color: #343A40;
+   margin: 10px 0;
+ }
+
 

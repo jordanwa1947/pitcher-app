@@ -39,7 +39,7 @@ class MainAddressesController < ApplicationController
 
   def address_alert
     {
-      success: "You're Main Address Has Been Updated",
+      success: "Your Main Address Has Been Updated",
       failure: 'An Error Occured. Please Try Again',
       deleted: 'Main Address Has Been Deleted'
     }

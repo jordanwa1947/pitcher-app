@@ -3,21 +3,28 @@
     <%= image_tag("logo.png") %>
   </div>
   <ul class="navbar-nav">
-    <li class="nav-item">
     <% if current_user %>
-      <a class="nav-link" href="/dashboard">Dashboard</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/wishlist">Wishlist</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/visited">Visited</a>
-    </li>
-      <% if current_user.main_address %>
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/wishlist">Wishlist</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/visited">Visited</a>
+      </li>
         <li class="nav-item">
-          <a class="nav-link" href=<%=matches_path(location: current_user.build_address)%>>Default Location</a>
-        </li>
+      <% if current_user.main_address %>
+          <a class="nav-link" href=<%=matches_path(location: current_user.build_address)%>>Find Local Matches</a>
       <% end %>
+        </li>
     <% end %>
   </ul>
+  <div class="navbar-nav float-right">
+    <% if current_user %>
+      <span class="nav-user-name"><%= current_user.first_name %> <%= current_user.last_name %></span>
+      <a class="nav-link" href=<%=logout_path%>>Logout</a>
+    <% end %>
+  </div>
+
 </nav>

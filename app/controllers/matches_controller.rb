@@ -15,6 +15,9 @@ class MatchesController < ApplicationController
     data       = params[:restaurant_info]
     id         = data[:id]
     restaurant = Restaurant.find_by(yelp_id: id) || Restaurant.create_self( data )
+    photos     = data[:photos].each do |photo|
+      restaurant.photos.create(url: photo)
+    end
     wishlist   = current_user.wishlists.create(restaurant: restaurant)
     redirect_to matches_path(location: session[:location])
   end
@@ -36,7 +39,8 @@ class MatchesController < ApplicationController
 
   def new_local_session
     target = { target: :location, location: params[:location] }
-    session[:locals] = YelpService.new(target).local_restaurants
+    yelp_ids = YelpService.new(target).local_restaurants
+    session[:locals] = current_user.no_repeat_restaurants(yelp_ids)
   end
 
 end

@@ -17,15 +17,16 @@ describe 'As a registered user' do
     end
 
     it 'displays a form to leave a rating and review' do
-      expect(page).to have_content("Leave a Review")
+      expect(page).to have_button("Leave A Review")
     end
 
     describe 'when I enter a rating and review' do
 
       before(:each) do
-        fill_in 'Review Title', with: 'First Review'
-        fill_in 'Rating',       with: 5
-        fill_in 'Review',       with: 'This is my first review.'
+        click_on 'Leave A Review'
+        fill_in 'review[title]',        with: 'First Review'
+        fill_in 'review[rating]',       with: 5
+        fill_in 'review[review]',       with: 'This is my first review.'
         click_button 'Create Review'
       end
 
@@ -46,9 +47,9 @@ describe 'As a registered user' do
           visit_2   = create(:visit, user: @user_2, restaurant: restaurant)
           allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_2)
           visit visited_path
-          fill_in 'Review Title', with: 'New Review'
-          fill_in 'Rating',       with: 4
-          fill_in 'Review',       with: 'This is a new review.'
+          fill_in 'review[title]', with: 'New Review'
+          fill_in 'review[rating]',       with: 4
+          fill_in 'review[review]',       with: 'This is a new review.'
           click_button 'Create Review'
 
           expect(page).to have_content("First Review")
@@ -63,10 +64,10 @@ describe 'As a registered user' do
       it 'displays my rating and review for restaurants I already reviewed' do
         visit visited_path
 
-        expect(page).to_not have_content("Leave a Review")
+        expect(page).to_not have_content("Leave A Review")
         expect(page).to     have_content("My Review")
-        expect(page).to     have_content("Rating: 5")
-        expect(page).to     have_content("Title: First Review")
+        expect(page).to     have_content("5 stars")
+        expect(page).to     have_content("First Review")
         expect(page).to     have_content("This is my first review.")
       end
     end
