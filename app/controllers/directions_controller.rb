@@ -4,7 +4,7 @@ class DirectionsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
-    @address = current_user.main_address
+    @address = current_user.wishlists.find_by(restaurant_id: params[:id]).searched_address
   end
 
 end

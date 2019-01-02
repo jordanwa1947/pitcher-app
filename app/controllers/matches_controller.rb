@@ -7,7 +7,7 @@ class MatchesController < ApplicationController
     session[:locals] = Hash.new unless session[:location] == params[:location] #reset session[:locals] if location has changed
     session[:location] = params[:location] #save location in sessions
     new_local_session if needs_locals?
-    @facade = MatchesFacade.new(current_user, session[:locals].shift)
+    @facade = MatchesFacade.new(current_user, session[:locals].shift, params[:location])
     redirect_to matches_path(location: session[:location]) if @facade.images.empty? #skip restaurants without photos
   end
 
@@ -18,7 +18,7 @@ class MatchesController < ApplicationController
     photos     = data[:photos].each do |photo|
       restaurant.photos.create(url: photo)
     end
-    wishlist   = current_user.wishlists.create(restaurant: restaurant)
+    wishlist = current_user.wishlists.create(restaurant: restaurant, searched_address: params[:location])
     redirect_to matches_path(location: session[:location])
   end
 
