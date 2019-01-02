@@ -3,14 +3,14 @@ require 'rails_helper'
 describe 'User edits their wishlist' do
 
   let(:user)   { create(:user) }
-  let(:facade) { MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA") }
+  let(:facade) { MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA", searched_address: "1331 17th Street Denver CO 80202") }
 
   before(:each) do
-    VCR.use_cassette('geocode_lookup') do
+    VCR.use_cassette('geocode_lookup', allow_playback_repeats: true) do
       stub_business_1
       address = create(:main_address, user: user)
       @restaurant = Restaurant.create_self(facade.restaurant_info)
-      user.wishlists.create(restaurant: @restaurant)
+      user.wishlists.create(restaurant: @restaurant, searched_address: "1331 17th Street Denver CO 80202")
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
       visit wishlist_path
     end

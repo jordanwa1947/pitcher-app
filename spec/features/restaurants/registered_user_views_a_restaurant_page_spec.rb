@@ -8,7 +8,7 @@ describe 'As a registered user' do
       address = create(:main_address, user: @user)
       @restaurant = create(:restaurant)
       wishlist = create(:wishlist, user: @user, restaurant: @restaurant)
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)      
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
     end
   end
 

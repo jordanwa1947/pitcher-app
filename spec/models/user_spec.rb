@@ -52,8 +52,9 @@ describe User, type: :model do
       restaurant_2 = create(:restaurant, yelp_id: "YxeTWblmRB3m7egJzgAJCg")
 
       Visit.create(user_id: user.id, restaurant_id: restaurant.id)
-      Wishlist.create(user_id: user.id, restaurant_id: restaurant_2.id)
-
+      VCR.use_cassette('geocode_lookup') do
+        Wishlist.create!(user_id: user.id, restaurant_id: restaurant_2.id, searched_address: '17th St LL100 Denver CO 80202')
+      end
       never_chosen = user.no_repeat_restaurants(yelp_ids)
 
       expect(never_chosen.count).to eq 18
