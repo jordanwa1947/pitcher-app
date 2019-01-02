@@ -13,7 +13,7 @@ describe 'As a registered user' do
   end
 
   describe 'when I visit the wishlist_path' do
-    xit 'allows me to get directions' do
+    it 'allows me to get directions' do
       visit '/wishlist'
 
       find("div.default-wishlists").click
