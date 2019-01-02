@@ -1,10 +1,11 @@
 class MatchesFacade
 
-  attr_reader :yelp_id
+  attr_reader :yelp_id, :location 
 
-  def initialize(user, yelp_id)
+  def initialize(user, yelp_id, location)
     @user    = user
     @yelp_id = yelp_id
+    @location = location
   end
 
   def images

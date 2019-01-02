@@ -42,7 +42,9 @@ describe 'As a registered user' do
       describe "when I click the like button" do
 
         before(:each) do
-          click_on "Like"
+          VCR.use_cassette('geocode_lookup') do
+            click_on "Like"
+          end 
         end
 
         it "should display a new set of photos" do

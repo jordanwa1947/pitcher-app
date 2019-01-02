@@ -21,8 +21,10 @@ RSpec.describe Wishlist, type: :model do
   describe "Methods" do
 
     it 'can access yelp_id' do
-      id = wishlist.yelp_id
-      expect(id).to eq(restaurant.yelp_id)
+      VCR.use_cassette('geocode_lookup') do
+        id = wishlist.yelp_id
+        expect(id).to eq(restaurant.yelp_id)
+      end
     end
 
   end

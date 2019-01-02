@@ -32,13 +32,13 @@ class User < ApplicationRecord
 
   def wish_yelp_ids
     wish_yelp_ids = wishlists.map do |wishlist|
-      wishlist.restaurant.yelp_id
+      wishlist.yelp_id
     end
   end
 
   def visit_yelp_ids
     visits.map do |visit|
-      visit.restaurant.yelp_id
+      visit.yelp_id
     end
   end
 
