@@ -25,6 +25,7 @@ gem 'google-api-client'
 gem 'omniauth-google-oauth2'
 gem 'geocoder'
 gem 'jquery-rails'
+gem 'travis'
 
 
 group :development, :test do
@@ -44,7 +45,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'awesome_print'
-end 
+end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
