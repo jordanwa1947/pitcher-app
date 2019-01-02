@@ -106,7 +106,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 02 Jan 2019 01:01:07 GMT
+      - Wed, 02 Jan 2019 04:00:44 GMT
       Server:
       - Apache/2.4.29 (Ubuntu)
       Access-Control-Allow-Origin:
