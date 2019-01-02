@@ -24,7 +24,6 @@ gem 'faraday'
 gem 'google-api-client'
 gem 'omniauth-google-oauth2'
 gem 'geocoder'
-gem 'jquery-rails'
 gem 'travis'
 
 group :development, :test do

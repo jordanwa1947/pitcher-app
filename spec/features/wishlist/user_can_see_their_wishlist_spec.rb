@@ -12,9 +12,9 @@ describe 'Wishlist' do
   describe "User" do
 
     let(:user)         { create(:user) }
-    let(:facade_1)     { MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA") }
-    let(:facade_2)     { MatchesFacade.new(user, "eaVcCJO5OmBhAv-kJRpWRg") }
-    let(:facade_3)     { MatchesFacade.new(user, "KPQ1fifN8sVnINat4xmDXQ") }
+    let(:facade_1)     { MatchesFacade.new(user, "cL8rbKfItlQOoFzLIQAsdA", searched_address: "1331 17th Street Denver CO 80202") }
+    let(:facade_2)     { MatchesFacade.new(user, "eaVcCJO5OmBhAv-kJRpWRg", searched_address: "1331 17th Street Denver CO 80202") }
+    let(:facade_3)     { MatchesFacade.new(user, "KPQ1fifN8sVnINat4xmDXQ", searched_address: "1331 17th Street Denver CO 80202") }
     let(:restaurant_1) { Restaurant.create_self(facade_1.restaurant_info) }
     let(:restaurant_2) { Restaurant.create_self(facade_2.restaurant_info) }
     let(:restaurant_3) { Restaurant.create_self(facade_3.restaurant_info) }
@@ -23,14 +23,14 @@ describe 'Wishlist' do
     # let(:wishlist_3)   { user.wishlists.create(restaurant: restaurant_3) }
 
     before(:each) do
-      VCR.use_cassette('geocode_lookup') do
+      VCR.use_cassette('geocode_lookup', allow_playback_repeats: true) do
         stub_business_1
         stub_business_2
         stub_business_10
         address = create(:main_address, user: user)
-        user.wishlists.create(restaurant: restaurant_1)
-        user.wishlists.create(restaurant: restaurant_2)
-        user.wishlists.create(restaurant: restaurant_3)
+        user.wishlists.create(restaurant: restaurant_1, searched_address: "1331 17th Street Denver CO 80202")
+        user.wishlists.create(restaurant: restaurant_2, searched_address: "1331 17th Street Denver CO 80202")
+        user.wishlists.create(restaurant: restaurant_3, searched_address: "1331 17th Street Denver CO 80202")
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
         visit wishlist_path
       end

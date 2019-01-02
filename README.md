@@ -25,7 +25,8 @@ Database: Postgresql
   - Get a [client_id & access token](https://www.yelp.com/fusion)
   - ``bundle exec figaro install``
   - Store API keys in config/application.yml
-    - YELP_API_KEY: <client_id>
+    - yelp_client_id: <client_id>
+    - YELP_API_KEY: <token>
 
 4 - Setup Google API:
   - Get a [client_secret & client_id](https://developers.google.com/identity/sign-in/web/sign-in)
@@ -34,16 +35,19 @@ Database: Postgresql
     - google_secret: <client_secret>
 
 5 - Setup Google Maps Api:
-  - register for google premium to obtain a google_maps_api_key at https://cloud.google.com/maps-platform/
+  - [Register for Google premium](https://cloud.google.com/maps-platform/) to obtain a google_maps_api_key
   - Store API key in config/application.yml
-  - google_maps_api_key: <client_id>
+    - google_maps_api_key: <client_id>
 
 ## Gems
 - ``gem 'pg', '>= 0.18', '< 2.0'``
 - ``gem 'figaro'``
 - ``gem 'faraday'``
+- ``gem 'jquery-rails'``
 - ``gem 'google-api-client'``
 - ``gem 'omniauth-google-oauth2'``
+- ``gem 'geocoder'``
+- ``gem 'travis'``
 
 ##### Testing & Development:
 - ``gem 'pry'``
@@ -59,7 +63,7 @@ Database: Postgresql
 - ``gem 'awesome_print'``
 
 ## Testing
-MiniTest has been excluded from this app, opting for RSpec instead. See 'Install' to install RSpec.
+MiniTest has been excluded from this app, opting for RSpec instead.
 
 Run RSpec via ``bundle exec rspec``
 
