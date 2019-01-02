@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.4.1
+# - jruby
+
+services:
+  - postgresql
+
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.yml.travis config/database.yml
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: CHr8I3nXq9ZqjyBKqCst5HOzCJY931x0Sn4bUu+tlgHNYAEsGNhPZezjlLy145CeBLosWh2spn2++hyzPLj1x7SDRw87rB5kdwy0gofpeVsnjYmyoFNgu40N18Dm8cWtadHBXBxrMItWO9AUHitEG/ayo2EZN4x4K4aoxcmg6QyzIqRLWl0KbTRZ98eqrOdGsC4De+bOg1H6c/f4ZWow6HpqwrsknvU1SdQzwO/F8ZCpXKNoZqp1sputGVWbabHWyEYQSLYO6vox5ypcwKIs0XVuactDoZTCbzhZ3fYBAUKjIHv4esWm8nCf77teSB1cMxB+uVraejhswOkYc8jphHIpbAC/dvLVEhOTRAIDiU+09Qy6K333YMsblG4371rFUfp9tRUWTs9xy0YvofVBhb740n3QIIgsLsyA7VlX8tjAtnY2TKgnwV1znXxNFw1UpunibRztsZKspqSIkHAWnlOsoOKHA3PfrTAqrYDTnWXXaxZCK8bFOZIwJTLMEGHgpkIQrmVjTlYgz4+W9ToVgAt0QwUGRkvelYzRt7zLm5jW8wwIaqAr690Ia18KNIlsLriqaIryT68ZzbQ68hm6vjCRsLVLOxbXyua4ed5tGgNZqgJXFN2EVDQlNS8hhaYhVa307JmVYN4f4c7cFz/CYUdnbzQLJ4xT3HYKzTKdG6M=
